@@ -1,0 +1,53 @@
+[
+ {
+  "desde": "2018-03-28",
+  "hasta": "2019-12-30",
+  "fuente_antes": "64ec6210162972acf3b8d6c3f2487e1577488edbc4d1c9a29efd5f9e815084a3",
+  "fuente_despues": "4af8bbe92a655a92e48b80f557cdf01c0865592cb2fe8e790d881edfcd1dfc86",
+  "pendientes": [],
+  "explicado": [
+   "1067-bis",
+   "1253",
+   "1339",
+   "1340",
+   "1390-bis-33"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2019-12-30",
+  "hasta": "2025-11-14",
+  "fuente_antes": "4af8bbe92a655a92e48b80f557cdf01c0865592cb2fe8e790d881edfcd1dfc86",
+  "fuente_despues": "b99bbf981434011b6351ef308922fea90f6f0f8777b113183cf1737840c5bbef",
+  "pendientes": [],
+  "explicado": [
+   "1054",
+   "1061-bis",
+   "1063",
+   "1067-bis",
+   "1253",
+   "1339",
+   "1340",
+   "1390-bis-33",
+   "1393",
+   "1414",
+   "1466",
+   "1477"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]
