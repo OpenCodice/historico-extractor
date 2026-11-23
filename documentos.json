@@ -5,7 +5,8 @@
     ],
     "renglones": [
       "Centro de Documentación, Información y Análisis",
-      "Dirección General de Servicios de Documentación, Información y Análisis"
+      "Dirección General de Servicios de Documentación, Información y Análisis",
+      "Dirección General de Bibliotecas"
     ],
     "patrones": [
       "^\\d{1,4}\\s*de\\s+\\d{2,4}$"
