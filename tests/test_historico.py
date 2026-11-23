@@ -134,7 +134,7 @@ def test_la_tanda_toma_primero_lo_nunca_intentado_y_luego_lo_mas_viejo(monkeypat
     assert [d["clave"] for d in tanda.elegir(5)] == ["b", "d"]
     assert [d["clave"] for d in tanda.elegir(5, ["c"])] == ["c"]
     estados |= {"b": {"fecha": "2026-11-22"}, "d": {"fecha": "2026-11-21"}}
-    assert [d["clave"] for d in tanda.elegir(2)] == ["c", "a"]
+    assert [d["clave"] for d in tanda.elegir(2)] == ["c", "a", "d", "b"]
 
 
 def test_un_articulo_adicionado_sin_nota_se_prueba_con_los_dos_pdf():
@@ -172,3 +172,19 @@ def test_una_version_declarada_fuera_no_entra_al_plan(tmp_path, monkeypatch):
         {"archivo": f"{n}_X.pdf", "captura": str(n), "url": "u", "sha256": "s", "bytes": 1, "version": v,
          "paginas": 1, "origen": "2000-01-01"} for n, v in ((1, "2021-10-14"), (2, "2021-11-22"))])
     assert list(capturas.versiones("x")) == ["2021-10-14"]
+
+
+def test_una_rama_publicada_sin_capturas_nuevas_no_se_rehace(tmp_path, monkeypatch):
+    from historico import tanda
+    monkeypatch.setattr(tanda.capturas, "descargar", lambda *a: [{}] * 3)
+    monkeypatch.setattr(tanda.capturas, "versiones", lambda clave: {"2020-01-01": {}, "2021-01-01": {}})
+    monkeypatch.setattr(tanda.cadena, "sello_de_configuracion", lambda: "abc")
+    monkeypatch.setattr(tanda.cadena, "construir", lambda *a, **k: 1 / 0)
+    previo = {"fecha": "2026-11-01", "configuracion": "abc", "capturas": 3, "versiones_archivadas": 2,
+              "publicada": True, "versiones": 2}
+    monkeypatch.setattr(tanda, "leer_estado", lambda clave: previo)
+    doc = {"clave": "x", "archivos": "X.pdf", "extractor": "federal"}
+    estado = tanda.procesar(doc, tmp_path, tmp_path, tmp_path, publicar=True)
+    assert estado["publicada"] and estado["versiones"] == 2 and estado["fecha"] > "2026-11-01"
+    previo["capturas"] = 2
+    assert "ZeroDivisionError" in tanda.procesar(doc, tmp_path, tmp_path, tmp_path, publicar=True)["motivo"]

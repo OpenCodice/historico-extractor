@@ -11,6 +11,7 @@ import os
 import pathlib
 import re
 import subprocess
+import time
 
 from . import RAIZ, configuracion
 from . import cadena, capturas, coherencia, reedicion
@@ -19,6 +20,7 @@ ESTADO = RAIZ / "estado"
 INFORMES = RAIZ / "coherencia"
 EXTRACTOR = {"constitucion": "constitucion-extractor", "federal": "fiscal-extractor"}
 MARCA = ("<!-- ramas -->", "<!-- /ramas -->")
+MINUTOS_DE_REVISION = 240
 
 
 def leer_estado(clave: str) -> dict | None:
@@ -37,7 +39,9 @@ def elegir(lote: int, claves: list[str] | None = None) -> list[dict]:
     nuevos = sin_intentar()
     if nuevos:
         return nuevos[:lote]
-    return sorted(documentos, key=lambda d: leer_estado(d["clave"])["fecha"])[:lote]
+    # Revisión: todos, del que lleva más tiempo sin verse al más reciente;
+    # `correr` se detiene al agotar su tiempo.
+    return sorted(documentos, key=lambda d: leer_estado(d["clave"])["fecha"])
 
 
 def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
@@ -53,6 +57,11 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
         estado |= {"capturas": len(filas), "versiones_archivadas": len(plan)}
         if not plan:
             return estado | {"motivo": "sin capturas con fecha de versión"}
+        # Una rama publicada sin capturas nuevas ni cambios en lo declarado
+        # sigue siendo la misma: no hay nada que rehacer.
+        if (previo.get("publicada") and publicar and not desde_cero
+                and all(previo.get(k) == estado[k] for k in ("configuracion", "capturas", "versiones_archivadas"))):
+            return previo | {"fecha": estado["fecha"]}
         # Lo que ya falló solo se salta si nada de lo declarado cambió.
         fuera = previo.get("fuera", []) if previo.get("configuracion") == estado["configuracion"] else []
         if publicar:
@@ -127,7 +136,10 @@ def correr(lote: int, claves: list[str] | None, carpeta_capturas: pathlib.Path, 
     """Procesa una tanda. Devuelve si queda otra igual por hacer: documentos
     sin intentar, cuando la tanda no fue de claves dadas (repetirla con las
     mismas claves no avanzaría nada)."""
+    limite = time.monotonic() + MINUTOS_DE_REVISION * 60
     for doc in elegir(lote, claves):
+        if time.monotonic() > limite:
+            break
         estado = procesar(doc, carpeta_capturas, repo, extractores, publicar, desde_cero)
         guardar_estado(doc["clave"], estado)
         avisar(f"{doc['clave']}: " + (f"publicada, {estado['versiones']} versiones" if estado["publicada"]
