@@ -15,7 +15,7 @@ import re
 
 import pdfplumber
 
-CONTEXTO = 3
+CONTEXTO = (3, 8, 16)
 VENTANA = 12
 BORDE = 6
 HUECO = 600
@@ -80,11 +80,11 @@ def palabras(articulo: str) -> list[str]:
                     if not ROTULO.fullmatch(l.strip())).split()
 
 
-def _ventanas(seq: list[str], ini: int, fin: int) -> list[str]:
+def _ventanas(seq: list[str], ini: int, fin: int, contexto: int) -> list[str]:
     """El tramo [ini, fin) con su contexto, partido en trozos que quepan en una
     búsqueda literal: un tramo largo cruza saltos de página, donde el PDF
     intercala su encabezado."""
-    a, b = max(0, ini - CONTEXTO), min(len(seq), fin + CONTEXTO)
+    a, b = max(0, ini - contexto), min(len(seq), fin + contexto)
     if b - a <= VENTANA:
         return [" ".join(seq[a:b])]
     return [" ".join(seq[i:i + VENTANA]) for i in range(a, b - VENTANA + 1, VENTANA // 2)]
@@ -125,30 +125,52 @@ def clase(antes: str, despues: str, pdf_antes: str, pdf_despues: str) -> str | N
     una versión dejó en el cuerpo (el texto de la ley no cambia); None si
     alguna diferencia no se puede probar."""
     v, n = palabras(antes), palabras(despues)
+    notas_antes, notas_despues = _notas(antes), _notas(despues)
     tramos = [op for op in difflib.SequenceMatcher(None, v, n, autojunk=False).get_opcodes()
               if op[0] != "equal"]
     notas = 0
     for _, i1, i2, j1, j2 in tramos:
-        if _es_nota(v[i1:i2], pdf_antes) and _es_nota(n[j1:j2], pdf_despues) and (i2 > i1 or j2 > j1):
+        if (_es_nota(v[i1:i2], pdf_antes, notas_despues) and _es_nota(n[j1:j2], pdf_despues, notas_antes)
+                and (i2 > i1 or j2 > j1)):
             notas += 1
             continue
-        viejas, nuevas = _ventanas(v, i1, i2), _ventanas(n, j1, j2)
-        if not all(esta(t, pdf_antes) for t in viejas) or not all(esta(t, pdf_despues) for t in nuevas):
-            return None
-        # Una frase corta puede repetirse en otro artículo del otro PDF; basta
-        # que una de las dos redacciones falte en el PDF ajeno. Si las dos
-        # están en ambos, los PDF no distinguen las versiones.
-        if all(esta(t, pdf_despues) for t in viejas) and all(esta(t, pdf_antes) for t in nuevas):
+        if not _probado(v, i1, i2, n, j1, j2, pdf_antes, pdf_despues):
             return None
     if not tramos:
         return None
     return "nota_en_el_cuerpo" if notas else "reedicion"
 
 
-def _es_nota(tramo: list[str], pdf: str) -> bool:
-    """Un tramo vacío, o texto literal del PDF que cita su reforma en el DOF."""
+def _probado(v, i1, i2, n, j1, j2, pdf_antes, pdf_despues) -> bool:
+    """El tramo está literal en el PDF de su versión y alguna de las dos
+    redacciones falta en el PDF ajeno. Una frase corta puede repetirse en otro
+    artículo del otro PDF: entonces se prueba con más contexto y, si la frase
+    entera está repetida en otro artículo, contando: la redacción vieja debe
+    aparecer más veces en su PDF que en el ajeno, y la nueva también. Si no,
+    los PDF no distinguen las versiones."""
+    for contexto in CONTEXTO:
+        viejas, nuevas = _ventanas(v, i1, i2, contexto), _ventanas(n, j1, j2, contexto)
+        if not all(esta(t, pdf_antes) for t in viejas) or not all(esta(t, pdf_despues) for t in nuevas):
+            return False
+        if not (all(esta(t, pdf_despues) for t in viejas) and all(esta(t, pdf_antes) for t in nuevas)):
+            return True
+    de_mas = [any(suyo.count(t) > ajeno.count(t) for t in ventanas)
+              for ventanas, suyo, ajeno, hay in ((viejas, pdf_antes, pdf_despues, i2 > i1),
+                                                 (nuevas, pdf_despues, pdf_antes, j2 > j1)) if hay]
+    return all(de_mas)
+
+
+def _notas(articulo: str) -> str:
+    """Las líneas de notas del artículo, en un solo renglón."""
+    from .coherencia import LINEA_DE_NOTA
+    return normalizar(" ".join(l for l in articulo.splitlines() if LINEA_DE_NOTA.fullmatch(l.strip())))
+
+
+def _es_nota(tramo: list[str], pdf: str, notas_de_la_otra: str) -> bool:
+    """Un tramo vacío, o texto literal del PDF que cita su reforma en el DOF
+    o que la otra versión lleva entre sus notas."""
     texto = " ".join(tramo)
-    return not tramo or (bool(NOTA_DOF.search(texto)) and texto in pdf)
+    return not tramo or (texto in pdf and (bool(NOTA_DOF.search(texto)) or texto in notas_de_la_otra))
 
 
 def es_de_la_fuente(antes: str, despues: str, pdf_antes: str, pdf_despues: str) -> bool:

@@ -135,3 +135,40 @@ def test_la_tanda_toma_primero_lo_nunca_intentado_y_luego_lo_mas_viejo(monkeypat
     assert [d["clave"] for d in tanda.elegir(5, ["c"])] == ["c"]
     estados |= {"b": {"fecha": "2026-11-22"}, "d": {"fecha": "2026-11-21"}}
     assert [d["clave"] for d in tanda.elegir(2)] == ["c", "a"]
+
+
+def test_un_articulo_adicionado_sin_nota_se_prueba_con_los_dos_pdf():
+    nuevo = "# Artículo 133-B\n\nEl recurso de revocación podrá tramitarse conforme al procedimiento especializado."
+    pdf_antes = "Artículo 133-A. Las autoridades demandadas. Artículo 134. Las notificaciones se harán"
+    pdf_despues = ("Artículo 133-A. Las autoridades demandadas. Artículo 133-B. El recurso de revocación podrá "
+                   "tramitarse conforme al procedimiento especializado. Artículo 134. Las notificaciones se harán")
+    assert reedicion.clase("", nuevo, pdf_antes, pdf_despues) == "reedicion"
+    assert reedicion.clase(nuevo, "", pdf_despues, pdf_antes) == "reedicion"
+    assert reedicion.clase("", nuevo, pdf_despues, pdf_despues) is None
+
+
+def test_una_frase_repetida_en_otro_articulo_se_prueba_contando():
+    antes = "# Artículo 40-A\n\nhasta por el monto conforme a la Ley de la materia y las aportaciones voluntarias"
+    despues = antes.replace("la Ley de", "la ley de")
+    otro = "Artículo 156-Bis. hasta por el monto conforme a la {} de la materia y las aportaciones voluntarias"
+    cuerpo = "Artículo 40-A. hasta por el monto conforme a la {} de la materia y las aportaciones voluntarias "
+    pdf_antes = cuerpo.format("Ley") + otro.format("ley")
+    pdf_despues = cuerpo.format("ley") + otro.format("ley")
+    assert reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_despues)
+    assert not reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_antes)
+
+
+def test_texto_que_la_otra_version_lleva_como_nota():
+    antes = "# Artículo 467 Bis\n\nse aplicará de 7 a 15 años de prisión.\n\n_Artículo adicionado DOF 04-12-2013_\n\n(En la porción normativa que remite a la fracción IV)"
+    despues = "# Artículo 467 Bis\n\nse aplicará de 7 a 15 años de prisión.\n\n_Artículo adicionado DOF 04-12-2013 (En la porción normativa que remite a la fracción IV)_"
+    pdf = "se aplicará de 7 a 15 años de prisión. Artículo adicionado DOF 04-12-2013 (En la porción normativa que remite a la fracción IV) Artículo 468"
+    assert reedicion.clase(antes, despues, pdf, pdf) == "nota_en_el_cuerpo"
+
+
+def test_una_version_declarada_fuera_no_entra_al_plan(tmp_path, monkeypatch):
+    monkeypatch.setattr(capturas, "MANIFIESTOS", tmp_path)
+    monkeypatch.setattr(capturas, "configuracion", lambda: {"versiones_fuera": {"x": {"2021-11-22": "motivo"}}})
+    capturas.escribir_manifiesto("x", [
+        {"archivo": f"{n}_X.pdf", "captura": str(n), "url": "u", "sha256": "s", "bytes": 1, "version": v,
+         "paginas": 1, "origen": "2000-01-01"} for n, v in ((1, "2021-10-14"), (2, "2021-11-22"))])
+    assert list(capturas.versiones("x")) == ["2021-10-14"]

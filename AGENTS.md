@@ -80,11 +80,16 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
 - **solo notas**, si el texto es idéntico y cambiaron las líneas de notas;
 - **solo forma**, si son las mismas palabras en el mismo orden, partidas en
   otros párrafos (una nota nueva corta el párrafo donde antes seguía);
-- **reedición**, si cambió sin reforma y cada diferencia está literal en el
+- **reedición**, si cambió sin nota y cada diferencia está literal en el
   PDF de su versión y falta en el de la otra (`historico/reedicion.py`): la
-  Cámara retocó puntuación, acentos, mayúsculas o incisos;
+  Cámara retocó puntuación, acentos, mayúsculas o incisos. Vale también para
+  un artículo adicionado o retirado, y es la única prueba en las leyes cuyo
+  PDF no anota las reformas (el CFF): ahí caen sus reformas. Si la frase
+  está repetida en otro artículo, se prueba con más contexto y contando sus
+  apariciones en cada PDF;
 - **nota en el cuerpo**, si lo que cambia es texto de una nota de reforma
-  que una versión dejó como texto del artículo (la ley no cambia);
+  que una versión dejó como texto del artículo: cita su DOF o la otra
+  versión lo lleva entre sus notas (la ley no cambia);
 - **solo puntuación**, si son las mismas letras y cifras y cambian espacios o
   signos (un guion de fin de renglón);
 - **otro orden**, si son las mismas palabras en otro orden (las celdas de una
@@ -130,7 +135,10 @@ versiones del artículo contra sus dos PDF y agrega a
 
 El veredicto va ligado a las huellas: si la extracción cambia, deja de aplicar.
 Un defecto de lectura de una versión antigua se resuelve declarando algo en
-`documentos.json` o dejando esa versión fuera; nunca parchando el extractor.
+`documentos.json` o dejando esa versión fuera (`versiones_fuera` de
+`documentos.json`: clave → versión → motivo); nunca parchando el extractor.
+Si el defecto también está en el texto vigente, es del extractor: va como
+issue a su repo y la rama espera a que se corrija.
 
 ## Commits de datos
 

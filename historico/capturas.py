@@ -15,7 +15,7 @@ import urllib.request
 
 import pdfplumber
 
-from . import MANIFIESTOS
+from . import MANIFIESTOS, configuracion
 
 CDX = "https://web.archive.org/cdx/search/cdx"
 CARPETA_PDF = "diputados.gob.mx/LeyesBiblio/pdf/"
@@ -171,11 +171,13 @@ def versiones(clave: str) -> dict[str, dict]:
     """Versión → su captura más reciente: la Cámara corrige erratas y notas
     sin cambiar la fecha de la portada, y la última captura las trae. Solo
     cuentan las capturas de la ley vigente: las de otra con otro día de
-    publicación son de la ley que esta abrogó."""
+    publicación son de la ley que esta abrogó. Las versiones declaradas en
+    `versiones_fuera` no entran: su lectura no es fiel al PDF."""
     filas = [f for f in leer_manifiesto(clave) if re.fullmatch(r"\d{4}-\d\d-\d\d", f["version"])]
     vigente = next((f["origen"] for f in reversed(filas) if f.get("origen")), "")
     elegidas = {}
     for f in filas:
         if f.get("origen", "") in ("", vigente):
             elegidas[f["version"]] = f
-    return dict(sorted(elegidas.items()))
+    fuera = configuracion().get("versiones_fuera", {}).get(clave, {})
+    return dict(sorted((v, f) for v, f in elegidas.items() if v not in fuera))

@@ -11,6 +11,12 @@
       "^\\d{1,4}\\s*de\\s+\\d{2,4}$"
     ]
   },
+  "versiones_fuera": {
+    "lgs": {
+      "2021-11-22": "el artículo 10 Bis pierde su tercer párrafo y su nota: el PDF los trae tras el corchete de la porción invalidada",
+      "2022-03-30": "el artículo 10 Bis pierde su tercer párrafo y su nota: el PDF los trae tras el corchete de la porción invalidada"
+    }
+  },
   "documentos": [
     {
       "clave": "cpeum",

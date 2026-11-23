@@ -131,7 +131,7 @@ def medir(repo: pathlib.Path, rama: str, texto_de=None) -> list[dict]:
             # crudo de cada PDF: ahí la prueba de reedición no distingue nada.
             if menor == "otro_orden":
                 clase = menor
-            elif clase == "sin_explicar" and estado == "M" and texto_de:
+            elif clase == "sin_explicar" and texto_de:
                 clase = reedicion.clase(antes, despues, texto_de(fuente[ha]),
                                         texto_de(fuente[hb])) or menor or clase
             elif menor:
