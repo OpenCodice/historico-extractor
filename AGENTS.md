@@ -35,6 +35,8 @@ Publicacion).
 | `historico/capturas.py` | Lista en el CDX de Wayback las capturas distintas del PDF, las baja a `capturas/` (fuera de git) y lee de cada portada su «Última reforma». Deja `manifiestos/<clave>.tsv`, que sí se versiona: es la procedencia. |
 | `historico/cadena.py` | Por cada versión, en orden: extrae, pasa las compuertas del extractor y hace el commit en la rama del documento, fechado el día del DOF. Continúa una rama a medias si es prefijo del plan con el mismo extractor. |
 | `historico/coherencia.py` | La compuerta de la cadena (ver abajo). |
+| `historico/reedicion.py` | Prueba, con el texto de los dos PDF, que un cambio sin reforma lo hizo la Cámara. |
+| `coherencia/<clave>.json`, `verificaciones/<clave>.json` | El informe de la compuerta de cada rama y los veredictos del agente. |
 
 Una versión es una fecha de portada; si hay varias capturas con la misma
 fecha se usa la más reciente (la Cámara corrige erratas y notas sin cambiar la
@@ -53,18 +55,43 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
 - **solo notas**, si el texto es idéntico y cambiaron las líneas de notas;
 - **solo forma**, si son las mismas palabras en el mismo orden, partidas en
   otros párrafos (una nota nueva corta el párrafo donde antes seguía);
-- **sin explicar**, en cualquier otro caso: cambió la lectura, no la ley.
+- **reedición**, si cambió sin reforma y cada diferencia está literal en el
+  PDF de su versión y falta en el de la otra (`historico/reedicion.py`): la
+  Cámara retocó puntuación, acentos, mayúsculas o incisos;
+- **solo puntuación**, si son las mismas letras y cifras y cambian espacios o
+  signos (un guion de fin de renglón);
+- **otro orden**, si son las mismas palabras en otro orden (las celdas de una
+  tabla);
+- **juzgado**, si un agente dejó su veredicto (ver abajo);
+- **sin explicar**, en cualquier otro caso.
 
-`python -m historico coherencia <clave> --out <repo>` sale con 1 si queda
-algo sin explicar.
+Solo «sin explicar» detiene la publicación de la rama:
+`python -m historico coherencia <clave> --out <repo>` sale con 1. «Solo
+puntuación» y «otro orden» son lecturas distintas del mismo contenido; pasan,
+y quedan a la vista en el informe versionado `coherencia/<clave>.json`.
 
-Lo que queda sin explicar suele ser una de dos cosas, y solo se distinguen
-contra los dos PDF: una reedición de la Cámara (retocó puntuación, mayúsculas
-o la numeración de incisos sin que mediara reforma) o una lectura distinta del
-extractor (una tabla cuyas celdas salen en otro orden). Medido el 2026-11-23:
-CPEUM, 75 versiones, 68 de 74 pasos limpios, 84 artículos sin explicar (53 de
-ellos en la reedición de junio de 2008); LFT, 24 versiones, 17 de 23 pasos
-limpios, 16 artículos sin explicar.
+### Juicio de lo que queda sin explicar
+
+Lo que no se puede probar con código lo juzga un agente que solo juzga. El
+informe trae, por cada paso, los `pendientes` (artículo y huella de sus dos
+versiones) y el sha256 de las dos capturas. El agente compara las dos
+versiones del artículo contra sus dos PDF y agrega a
+`verificaciones/<clave>.json` un registro por artículo:
+
+```json
+{"desde": "2008-05-07", "hasta": "2008-06-18", "articulo": "059",
+ "antes": "<huella>", "despues": "<huella>",
+ "veredicto": "fuente", "detalle": "el PDF de junio acentúa «período»"}
+```
+
+- `fuente`: las dos versiones son fieles, cada una a su PDF; el cambio lo
+  hizo la Cámara. Cuenta como juzgado.
+- `lectura`: los PDF dicen lo mismo, o alguna versión no es fiel al suyo.
+  Sigue sin explicar, y el `detalle` dice cuál versión y qué le falta o sobra.
+
+El veredicto va ligado a las huellas: si la extracción cambia, deja de aplicar.
+Un defecto de lectura de una versión antigua se resuelve declarando algo en
+`documentos.json` o dejando esa versión fuera; nunca parchando el extractor.
 
 ## Commits de datos
 
@@ -82,6 +109,7 @@ Articulos-Retirados: …
 Fuente: https://web.archive.org/web/<captura>id_/<url original>
 Fuente-Sha256: …
 Extractor: OpenCodice/fiscal-extractor@<sha>
+Configuracion: <huella de lo declarado en documentos.json>
 ```
 
 Las listas de artículos salen del diff contra la versión anterior (la primera

@@ -1,6 +1,6 @@
 import re
 
-from historico import cadena, capturas, coherencia, configuracion
+from historico import cadena, capturas, coherencia, configuracion, reedicion
 
 
 def test_la_portada_da_la_version():
@@ -66,3 +66,33 @@ def test_las_mismas_palabras_en_otros_parrafos_no_son_una_reforma():
     assert coherencia.clasificar("M", antes, despues, set(), "2012-11-30", "2015-06-12") == "solo_forma"
     assert coherencia.clasificar("M", antes, despues.replace("Dos", "Tres"), set(),
                                  "2012-11-30", "2015-06-12") == "sin_explicar"
+
+
+def test_una_reedicion_de_la_camara_se_prueba_con_los_dos_pdf():
+    antes = "# Artículo 30.\n\nLa nacionalidad se adquiere así.\n\nA.- Son mexicanos por nacimiento:"
+    despues = "# Artículo 30.\n\nLa nacionalidad se adquiere así.\n\nA) Son mexicanos por nacimiento:"
+    pdf_antes = "Artículo 30. La nacionalidad se adquiere así. A.- Son mexicanos por nacimiento: I."
+    pdf_despues = "Artículo 30. La nacionalidad se adquiere así. A) Son mexicanos por nacimiento: I."
+    assert reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_despues)
+
+
+def test_si_los_dos_pdf_dicen_lo_mismo_cambio_la_lectura():
+    antes = "# Artículo 899-B\n\nlos contratos colectivos de trabajo o contratos- Ley que contengan"
+    despues = "# Artículo 899-B\n\nlos contratos colectivos de trabajo o contratos-Ley que contengan"
+    pdf = "los contratos colectivos de trabajo o contratos- Ley que contengan beneficios"
+    assert not reedicion.es_de_la_fuente(antes, despues, pdf, pdf)
+    assert not reedicion.es_de_la_fuente(antes, antes, pdf, pdf)
+
+
+def test_el_mobiliario_de_pagina_no_corta_el_texto_del_pdf():
+    cuerpos = ["uno empieza y", "sigue en la dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"]
+    paginas = [f"LEY FEDERAL\nSecretaría General\n{c}\n{n} de 9" for n, c in enumerate(cuerpos, 1)]
+    texto = reedicion.sin_mobiliario(paginas)
+    assert "uno empieza y sigue en la dos tres" in texto
+    assert "Secretaría" not in texto and "de 9" not in texto
+
+
+def test_lecturas_distintas_del_mismo_contenido():
+    assert coherencia.lectura_menor("o contratos- Ley que", "o contratos-Ley que") == "solo_puntuacion"
+    assert coherencia.lectura_menor("81 Del codo 10%", "Del codo 81 10%") == "otro_orden"
+    assert coherencia.lectura_menor("el periodo inmediato", "el período inmediato") is None

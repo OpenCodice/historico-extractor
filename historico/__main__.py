@@ -4,7 +4,7 @@ import pathlib
 import sys
 
 from . import RAIZ, documento
-from . import cadena, capturas, coherencia
+from . import cadena, capturas, coherencia, reedicion
 
 EXTRACTOR = {"constitucion": "constitucion-extractor", "federal": "fiscal-extractor"}
 
@@ -29,6 +29,7 @@ def main(argv=None) -> int:
     sp = sub.add_parser("coherencia", help="compuerta: ningún artículo cambia sin causa")
     sp.add_argument("clave")
     sp.add_argument("--out", required=True, type=pathlib.Path)
+    sp.add_argument("--capturas", default=RAIZ / "capturas", type=pathlib.Path)
     sp.add_argument("--json", type=pathlib.Path)
 
     args = p.parse_args(argv)
@@ -53,7 +54,16 @@ def main(argv=None) -> int:
         print(f"{doc['clave']}: {len(filas) - len(fuera)} versiones nuevas, {len(fuera)} fuera")
         return 0
 
-    pasos = coherencia.medir(args.out, doc["clave"])
+    por_sha = {f["sha256"]: f["archivo"] for f in capturas.leer_manifiesto(doc["clave"])}
+    textos = {}
+
+    def texto_de(sha: str) -> str:
+        if sha not in textos:
+            textos[sha] = reedicion.texto_del_pdf(
+                args.capturas / doc["clave"] / por_sha[sha], RAIZ / "_trabajo" / "texto")
+        return textos[sha]
+
+    pasos = coherencia.medir(args.out, doc["clave"], texto_de)
     if args.json:
         args.json.write_text(json.dumps(pasos, ensure_ascii=False, indent=1) + "\n")
     print(coherencia.informe(pasos))

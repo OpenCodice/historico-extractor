@@ -9,6 +9,7 @@ Cada documento vive en una rama huérfana con su clave. Así se puede regenerar
 uno (porque mejoró un extractor o apareció una captura) sin mover los hashes
 de los demás.
 """
+import hashlib
 import json
 import os
 import pathlib
@@ -37,7 +38,15 @@ def _git(repo, *args, env=None) -> str:
 
 def patrones_de_ruido(encabezados: dict) -> list[str]:
     return ([f"^{re.escape(p)}\\b" for p in encabezados["prefijos"]]
-            + [f"^{re.escape(r)}$" for r in encabezados["renglones"]])
+            + [f"^{re.escape(r)}$" for r in encabezados["renglones"]]
+            + encabezados.get("patrones", []))
+
+
+def sello_de_configuracion() -> str:
+    """Cambia cuando cambia lo que se le declara a los extractores: una rama
+    hecha con otra configuración es otra cadena."""
+    canonico = json.dumps(configuracion()["encabezados_antiguos"], sort_keys=True, ensure_ascii=False)
+    return hashlib.sha256(canonico.encode()).hexdigest()[:12]
 
 
 def extraer(doc: dict, pdf: pathlib.Path, version: str, trabajo: pathlib.Path,
@@ -113,7 +122,8 @@ def mensaje(doc: dict, fila: dict, extractor_sha: str, cambios: dict | None) -> 
             lineas.append(f"Articulos-{nombre}: {', '.join(cambios[estado])}")
     lineas += [f"Fuente: https://web.archive.org/web/{fila['captura']}id_/{fila['url']}",
                f"Fuente-Sha256: {fila['sha256']}",
-               f"Extractor: {REPO_DE[doc['extractor']]}@{extractor_sha}"]
+               f"Extractor: {REPO_DE[doc['extractor']]}@{extractor_sha}",
+               f"Configuracion: {sello_de_configuracion()}"]
     return "\n".join(lineas) + "\n"
 
 
@@ -133,7 +143,9 @@ def construir(doc: dict, capturas: pathlib.Path, repo: pathlib.Path, extractor: 
     # extractor; cualquier otra cosa es otra cadena y se rehace entera.
     previstas = [(v, f["sha256"]) for v, f in plan.items()]
     ya = [(t.get("Publicacion"), t.get("Fuente-Sha256")) for t in hechas]
-    continua = bool(hechas) and all(t.get("Extractor") == sello for t in hechas) \
+    continua = bool(hechas) and all(
+        t.get("Extractor") == sello and t.get("Configuracion") == sello_de_configuracion()
+        for t in hechas) \
         and all(par in previstas for par in ya)
     _git(repo, "symbolic-ref", "HEAD", f"refs/heads/{clave}")
     if continua:
