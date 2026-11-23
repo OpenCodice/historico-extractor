@@ -108,9 +108,12 @@ def medir(repo: pathlib.Path, rama: str, texto_de=None) -> list[dict]:
         fuente[h] = re.search(r"^Fuente-Sha256: (\S+)", cuerpo, re.M)[1]
     anotadas: dict[str, set[str]] = {}
     for h, _ in commits:
-        for ruta in _git(repo, "ls-tree", "-r", "--name-only", h).splitlines():
-            if ruta.endswith(".md"):
-                anotadas.setdefault(ruta, set()).update(fechas_anotadas(_git(repo, "show", f"{h}:{ruta}")))
+        # Una sola búsqueda por versión: «<commit>:<ruta>:<renglón con DOF>».
+        hallado = subprocess.run(["git", "grep", "-I", "DOF", h, "--", "*.md"],
+                                 cwd=repo, capture_output=True, text=True).stdout
+        for linea in hallado.splitlines():
+            _, ruta, renglon = linea.split(":", 2)
+            anotadas.setdefault(ruta, set()).update(fechas_anotadas(renglon))
     juicios = veredictos(rama)
     pasos = []
     for (ha, fa), (hb, fb) in zip(commits, commits[1:]):
