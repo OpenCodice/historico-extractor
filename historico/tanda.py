@@ -124,7 +124,9 @@ def publicar_indice(repo: pathlib.Path) -> bool:
 
 def correr(lote: int, claves: list[str] | None, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
            extractores: pathlib.Path, publicar: bool, desde_cero: bool = False, avisar=print) -> bool:
-    """Procesa una tanda. Devuelve si quedan documentos sin intentar."""
+    """Procesa una tanda. Devuelve si queda otra igual por hacer: documentos
+    sin intentar, cuando la tanda no fue de claves dadas (repetirla con las
+    mismas claves no avanzaría nada)."""
     for doc in elegir(lote, claves):
         estado = procesar(doc, carpeta_capturas, repo, extractores, publicar, desde_cero)
         guardar_estado(doc["clave"], estado)
@@ -132,4 +134,4 @@ def correr(lote: int, claves: list[str] | None, carpeta_capturas: pathlib.Path, 
                                       else estado.get("motivo", "lista, sin publicar")))
     if publicar:
         publicar_indice(repo)
-    return bool(sin_intentar())
+    return not claves and bool(sin_intentar())
