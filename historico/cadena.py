@@ -20,6 +20,10 @@ import subprocess
 from . import configuracion
 from .capturas import versiones
 
+# Identidad fija: con ella, las mismas capturas y el mismo extractor dan los
+# mismos hashes a quien regenere la rama.
+FIRMA = {f"GIT_{quien}_{campo}": valor for quien in ("AUTHOR", "COMMITTER")
+         for campo, valor in (("NAME", "OpenCodice"), ("EMAIL", "noreply@constitucion.app"))}
 REPO_DE = {"constitucion": "OpenCodice/constitucion-extractor",
            "federal": "OpenCodice/fiscal-extractor"}
 
@@ -178,7 +182,7 @@ def construir(doc: dict, capturas: pathlib.Path, repo: pathlib.Path, extractor: 
         cambios = None if primera else _cambios(repo)
         fecha = f"{version}T12:00:00+00:00"
         _git(repo, "commit", "-q", "--allow-empty", "-m", mensaje(doc, fila, extractor_sha, cambios),
-             env={**os.environ, "GIT_AUTHOR_DATE": fecha, "GIT_COMMITTER_DATE": fecha})
+             env={**os.environ, **FIRMA, "GIT_AUTHOR_DATE": fecha, "GIT_COMMITTER_DATE": fecha})
         unidades = len(list(destino.glob("*.md")))
         filas.append({"version": version, "estado": "ok", "motivo": "", "unidades": unidades})
         avisar(f"{clave} {version}: {unidades} artículos")

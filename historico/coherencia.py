@@ -18,6 +18,8 @@ Un artículo que cambia queda en una de tres clases:
   reedición   cambió sin reforma, y cada diferencia está literal en el PDF
               de su versión y falta en el de la otra: lo cambió la Cámara
               (ver reedicion.py);
+  nota en el cuerpo  lo que cambia es texto de una nota de reforma que una
+              versión dejó como texto del artículo; la ley no cambia;
   solo puntuación  las mismas letras y cifras; cambian espacios o signos
               (un guion de fin de renglón, un punto junto al salto de página);
   otro orden  las mismas palabras en otro orden (las celdas de una tabla);
@@ -25,7 +27,8 @@ Un artículo que cambia queda en una de tres clases:
               en `verificaciones/<clave>.json` que el cambio es de la fuente;
   sin explicar  lo demás.
 
-Solo la última clase detiene la publicación. «Solo puntuación» y «otro orden»
+Solo la última clase detiene la publicación. «Nota en el cuerpo», «solo
+puntuación» y «otro orden»
 son lecturas distintas del mismo contenido: pasan, y quedan a la vista en el
 informe (`coherencia/<clave>.json`).
 """
@@ -37,13 +40,14 @@ import subprocess
 
 from . import RAIZ
 
-from .reedicion import es_de_la_fuente
+from . import reedicion
 
 NOTA = re.compile(r"DOF[^\n]*")
 FECHA = re.compile(r"(\d{2})-(\d{2})-(\d{4})")
 LINEA_DE_NOTA = re.compile(r"_.*_")
 ALFANUMERICO = re.compile(r"[^\W_]")
-CLASES = ("explicado", "solo_notas", "solo_forma", "reedicion", "solo_puntuacion", "otro_orden",
+CLASES = ("explicado", "solo_notas", "solo_forma", "reedicion", "nota_en_el_cuerpo", "solo_puntuacion",
+          "otro_orden",
           "juzgado", "sin_explicar")
 
 
@@ -119,11 +123,16 @@ def medir(repo: pathlib.Path, rama: str, texto_de=None) -> list[dict]:
             antes = _git(repo, "show", f"{ha}:{ruta}") if estado != "A" else ""
             despues = _git(repo, "show", f"{hb}:{ruta}") if estado != "D" else ""
             clase = clasificar(estado, antes, despues, anotadas.get(ruta, set()), fa, fb)
-            if clase == "sin_explicar" and estado == "M" and texto_de and es_de_la_fuente(
-                    antes, despues, texto_de(fuente[ha]), texto_de(fuente[hb])):
-                clase = "reedicion"
-            if clase == "sin_explicar" and estado == "M":
-                clase = lectura_menor(antes, despues) or clase
+            menor = lectura_menor(antes, despues) if clase == "sin_explicar" and estado == "M" else None
+            # El orden de las celdas de una tabla también varía en el texto
+            # crudo de cada PDF: ahí la prueba de reedición no distingue nada.
+            if menor == "otro_orden":
+                clase = menor
+            elif clase == "sin_explicar" and estado == "M" and texto_de:
+                clase = reedicion.clase(antes, despues, texto_de(fuente[ha]),
+                                        texto_de(fuente[hb])) or menor or clase
+            elif menor:
+                clase = menor
             if clase == "sin_explicar" and juicios.get((blob(antes), blob(despues))) == "fuente":
                 clase = "juzgado"
             paso[clase].append(pathlib.Path(ruta).stem)

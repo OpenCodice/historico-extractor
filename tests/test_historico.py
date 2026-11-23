@@ -96,3 +96,13 @@ def test_lecturas_distintas_del_mismo_contenido():
     assert coherencia.lectura_menor("o contratos- Ley que", "o contratos-Ley que") == "solo_puntuacion"
     assert coherencia.lectura_menor("81 Del codo 10%", "Del codo 81 10%") == "otro_orden"
     assert coherencia.lectura_menor("el periodo inmediato", "el período inmediato") is None
+
+
+def test_una_nota_intercalada_en_el_pdf_no_impide_la_prueba():
+    antes = "# Artículo 97.\n\nde algún juez o magistrado federal.\n\n(Párrafo tercero. Se deroga)\n\nLa Suprema Corte nombrará"
+    despues = "# Artículo 97.\n\nde algún juez o magistrado federal.\n\n(Se deroga el párrafo tercero)\n\nLa Suprema Corte nombrará"
+    pdf_antes = "de algún juez o magistrado federal. (Párrafo tercero. Se deroga) La Suprema Corte nombrará y removerá"
+    pdf_despues = ("de algún juez o magistrado federal. Párrafo reformado DOF 10-06-2011 (Se deroga el párrafo tercero) "
+                   "Párrafo derogado DOF 13-11-2007 La Suprema Corte nombrará y removerá")
+    assert reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_despues)
+    assert not reedicion.esta("uno dos tres cuatro", "uno dos y luego mucho después tres cuatro")

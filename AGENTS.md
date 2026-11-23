@@ -58,6 +58,8 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
 - **reedición**, si cambió sin reforma y cada diferencia está literal en el
   PDF de su versión y falta en el de la otra (`historico/reedicion.py`): la
   Cámara retocó puntuación, acentos, mayúsculas o incisos;
+- **nota en el cuerpo**, si lo que cambia es texto de una nota de reforma
+  que una versión dejó como texto del artículo (la ley no cambia);
 - **solo puntuación**, si son las mismas letras y cifras y cambian espacios o
   signos (un guion de fin de renglón);
 - **otro orden**, si son las mismas palabras en otro orden (las celdas de una
@@ -66,9 +68,21 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
 - **sin explicar**, en cualquier otro caso.
 
 Solo «sin explicar» detiene la publicación de la rama:
-`python -m historico coherencia <clave> --out <repo>` sale con 1. «Solo
-puntuación» y «otro orden» son lecturas distintas del mismo contenido; pasan,
+`python -m historico coherencia <clave> --out <repo>` sale con 1. «Nota en el
+cuerpo», «solo puntuación» y «otro orden» son lecturas distintas del mismo contenido; pasan,
 y quedan a la vista en el informe versionado `coherencia/<clave>.json`.
+
+Medido el 2026-11-23, ambas ramas pasan sin ningún veredicto de agente:
+
+| | CPEUM (75 versiones) | LFT (24 versiones) |
+|---|---|---|
+| Con reforma anotada | 405 | 1,063 |
+| Solo notas | 121 | 660 |
+| Solo forma | 6 | 14 |
+| Reedición de la Cámara | 77 | 12 |
+| Nota en el cuerpo | 6 | 0 |
+| Otro orden | 0 | 4 |
+| Sin explicar | 0 | 0 |
 
 ### Juicio de lo que queda sin explicar
 
@@ -112,7 +126,9 @@ Extractor: OpenCodice/fiscal-extractor@<sha>
 Configuracion: <huella de lo declarado en documentos.json>
 ```
 
-Las listas de artículos salen del diff contra la versión anterior (la primera
+Los commits van firmados como «OpenCodice», con una identidad fija, para
+que regenerar una rama con las mismas capturas y el mismo extractor dé los
+mismos hashes. Las listas de artículos salen del diff contra la versión anterior (la primera
 versión no las lleva). `Articulos-Modificados` incluye los cambios de solo
 notas.
 
