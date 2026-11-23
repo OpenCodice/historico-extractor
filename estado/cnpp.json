@@ -1,0 +1,38 @@
+{
+ "fecha": "2026-11-23T19:08:22+00:00",
+ "configuracion": "d155e8edee1d",
+ "publicada": true,
+ "capturas": 19,
+ "versiones_archivadas": 13,
+ "fuera": [
+  {
+   "version": "2021-02-19",
+   "sha256": "2d49c3709f444948edc55adaa0a4b9c5323710bf47136fa8b5386fb7a69aa4f6",
+   "motivo": "auditar:   cnpp/192: encabezado_pegado «Párrafo declarado inválido por sentencia de la SCJN a Acción de Inconstitucional»"
+  },
+  {
+   "version": "2023-04-25",
+   "sha256": "88ff36ac97ad7eb6aa3d13e0abd42c930c451bf9de64d70c1957d35b2184f7da",
+   "motivo": "auditar:   cnpp/192: encabezado_pegado «Párrafo declarado inválido por sentencia de la SCJN a Acción de Inconstitucional»"
+  },
+  {
+   "version": "2024-01-03",
+   "sha256": "462d5b4604a654587ca35d29098acb9521b32acf9e654ecff6680b4ae88e5f0c",
+   "motivo": "auditar:   cnpp/192: encabezado_pegado «Párrafo declarado inválido por sentencia de la SCJN a Acción de Inconstitucional»"
+  },
+  {
+   "version": "2024-01-26",
+   "sha256": "abc81308591c719820c594c73c56e57f182e5f977626025b074a351dedef4a55",
+   "motivo": "auditar:   cnpp/192: encabezado_pegado «Párrafo declarado inválido por sentencia de la SCJN a Acción de Inconstitucional»"
+  },
+  {
+   "version": "2024-12-16",
+   "sha256": "f22256a3b40fa6d55976dd0aecfecfcb515650027a0e7b25f6495900b0aa7e65",
+   "motivo": "auditar:   cnpp/192: encabezado_pegado «Párrafo declarado inválido por sentencia de la SCJN a Acción de Inconstitucional»"
+  }
+ ],
+ "versiones": 8,
+ "desde": "2014-03-05",
+ "hasta": "2025-11-28",
+ "sin_explicar": 0
+}

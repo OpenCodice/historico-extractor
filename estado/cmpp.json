@@ -1,0 +1,18 @@
+{
+ "fecha": "2026-11-23T18:46:39+00:00",
+ "configuracion": "d155e8edee1d",
+ "publicada": true,
+ "capturas": 13,
+ "versiones_archivadas": 5,
+ "fuera": [
+  {
+   "version": "2016-05-16",
+   "sha256": "cee70a813ea603f6775ff80422bcfe08cf26b2038a9e6988462ae49c8abf0cf1",
+   "motivo": "validar: ✗ HAY FALLAS"
+  }
+ ],
+ "versiones": 4,
+ "desde": "2018-06-21",
+ "hasta": "2025-11-14",
+ "sin_explicar": 0
+}
