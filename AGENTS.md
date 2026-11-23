@@ -51,10 +51,20 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
 - **explicado**, si alguna versión de la cadena le anota una reforma de ese
   periodo;
 - **solo notas**, si el texto es idéntico y cambiaron las líneas de notas;
+- **solo forma**, si son las mismas palabras en el mismo orden, partidas en
+  otros párrafos (una nota nueva corta el párrafo donde antes seguía);
 - **sin explicar**, en cualquier otro caso: cambió la lectura, no la ley.
 
 `python -m historico coherencia <clave> --out <repo>` sale con 1 si queda
 algo sin explicar.
+
+Lo que queda sin explicar suele ser una de dos cosas, y solo se distinguen
+contra los dos PDF: una reedición de la Cámara (retocó puntuación, mayúsculas
+o la numeración de incisos sin que mediara reforma) o una lectura distinta del
+extractor (una tabla cuyas celdas salen en otro orden). Medido el 2026-11-23:
+CPEUM, 75 versiones, 68 de 74 pasos limpios, 84 artículos sin explicar (53 de
+ellos en la reedición de junio de 2008); LFT, 24 versiones, 17 de 23 pasos
+limpios, 16 artículos sin explicar.
 
 ## Commits de datos
 

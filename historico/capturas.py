@@ -46,8 +46,14 @@ def listar(patron: str) -> list[tuple[str, str]]:
         "url": CARPETA_PDF, "matchType": "prefix", "collapse": "digest",
         "fl": "timestamp,original,digest", "filter": "statuscode:200"})
     pedido = urllib.request.Request(f"{CDX}?{consulta}", headers=AGENTE)
-    lineas = urllib.request.urlopen(pedido, timeout=300).read().decode().splitlines()
-    return filtrar(lineas, patron)
+    for intento in range(4):
+        try:
+            lineas = urllib.request.urlopen(pedido, timeout=300).read().decode().splitlines()
+            return filtrar(lineas, patron)
+        except OSError:
+            if intento == 3:
+                raise
+            time.sleep(30 * (intento + 1))
 
 
 def filtrar(lineas: list[str], patron: str) -> list[tuple[str, str]]:
