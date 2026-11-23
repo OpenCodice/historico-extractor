@@ -1,0 +1,28 @@
+{
+  "encabezados_antiguos": {
+    "prefijos": [
+      "Cámara de Diputados del H. Congreso de la Unión"
+    ],
+    "renglones": [
+      "Centro de Documentación, Información y Análisis",
+      "Dirección General de Servicios de Documentación, Información y Análisis"
+    ]
+  },
+  "documentos": [
+    {
+      "clave": "cpeum",
+      "extractor": "constitucion",
+      "sigla": "CPEUM",
+      "archivos": "(1|1_\\d{6}|CPEUM)\\.pdf"
+    },
+    {
+      "clave": "lft",
+      "extractor": "federal",
+      "sigla": "LFT",
+      "etiqueta": "Ley Federal del Trabajo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
+      "archivos": "(125|125_\\d{6}|LFT)\\.pdf"
+    }
+  ]
+}

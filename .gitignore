@@ -1,0 +1,5 @@
+capturas/
+.venv/
+__pycache__/
+.pytest_cache/
+_trabajo/
