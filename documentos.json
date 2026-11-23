@@ -19,13 +19,2857 @@
       "archivos": "(1|1_\\d{6}|CPEUM)\\.pdf"
     },
     {
+      "clave": "ccf",
+      "extractor": "federal",
+      "sigla": "CCF",
+      "etiqueta": "Código Civil Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf",
+      "archivos": "(CCF|2)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ccom",
+      "extractor": "federal",
+      "sigla": "CCom",
+      "etiqueta": "Código de Comercio",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CCom.pdf",
+      "archivos": "(CCom|3)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cff",
+      "extractor": "federal",
+      "sigla": "CFF",
+      "etiqueta": "Código Fiscal de la Federación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf",
+      "archivos": "(CFF|8)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cfpc",
+      "extractor": "federal",
+      "sigla": "CFPC",
+      "etiqueta": "Código Federal de Procedimientos Civiles",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf",
+      "archivos": "(CFPC|6)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cjm",
+      "extractor": "federal",
+      "sigla": "CJM",
+      "etiqueta": "Código de Justicia Militar",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CJM.pdf",
+      "archivos": "(CJM|4)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cmpp",
+      "extractor": "federal",
+      "sigla": "CMPP",
+      "etiqueta": "Código Militar de Procedimientos Penales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CMPP.pdf",
+      "archivos": "(CMPP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cnpcf",
+      "extractor": "federal",
+      "sigla": "CNPCF",
+      "etiqueta": "Código Nacional de Procedimientos Civiles y Familiares",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf",
+      "archivos": "(CNPCF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cnpp",
+      "extractor": "federal",
+      "sigla": "CNPP",
+      "etiqueta": "Código Nacional de Procedimientos Penales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPP.pdf",
+      "archivos": "(CNPP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "cpf",
+      "extractor": "federal",
+      "sigla": "CPF",
+      "etiqueta": "Código Penal Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/CPF.pdf",
+      "archivos": "(CPF|9)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "egdf",
+      "extractor": "federal",
+      "sigla": "EGDF",
+      "etiqueta": "Estatuto de Gobierno del Distrito Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/10_270614.pdf",
+      "archivos": "(10_270614|10)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "laam",
+      "extractor": "federal",
+      "sigla": "LAAM",
+      "etiqueta": "Ley de Ascensos de la Armada de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAAM.pdf",
+      "archivos": "(LAAM|21)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "laassp",
+      "extractor": "federal",
+      "sigla": "LAASSP",
+      "etiqueta": "Ley de Adquisiciones, Arrendamientos y Servicios del Sector Público",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAASSP.pdf",
+      "archivos": "(LAASSP|14)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "laat",
+      "extractor": "federal",
+      "sigla": "LAAT",
+      "etiqueta": "Ley de Ayuda Alimentaria para los Trabajadores",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf",
+      "archivos": "(LAAT)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lac",
+      "extractor": "federal",
+      "sigla": "LAC",
+      "etiqueta": "Ley de Aviación Civil",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAC.pdf",
+      "archivos": "(LAC|25)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lacp",
+      "extractor": "federal",
+      "sigla": "LACP",
+      "etiqueta": "Ley de Ahorro y Crédito Popular",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LACP.pdf",
+      "archivos": "(LACP|17)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ladua",
+      "extractor": "federal",
+      "sigla": "L. Aduanera",
+      "etiqueta": "Ley Aduanera",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAdua.pdf",
+      "archivos": "(LAdua|12)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "laem",
+      "extractor": "federal",
+      "sigla": "LAEM",
+      "etiqueta": "Ley que crea la Agencia Espacial Mexicana",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAEM.pdf",
+      "archivos": "(LAEM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "laero",
+      "extractor": "federal",
+      "sigla": "LAero",
+      "etiqueta": "Ley de Aeropuertos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAero.pdf",
+      "archivos": "(LAero|15)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lagra",
+      "extractor": "federal",
+      "sigla": "LAgra",
+      "etiqueta": "Ley Agraria",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAgra.pdf",
+      "archivos": "(LAgra|13)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lamn",
+      "extractor": "federal",
+      "sigla": "LAmn",
+      "etiqueta": "Ley de Amnistía",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmn.pdf",
+      "archivos": "(LAmn)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lamni",
+      "extractor": "federal",
+      "sigla": "LAMNI",
+      "etiqueta": "Ley de Amnistía",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/19.pdf",
+      "archivos": "(19|19)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lamp",
+      "extractor": "federal",
+      "sigla": "LAmp",
+      "etiqueta": "Ley de Amparo, Reglamentaria de los artículos 103 y 107 de la Constitución Política de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAmp.pdf",
+      "archivos": "(LAmp|20)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lan",
+      "extractor": "federal",
+      "sigla": "LAN",
+      "etiqueta": "Ley de Aguas Nacionales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAN.pdf",
+      "archivos": "(LAN|16)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lansi",
+      "extractor": "federal",
+      "sigla": "LANSI",
+      "etiqueta": "Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LANSI.pdf",
+      "archivos": "(LANSI)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lapp",
+      "extractor": "federal",
+      "sigla": "LAPP",
+      "etiqueta": "Ley de Asociaciones Público Privadas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAPP.pdf",
+      "archivos": "(LAPP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "larcp",
+      "extractor": "federal",
+      "sigla": "LARCP",
+      "etiqueta": "Ley de Asociaciones Religiosas y Culto Público",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LARCP.pdf",
+      "archivos": "(LARCP|24)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "larefam",
+      "extractor": "federal",
+      "sigla": "LAREFAGN",
+      "etiqueta": "Ley de Ascensos y Recompensas del Ejército, Fuerza Aérea y Guardia Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LAREFAGN.pdf",
+      "archivos": "(LAREFAGN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lasoc",
+      "extractor": "federal",
+      "sigla": "LASoc",
+      "etiqueta": "Ley de Asistencia Social",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LASoc.pdf",
+      "archivos": "(LASoc|270)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "latime",
+      "extractor": "federal",
+      "sigla": "LATIME",
+      "etiqueta": "Ley Sobre la Aprobación de Tratados Internacionales en Materia Económica",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/271.pdf",
+      "archivos": "(271|271)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lbio",
+      "extractor": "federal",
+      "sigla": "LBio",
+      "etiqueta": "Ley de Biocombustibles",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LBio.pdf",
+      "archivos": "(LBio)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lbm",
+      "extractor": "federal",
+      "sigla": "LBM",
+      "etiqueta": "Ley del Banco de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/74.pdf",
+      "archivos": "(74|74)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lbogm",
+      "extractor": "federal",
+      "sigla": "LBOGM",
+      "etiqueta": "Ley de Bioseguridad de Organismos Genéticamente Modificados",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf",
+      "archivos": "(LBOGM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcaaa",
+      "extractor": "federal",
+      "sigla": "LCAAA",
+      "etiqueta": "Ley sobre Cámaras Agrícolas, que en lo sucesivo se denominarán Asociaciones Agrícolas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/23.pdf",
+      "archivos": "(23|23)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcacsam",
+      "extractor": "federal",
+      "sigla": "LCACSAM",
+      "etiqueta": "Ley para la Comprobación, Ajuste y Cómputo de Servicios de la Armada de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/268.pdf",
+      "archivos": "(268|268)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcacsefam",
+      "extractor": "federal",
+      "sigla": "LCACSEFAM",
+      "etiqueta": "Ley para la Comprobación, Ajuste y Cómputo de Servicios en el Ejército y Fuerza Aérea Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCACSEFAM.pdf",
+      "archivos": "(LCACSEFAM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lccaif",
+      "extractor": "federal",
+      "sigla": "LCCAIF",
+      "etiqueta": "Ley que Establece Bases para la Ejecución en México, por el Poder Ejecutivo Federal, del Convenio Constitutivo de la Asociación Internacional de Fomento",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCCAIF.pdf",
+      "archivos": "(LCCAIF|199)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lccbid",
+      "extractor": "federal",
+      "sigla": "LCCBID",
+      "etiqueta": "Ley que Establece Bases para la Ejecución en México, por el Poder Ejecutivo Federal, del Convenio Constitutivo del Banco Interamericano de Desarrollo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/200_291214.pdf",
+      "archivos": "(200_291214|200)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lce",
+      "extractor": "federal",
+      "sigla": "LCE",
+      "etiqueta": "Ley de Comercio Exterior",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCE.pdf",
+      "archivos": "(LCE|28)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcec",
+      "extractor": "federal",
+      "sigla": "LCEC",
+      "etiqueta": "Ley de Cámaras Empresariales y sus Confederaciones",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCEC_120419.pdf",
+      "archivos": "(LCEC_120419)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcf",
+      "extractor": "federal",
+      "sigla": "LCF",
+      "etiqueta": "Ley de Coordinación Fiscal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCF.pdf",
+      "archivos": "(LCF|31)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcid",
+      "extractor": "federal",
+      "sigla": "LCID",
+      "etiqueta": "Ley de Cooperación Internacional para el Desarrollo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCID_061120.pdf",
+      "archivos": "(LCID_061120)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcjpjf",
+      "extractor": "federal",
+      "sigla": "LCJPJF",
+      "etiqueta": "Ley de Carrera Judicial del Poder Judicial de la Federación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf",
+      "archivos": "(LCJPJF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcm",
+      "extractor": "federal",
+      "sigla": "LCM",
+      "etiqueta": "Ley de Concursos Mercantiles",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCM.pdf",
+      "archivos": "(LCM|29)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcmm",
+      "extractor": "federal",
+      "sigla": "LCMM",
+      "etiqueta": "Ley de la Casa de Moneda de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCMM.pdf",
+      "archivos": "(LCMM|45)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcmopfih",
+      "extractor": "federal",
+      "sigla": "LCMOPFIH",
+      "etiqueta": "Ley de Contribución de Mejoras por Obras Públicas Federales de Infraestructura Hidráulica",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/30.pdf",
+      "archivos": "(30|30)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcnbv",
+      "extractor": "federal",
+      "sigla": "LCNBV",
+      "etiqueta": "Ley de la Comisión Nacional Bancaria y de Valores",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNBV.pdf",
+      "archivos": "(LCNBV|46)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcndh",
+      "extractor": "federal",
+      "sigla": "LCNDH",
+      "etiqueta": "Ley de la Comisión Nacional de los Derechos Humanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNDH.pdf",
+      "archivos": "(LCNDH|47)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcne",
+      "extractor": "federal",
+      "sigla": "LCNE",
+      "etiqueta": "Ley de la Comisión Nacional de Energía",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf",
+      "archivos": "(LCNE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcnp",
+      "extractor": "federal",
+      "sigla": "LCNP",
+      "etiqueta": "Ley para Conservar la Neutralidad del País",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/176_210618.pdf",
+      "archivos": "(176_210618|176)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcpaf",
+      "extractor": "federal",
+      "sigla": "LCPAF",
+      "etiqueta": "Ley de Caminos, Puentes y Autotransporte Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LCPAF.pdf",
+      "archivos": "(LCPAF|27)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcpro",
+      "extractor": "federal",
+      "sigla": "LCPRO",
+      "etiqueta": "Ley de Capitalización del Procampo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/238.pdf",
+      "archivos": "(238|238)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lcs",
+      "extractor": "federal",
+      "sigla": "LCS",
+      "etiqueta": "Ley Sobre el Contrato de Seguro",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/211.pdf",
+      "archivos": "(211|211)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldcmpme",
+      "extractor": "federal",
+      "sigla": "LDCMPME",
+      "etiqueta": "Ley para el Desarrollo de la Competitividad de la Micro, Pequeña y Mediana Empresa",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDCMPME.pdf",
+      "archivos": "(LDCMPME|247)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldcpdch",
+      "extractor": "federal",
+      "sigla": "LDCPDCH",
+      "etiqueta": "Ley para el Diálogo, la Conciliación y la Paz Digna en Chiapas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/177.pdf",
+      "archivos": "(177|177)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldefam",
+      "extractor": "federal",
+      "sigla": "LDEFAGN",
+      "etiqueta": "Ley de Disciplina del Ejército, Fuerza Aérea y Guardia Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDEFAGN.pdf",
+      "archivos": "(LDEFAGN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldfefm",
+      "extractor": "federal",
+      "sigla": "LDFEFM",
+      "etiqueta": "Ley de Disciplina Financiera de las Entidades Federativas y los Municipios",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDFEFM.pdf",
+      "archivos": "(LDFEFM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldofgg",
+      "extractor": "federal",
+      "sigla": "LDOFGG",
+      "etiqueta": "Ley del Diario Oficial de la Federación y Gacetas Gubernamentales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/75_100619.pdf",
+      "archivos": "(75_100619|75)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldpam",
+      "extractor": "federal",
+      "sigla": "LDPAM",
+      "etiqueta": "Ley de los Derechos de las Personas Adultas Mayores",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDPAM.pdf",
+      "archivos": "(LDPAM|245)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldparm",
+      "extractor": "federal",
+      "sigla": "LDPARM",
+      "etiqueta": "Ley de Disciplina para el Personal de la Armada de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/252.pdf",
+      "archivos": "(252|252)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldrs",
+      "extractor": "federal",
+      "sigla": "LDRS",
+      "etiqueta": "Ley de Desarrollo Rural Sustentable",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDRS.pdf",
+      "archivos": "(LDRS|235)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldsc",
+      "extractor": "federal",
+      "sigla": "LDSC",
+      "etiqueta": "Ley de Desarrollo Sustentable de la Cafeticultura",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDSC.pdf",
+      "archivos": "(LDSC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldsca",
+      "extractor": "federal",
+      "sigla": "LDSCA",
+      "etiqueta": "Ley de Desarrollo Sustentable de la Caña de Azúcar",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDSCA.pdf",
+      "archivos": "(LDSCA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ldvuma",
+      "extractor": "federal",
+      "sigla": "LDVUMA",
+      "etiqueta": "Ley para Determinar el Valor de la Unidad de Medida y Actualización",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LDVUMA_301216.pdf",
+      "archivos": "(LDVUMA_301216)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lebhn",
+      "extractor": "federal",
+      "sigla": "LEBHN",
+      "etiqueta": "Ley sobre el Escudo, la Bandera y el Himno Nacionales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LEBHN.pdf",
+      "archivos": "(LEBHN|213)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lec",
+      "extractor": "federal",
+      "sigla": "LEC",
+      "etiqueta": "Ley de Energía para el Campo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/246.pdf",
+      "archivos": "(246|246)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ledpde",
+      "extractor": "federal",
+      "sigla": "LEDPDE",
+      "etiqueta": "Ley de Economía Digital para Pagos Digitales y Electrónicos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LEDPDE.pdf",
+      "archivos": "(LEDPDE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lei",
+      "extractor": "federal",
+      "sigla": "LEI",
+      "etiqueta": "Ley de Extradición Internacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/36_200521.pdf",
+      "archivos": "(36_200521|36)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lemefam",
+      "extractor": "federal",
+      "sigla": "LEMEFAGN",
+      "etiqueta": "Ley de Educación Militar del Ejército, Fuerza Aérea y Guardia Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LEMEFAGN.pdf",
+      "archivos": "(LEMEFAGN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "len",
+      "extractor": "federal",
+      "sigla": "LEN",
+      "etiqueta": "Ley de Educación Naval",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LEN.pdf",
+      "archivos": "(LEN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lepecfe",
+      "extractor": "federal",
+      "sigla": "LEPECFE",
+      "etiqueta": "Ley de la Empresa Pública del Estado, Comisión Federal de Electricidad",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LEPECFE.pdf",
+      "archivos": "(LEPECFE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lepepm",
+      "extractor": "federal",
+      "sigla": "LEPEPM",
+      "etiqueta": "Ley de la Empresa Pública del Estado, Petróleos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LEPEPM.pdf",
+      "archivos": "(LEPEPM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "less",
+      "extractor": "federal",
+      "sigla": "LESS",
+      "etiqueta": "Ley de la Economía Social y Solidaria",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LESS.pdf",
+      "archivos": "(LESS)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lexp",
+      "extractor": "federal",
+      "sigla": "LEXP",
+      "etiqueta": "Ley de Expropiación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/35.pdf",
+      "archivos": "(35|35)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfaar",
+      "extractor": "federal",
+      "sigla": "LFAAR",
+      "etiqueta": "Ley de Fondos de Aseguramiento Agropecuario y Rural",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFAAR.pdf",
+      "archivos": "(LFAAR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfaebsp",
+      "extractor": "federal",
+      "sigla": "LFAEBSP",
+      "etiqueta": "Ley Federal para la Administración y Enajenación de Bienes del Sector Público",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFAEBSP.pdf",
+      "archivos": "(LFAEBSP|251)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfafe",
+      "extractor": "federal",
+      "sigla": "LFAFE",
+      "etiqueta": "Ley Federal de Armas de Fuego y Explosivos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFAFE.pdf",
+      "archivos": "(LFAFE|102)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfar",
+      "extractor": "federal",
+      "sigla": "LFAR",
+      "etiqueta": "Ley Federal de Austeridad Republicana",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFAR.pdf",
+      "archivos": "(LFAR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfc",
+      "extractor": "federal",
+      "sigla": "LFC",
+      "etiqueta": "Ley Federal de Cinematografía",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFC.pdf",
+      "archivos": "(LFC|103)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfca",
+      "extractor": "federal",
+      "sigla": "LFCA",
+      "etiqueta": "Ley Federal de Cine y el Audiovisual",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCA.pdf",
+      "archivos": "(LFCA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfcc",
+      "extractor": "federal",
+      "sigla": "LFCC",
+      "etiqueta": "Ley de Fomento a la Confianza Ciudadana",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCC_200120.pdf",
+      "archivos": "(LFCC_200120)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfcdo",
+      "extractor": "federal",
+      "sigla": "LFCDO",
+      "etiqueta": "Ley Federal contra la Delincuencia Organizada",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCDO.pdf",
+      "archivos": "(LFCDO|101)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfce",
+      "extractor": "federal",
+      "sigla": "LFCE",
+      "etiqueta": "Ley Federal de Competencia Económica",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCE.pdf",
+      "archivos": "(LFCE|104)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfcp",
+      "extractor": "federal",
+      "sigla": "LFCP",
+      "etiqueta": "Ley Federal de Correduría Pública",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/105.pdf",
+      "archivos": "(105|105)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfcpo",
+      "extractor": "federal",
+      "sigla": "LFCPo",
+      "etiqueta": "Ley Federal de Consulta Popular",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCPo_190521.pdf",
+      "archivos": "(LFCPo_190521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfcpq",
+      "extractor": "federal",
+      "sigla": "LFCPQ",
+      "etiqueta": "Ley Federal para el Control de Precursores Químicos, Productos Químicos Esenciales y Máquinas para Elaborar Cápsulas, Tabletas y/o Comprimidos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCPQ.pdf",
+      "archivos": "(LFCPQ|126)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfcsq",
+      "extractor": "federal",
+      "sigla": "LFCSQ",
+      "etiqueta": "Ley Federal para el Control de Sustancias Químicas Susceptibles de Desvío para la Fabricación de Armas Químicas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCSQ.pdf",
+      "archivos": "(LFCSQ)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfd",
+      "extractor": "federal",
+      "sigla": "LFD",
+      "etiqueta": "Ley Federal de Derechos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFD.pdf",
+      "archivos": "(LFD|107)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfda",
+      "extractor": "federal",
+      "sigla": "LFDA",
+      "etiqueta": "Ley Federal del Derecho de Autor",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDA.pdf",
+      "archivos": "(LFDA|122)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfdc",
+      "extractor": "federal",
+      "sigla": "LFDC",
+      "etiqueta": "Ley Federal de los Derechos del Contribuyente",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDC.pdf",
+      "archivos": "(LFDC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfdeapd",
+      "extractor": "federal",
+      "sigla": "LFDEAPD",
+      "etiqueta": "Ley Federal de Declaración Especial de Ausencia para Personas Desaparecidas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDEAPD.pdf",
+      "archivos": "(LFDEAPD)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfdefp",
+      "extractor": "federal",
+      "sigla": "LFDefP",
+      "etiqueta": "Ley Federal de Defensoría Pública",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFDefP.pdf",
+      "archivos": "(LFDefP|106)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfea",
+      "extractor": "federal",
+      "sigla": "LFEA",
+      "etiqueta": "Ley de Firma Electrónica Avanzada",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFEA.pdf",
+      "archivos": "(LFEA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfep",
+      "extractor": "federal",
+      "sigla": "LFEP",
+      "etiqueta": "Ley Federal de las Entidades Paraestatales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFEP.pdf",
+      "archivos": "(LFEP|110)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lffaosc",
+      "extractor": "federal",
+      "sigla": "LFFAOSC",
+      "etiqueta": "Ley Federal de Fomento a las Actividades Realizadas por Organizaciones de la Sociedad Civil",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFFAOSC.pdf",
+      "archivos": "(LFFAOSC|266)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lffmaa",
+      "extractor": "federal",
+      "sigla": "LFFMAA",
+      "etiqueta": "Ley Federal para el Fomento de la Microindustria y la Actividad Artesanal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFFMAA.pdf",
+      "archivos": "(LFFMAA|127)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lffpmn",
+      "extractor": "federal",
+      "sigla": "LFFPMN",
+      "etiqueta": "Ley Federal para el Fomento y Protección del Maíz Nativo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFFPMN_130420.pdf",
+      "archivos": "(LFFPMN_130420)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfgfaga",
+      "extractor": "federal",
+      "sigla": "LFGFAGA",
+      "etiqueta": "Ley que Crea el Fondo de Garantía y Fomento para la Agricultura, Ganadería y Avicultura",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/192.pdf",
+      "archivos": "(192|192)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfgr",
+      "extractor": "federal",
+      "sigla": "LFGR",
+      "etiqueta": "Ley de la Fiscalía General de la República",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFGR.pdf",
+      "archivos": "(LFGR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfi",
+      "extractor": "federal",
+      "sigla": "LFI",
+      "etiqueta": "Ley de Fondos de Inversión",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFI.pdf",
+      "archivos": "(LFI|69)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfiiedb",
+      "extractor": "federal",
+      "sigla": "LFIIEDB",
+      "etiqueta": "Ley para el Fomento de la Inversión en Infraestructura Estratégica para el Desarrollo con Bienestar",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFIIEDB.pdf",
+      "archivos": "(LFIIEDB)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfisan",
+      "extractor": "federal",
+      "sigla": "LFISAN",
+      "etiqueta": "Ley Federal del Impuesto sobre Automóviles Nuevos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFISAN.pdf",
+      "archivos": "(LFISAN|123)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfiv",
+      "extractor": "federal",
+      "sigla": "LFIV",
+      "etiqueta": "Ley de Fomento a la Industria Vitivinícola",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFIV_230518.pdf",
+      "archivos": "(LFIV_230518)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfjs",
+      "extractor": "federal",
+      "sigla": "LFJS",
+      "etiqueta": "Ley Federal de Juegos y Sorteos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/109.pdf",
+      "archivos": "(109|109)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfll",
+      "extractor": "federal",
+      "sigla": "LFLL",
+      "etiqueta": "Ley de Fomento para la Lectura y el Libro",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFLL.pdf",
+      "archivos": "(LFLL|39)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfm",
+      "extractor": "federal",
+      "sigla": "LFM",
+      "etiqueta": "Ley Federal del Mar",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/124.pdf",
+      "archivos": "(124|124)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfmped",
+      "extractor": "federal",
+      "sigla": "LFMPED",
+      "etiqueta": "Ley del Fondo Mexicano del Petróleo para la Estabilización y el Desarrollo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFMPED.pdf",
+      "archivos": "(LFMPED)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfmzaah",
+      "extractor": "federal",
+      "sigla": "LFMZAAH",
+      "etiqueta": "Ley Federal sobre Monumentos y Zonas Arqueológicos, Artísticos e Históricos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFMZAAH.pdf",
+      "archivos": "(LFMZAAH|131)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfpa",
+      "extractor": "federal",
+      "sigla": "LFPA",
+      "etiqueta": "Ley Federal de Procedimiento Administrativo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPA.pdf",
+      "archivos": "(LFPA|112)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfpc",
+      "extractor": "federal",
+      "sigla": "LFPC",
+      "etiqueta": "Ley Federal de Protección al Consumidor",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf",
+      "archivos": "(LFPC|113)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfpca",
+      "extractor": "federal",
+      "sigla": "LFPCA",
+      "etiqueta": "Ley Federal de Procedimiento Contencioso Administrativo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPCA.pdf",
+      "archivos": "(LFPCA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfpdppp",
+      "extractor": "federal",
+      "sigla": "LFPDPPP",
+      "etiqueta": "Ley Federal de Protección de Datos Personales en Posesión de los Particulares",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+      "archivos": "(LFPDPPP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfped",
+      "extractor": "federal",
+      "sigla": "LFPED",
+      "etiqueta": "Ley Federal para Prevenir y Eliminar la Discriminación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPED.pdf",
+      "archivos": "(LFPED|262)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfpiorpi",
+      "extractor": "federal",
+      "sigla": "LFPIORPI",
+      "etiqueta": "Ley Federal para la Prevención e Identificación de Operaciones con Recursos de Procedencia Ilícita",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPIORPI.pdf",
+      "archivos": "(LFPIORPI)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfppcpcia",
+      "extractor": "federal",
+      "sigla": "LFPPCPCIA",
+      "etiqueta": "Ley Federal de Protección del Patrimonio Cultural de los Pueblos y Comunidades Indígenas y Afromexicanas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPPCPCIA.pdf",
+      "archivos": "(LFPPCPCIA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfppi",
+      "extractor": "federal",
+      "sigla": "LFPPI",
+      "etiqueta": "Ley Federal de Protección a la Propiedad Industrial",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPPI.pdf",
+      "archivos": "(LFPPI)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfppipp",
+      "extractor": "federal",
+      "sigla": "LFPPIPP",
+      "etiqueta": "Ley Federal para la Protección a Personas que Intervienen en el Procedimiento Penal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPPIPP_200521.pdf",
+      "archivos": "(LFPPIPP_200521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfprh",
+      "extractor": "federal",
+      "sigla": "LFPRH",
+      "etiqueta": "Ley Federal de Presupuesto y Responsabilidad Hacendaria",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPRH.pdf",
+      "archivos": "(LFPRH)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfpsdmh",
+      "extractor": "federal",
+      "sigla": "LFPSDMH",
+      "etiqueta": "Ley Federal para Prevenir y Sancionar los Delitos Cometidos en Materia de Hidrocarburos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPSDMH.pdf",
+      "archivos": "(LFPSDMH)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfra",
+      "extractor": "federal",
+      "sigla": "LFRA",
+      "etiqueta": "Ley Federal de Responsabilidad Ambiental",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRA.pdf",
+      "archivos": "(LFRA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfrcf",
+      "extractor": "federal",
+      "sigla": "LFRCF",
+      "etiqueta": "Ley de Fiscalización y Rendición de Cuentas de la Federación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRCF.pdf",
+      "archivos": "(LFRCF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfremsp",
+      "extractor": "federal",
+      "sigla": "LFRemSP",
+      "etiqueta": "Ley Federal de Remuneraciones de los Servidores Públicos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRemSP_190521.pdf",
+      "archivos": "(LFRemSP_190521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfrm",
+      "extractor": "federal",
+      "sigla": "LFRM",
+      "etiqueta": "Ley Federal de Revocación de Mandato",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRM.pdf",
+      "archivos": "(LFRM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfrpe",
+      "extractor": "federal",
+      "sigla": "LFRPE",
+      "etiqueta": "Ley Federal de Responsabilidad Patrimonial del Estado",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRPE.pdf",
+      "archivos": "(LFRPE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfrsp",
+      "extractor": "federal",
+      "sigla": "LFRSP",
+      "etiqueta": "Ley Federal de Responsabilidades de los Servidores Públicos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRSP.pdf",
+      "archivos": "(LFRSP|115)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfsa",
+      "extractor": "federal",
+      "sigla": "LFSA",
+      "etiqueta": "Ley Federal de Sanidad Animal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFSA.pdf",
+      "archivos": "(LFSA|116)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfsp",
+      "extractor": "federal",
+      "sigla": "LFSP",
+      "etiqueta": "Ley Federal de Seguridad Privada",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFSP.pdf",
+      "archivos": "(LFSP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfsv",
+      "extractor": "federal",
+      "sigla": "LFSV",
+      "etiqueta": "Ley Federal de Sanidad Vegetal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFSV.pdf",
+      "archivos": "(LFSV|117)(_\\d{6})?\\.pdf"
+    },
+    {
       "clave": "lft",
       "extractor": "federal",
       "sigla": "LFT",
       "etiqueta": "Ley Federal del Trabajo",
       "tipo": "ley",
       "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf",
-      "archivos": "(125|125_\\d{6}|LFT)\\.pdf"
+      "archivos": "(LFT|125)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lftse",
+      "extractor": "federal",
+      "sigla": "LFTSE",
+      "etiqueta": "Ley Federal de los Trabajadores al Servicio del Estado, Reglamentaria del Apartado B) del Artículo 123 Constitucional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFTSE.pdf",
+      "archivos": "(LFTSE|111)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfvv",
+      "extractor": "federal",
+      "sigla": "LFVV",
+      "etiqueta": "Ley Federal de Variedades Vegetales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFVV.pdf",
+      "archivos": "(LFVV|120)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lfzee",
+      "extractor": "federal",
+      "sigla": "LFZEE",
+      "etiqueta": "Ley Federal de Zonas Económicas Especiales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFZEE.pdf",
+      "archivos": "(LFZEE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lga",
+      "extractor": "federal",
+      "sigla": "LGA",
+      "etiqueta": "Ley General de Archivos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGA.pdf",
+      "archivos": "(LGA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgaas",
+      "extractor": "federal",
+      "sigla": "LGAAS",
+      "etiqueta": "Ley General de la Alimentación Adecuada y Sostenible",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAAS.pdf",
+      "archivos": "(LGAAS)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgag",
+      "extractor": "federal",
+      "sigla": "LGAg",
+      "etiqueta": "Ley General de Aguas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAg.pdf",
+      "archivos": "(LGAg)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgahotdu",
+      "extractor": "federal",
+      "sigla": "LGAHOTDU",
+      "etiqueta": "Ley General de Asentamientos Humanos, Ordenamiento Territorial y Desarrollo Urbano",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAHOTDU.pdf",
+      "archivos": "(LGAHOTDU)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgamvlv",
+      "extractor": "federal",
+      "sigla": "LGAMVLV",
+      "etiqueta": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencias",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAMVLV.pdf",
+      "archivos": "(LGAMVLV)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgappcea",
+      "extractor": "federal",
+      "sigla": "LGAPPCEA",
+      "etiqueta": "Ley General para la Atención y Protección a Personas con la Condición del Espectro Autista",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGAPPCEA_270516.pdf",
+      "archivos": "(LGAPPCEA_270516)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgb",
+      "extractor": "federal",
+      "sigla": "LGB",
+      "etiqueta": "Ley General de Bibliotecas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGB.pdf",
+      "archivos": "(LGB|134)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgbn",
+      "extractor": "federal",
+      "sigla": "LGBN",
+      "etiqueta": "Ley General de Bienes Nacionales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGBN.pdf",
+      "archivos": "(LGBN|267)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgcc",
+      "extractor": "federal",
+      "sigla": "LGCC",
+      "etiqueta": "Ley General de Cambio Climático",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGCC.pdf",
+      "archivos": "(LGCC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgcdc",
+      "extractor": "federal",
+      "sigla": "LGCDC",
+      "etiqueta": "Ley General de Cultura y Derechos Culturales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGCDC.pdf",
+      "archivos": "(LGCDC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgcfd",
+      "extractor": "federal",
+      "sigla": "LGCFD",
+      "etiqueta": "Ley General de Cultura Física y Deporte",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGCFD.pdf",
+      "archivos": "(LGCFD|258)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgcg",
+      "extractor": "federal",
+      "sigla": "LGCG",
+      "etiqueta": "Ley General de Contabilidad Gubernamental",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGCG.pdf",
+      "archivos": "(LGCG)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgcs",
+      "extractor": "federal",
+      "sigla": "LGCS",
+      "etiqueta": "Ley General de Comunicación Social",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGCS.pdf",
+      "archivos": "(LGCS)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgct",
+      "extractor": "federal",
+      "sigla": "LGCT",
+      "etiqueta": "Ley General para el Control del Tabaco",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGCT.pdf",
+      "archivos": "(LGCT)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgdfs",
+      "extractor": "federal",
+      "sigla": "LGDFS",
+      "etiqueta": "Ley General de Desarrollo Forestal Sustentable",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDFS.pdf",
+      "archivos": "(LGDFS|259)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgdlpi",
+      "extractor": "federal",
+      "sigla": "LGDLPI",
+      "etiqueta": "Ley General de Derechos Lingüísticos de los Pueblos Indígenas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDLPI.pdf",
+      "archivos": "(LGDLPI|257)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgdnna",
+      "extractor": "federal",
+      "sigla": "LGDNNA",
+      "etiqueta": "Ley General de los Derechos de Niñas, Niños y Adolescentes",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDNNA.pdf",
+      "archivos": "(LGDNNA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgdocia",
+      "extractor": "federal",
+      "sigla": "LGDOCIA",
+      "etiqueta": "Ley General para la Detección Oportuna del Cáncer en la Infancia y la Adolescencia",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDOCIA_070121.pdf",
+      "archivos": "(LGDOCIA_070121)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgdp",
+      "extractor": "federal",
+      "sigla": "LGDP",
+      "etiqueta": "Ley Federal de Deuda Pública",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/136_300118.pdf",
+      "archivos": "(136_300118|136)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgds",
+      "extractor": "federal",
+      "sigla": "LGDS",
+      "etiqueta": "Ley General de Desarrollo Social",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGDS.pdf",
+      "archivos": "(LGDS|264)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lge",
+      "extractor": "federal",
+      "sigla": "LGE",
+      "etiqueta": "Ley General de Educación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGE.pdf",
+      "archivos": "(LGE|137)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgec",
+      "extractor": "federal",
+      "sigla": "LGEC",
+      "etiqueta": "Ley General de Economía Circular",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGEC.pdf",
+      "archivos": "(LGEC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgeepa",
+      "extractor": "federal",
+      "sigla": "LGEEPA",
+      "etiqueta": "Ley General del Equilibrio Ecológico y la Protección al Ambiente",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGEEPA.pdf",
+      "archivos": "(LGEEPA|148)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgeo",
+      "extractor": "federal",
+      "sigla": "LGeo",
+      "etiqueta": "Ley de Geotermia",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGeo.pdf",
+      "archivos": "(LGeo)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lges",
+      "extractor": "federal",
+      "sigla": "LGES",
+      "etiqueta": "Ley General de Educación Superior",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGES_200421.pdf",
+      "archivos": "(LGES_200421)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgfacr",
+      "extractor": "federal",
+      "sigla": "LGFACR",
+      "etiqueta": "Ley General para el Fortalecimiento y Armonización Catastral y Registral",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGFACR.pdf",
+      "archivos": "(LGFACR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgimh",
+      "extractor": "federal",
+      "sigla": "LGISMH",
+      "etiqueta": "Ley General para la Igualdad Sustantiva entre Mujeres y Hombres",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGISMH.pdf",
+      "archivos": "(LGISMH)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgipd",
+      "extractor": "federal",
+      "sigla": "LGIPD",
+      "etiqueta": "Ley General para la Inclusión de las Personas con Discapacidad",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGIPD.pdf",
+      "archivos": "(LGIPD)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgipe",
+      "extractor": "federal",
+      "sigla": "LGIPE",
+      "etiqueta": "Ley General de Instituciones y Procedimientos Electorales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGIPE.pdf",
+      "archivos": "(LGIPE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgmasc",
+      "extractor": "federal",
+      "sigla": "LGMASC",
+      "etiqueta": "Ley General de Mecanismos Alternativos de Solución de Controversias",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMASC.pdf",
+      "archivos": "(LGMASC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgmde",
+      "extractor": "federal",
+      "sigla": "LGMDE",
+      "etiqueta": "Ley General en Materia de Delitos Electorales",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMDE_200521.pdf",
+      "archivos": "(LGMDE_200521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgmdfp",
+      "extractor": "federal",
+      "sigla": "LGMDFP",
+      "etiqueta": "Ley General en Materia de Desaparición Forzada de Personas, Desaparición Cometida por Particulares y del Sistema Nacional de Búsqueda de Personas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMDFP.pdf",
+      "archivos": "(LGMDFP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgmhcti",
+      "extractor": "federal",
+      "sigla": "LGMHCTI",
+      "etiqueta": "Ley General en materia de Humanidades, Ciencias, Tecnologías e Innovación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMHCTI.pdf",
+      "archivos": "(LGMHCTI)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgmime",
+      "extractor": "federal",
+      "sigla": "LGMIME",
+      "etiqueta": "Ley General de los Medios de Impugnación en Materia Electoral",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMIME.pdf",
+      "archivos": "(LGMIME)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgmsv",
+      "extractor": "federal",
+      "sigla": "LGMSV",
+      "etiqueta": "Ley General de Movilidad y Seguridad Vial",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGMSV.pdf",
+      "archivos": "(LGMSV)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgn",
+      "extractor": "federal",
+      "sigla": "LGN",
+      "etiqueta": "Ley de la Guardia Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGN.pdf",
+      "archivos": "(LGN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgoaac",
+      "extractor": "federal",
+      "sigla": "LGOAAC",
+      "etiqueta": "Ley General de Organizaciones y Actividades Auxiliares del Crédito",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGOAAC.pdf",
+      "archivos": "(LGOAAC|139)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgp",
+      "extractor": "federal",
+      "sigla": "LGP",
+      "etiqueta": "Ley General de Población",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGP.pdf",
+      "archivos": "(LGP|140)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpas",
+      "extractor": "federal",
+      "sigla": "LGPAS",
+      "etiqueta": "Ley General de Pesca y Acuacultura Sustentables",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPAS.pdf",
+      "archivos": "(LGPAS)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpc",
+      "extractor": "federal",
+      "sigla": "LGPC",
+      "etiqueta": "Ley General de Protección Civil",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPC.pdf",
+      "archivos": "(LGPC|141)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpdppso",
+      "extractor": "federal",
+      "sigla": "LGPDPPSO",
+      "etiqueta": "Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf",
+      "archivos": "(LGPDPPSO)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpgir",
+      "extractor": "federal",
+      "sigla": "LGPGIR",
+      "etiqueta": "Ley General para la Prevención y Gestión Integral de los Residuos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPGIR.pdf",
+      "archivos": "(LGPGIR|263)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpisdme",
+      "extractor": "federal",
+      "sigla": "LGPISDME",
+      "etiqueta": "Ley General para Prevenir, Investigar y Sancionar los Delitos en Materia de Extorsión, Reglamentaria de la fracción XXI del artículo 73 de la Constitución Política de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPISDME.pdf",
+      "archivos": "(LGPISDME)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpist",
+      "extractor": "federal",
+      "sigla": "LGPIST",
+      "etiqueta": "Ley General para Prevenir, Investigar y Sancionar la Tortura y Otros Tratos o Penas Crueles, Inhumanos o Degradantes",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPIST.pdf",
+      "archivos": "(LGPIST)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpp",
+      "extractor": "federal",
+      "sigla": "LGPP",
+      "etiqueta": "Ley General de Partidos Políticos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPP.pdf",
+      "archivos": "(LGPP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpsacdii",
+      "extractor": "federal",
+      "sigla": "LGPSACDII",
+      "etiqueta": "Ley General de Prestación de Servicios para la Atención, Cuidado y Desarrollo Integral Infantil",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPSACDII.pdf",
+      "archivos": "(LGPSACDII)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpsdms",
+      "extractor": "federal",
+      "sigla": "LGPSDMS",
+      "etiqueta": "Ley General para Prevenir y Sancionar los Delitos en Materia de Secuestro, Reglamentaria de la fracción XXI del artículo 73 de la Constitución Política de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPSDMS_200521.pdf",
+      "archivos": "(LGPSDMS_200521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpsedmtp",
+      "extractor": "federal",
+      "sigla": "LGPSEDMTP",
+      "etiqueta": "Ley General para Prevenir, Sancionar y Erradicar los Delitos en Materia de Trata de Personas y para la Protección y Asistencia a las Víctimas de estos Delitos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPSEDMTP.pdf",
+      "archivos": "(LGPSEDMTP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgpsvd",
+      "extractor": "federal",
+      "sigla": "LGPSVD",
+      "etiqueta": "Ley General para la Prevención Social de la Violencia y la Delincuencia",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPSVD_040521.pdf",
+      "archivos": "(LGPSVD_040521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgra",
+      "extractor": "federal",
+      "sigla": "LGRA",
+      "etiqueta": "Ley General de Responsabilidades Administrativas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA.pdf",
+      "archivos": "(LGRA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgs",
+      "extractor": "federal",
+      "sigla": "LGS",
+      "etiqueta": "Ley General de Salud",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGS.pdf",
+      "archivos": "(LGS|142)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgsc",
+      "extractor": "federal",
+      "sigla": "LGSC",
+      "etiqueta": "Ley General de Sociedades Cooperativas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSC.pdf",
+      "archivos": "(LGSC|143)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgscmm",
+      "extractor": "federal",
+      "sigla": "LGSCMM",
+      "etiqueta": "Ley General del Sistema para la Carrera de las Maestras y los Maestros",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSCMM_300919.pdf",
+      "archivos": "(LGSCMM_300919)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgsm",
+      "extractor": "federal",
+      "sigla": "LGSM",
+      "etiqueta": "Ley General de Sociedades Mercantiles",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSM.pdf",
+      "archivos": "(LGSM|144)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgsmime",
+      "extractor": "federal",
+      "sigla": "LGSMIME",
+      "etiqueta": "Ley General del Sistema de Medios de Impugnación en Materia Electoral",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSMIME.pdf",
+      "archivos": "(LGSMIME|149)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgsna",
+      "extractor": "federal",
+      "sigla": "LGSNA",
+      "etiqueta": "Ley General del Sistema Nacional Anticorrupción",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSNA_200521.pdf",
+      "archivos": "(LGSNA_200521)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgsnsp",
+      "extractor": "federal",
+      "sigla": "LGSNSP",
+      "etiqueta": "Ley General del Sistema Nacional de Seguridad Pública",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGSNSP.pdf",
+      "archivos": "(LGSNSP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgt",
+      "extractor": "federal",
+      "sigla": "LGT",
+      "etiqueta": "Ley General de Turismo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGT.pdf",
+      "archivos": "(LGT)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgtaip",
+      "extractor": "federal",
+      "sigla": "LGTAIP",
+      "etiqueta": "Ley General de Transparencia y Acceso a la Información Pública",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGTAIP.pdf",
+      "archivos": "(LGTAIP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgtoc",
+      "extractor": "federal",
+      "sigla": "LGTOC",
+      "etiqueta": "Ley General de Títulos y Operaciones de Crédito",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGTOC.pdf",
+      "archivos": "(LGTOC|145)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgv",
+      "extractor": "federal",
+      "sigla": "LGV",
+      "etiqueta": "Ley General de Víctimas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGV.pdf",
+      "archivos": "(LGV)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lgvs",
+      "extractor": "federal",
+      "sigla": "LGVS",
+      "etiqueta": "Ley General de Vida Silvestre",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LGVS.pdf",
+      "archivos": "(LGVS|146)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lhheum",
+      "extractor": "federal",
+      "sigla": "LHHEUM",
+      "etiqueta": "Ley de los Husos Horarios en los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LHHEUM.pdf",
+      "archivos": "(LHHEUM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lic",
+      "extractor": "federal",
+      "sigla": "LIC",
+      "etiqueta": "Ley de Instituciones de Crédito",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIC.pdf",
+      "archivos": "(LIC|43)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lical",
+      "extractor": "federal",
+      "sigla": "LICal",
+      "etiqueta": "Ley de Infraestructura de la Calidad",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LICal_010720.pdf",
+      "archivos": "(LICal_010720)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lie",
+      "extractor": "federal",
+      "sigla": "LIE",
+      "etiqueta": "Ley de Inversión Extranjera",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIE.pdf",
+      "archivos": "(LIE|44)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lieps",
+      "extractor": "federal",
+      "sigla": "LIEPS",
+      "etiqueta": "Ley del Impuesto Especial sobre Producción y Servicios",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIEPS.pdf",
+      "archivos": "(LIEPS|78)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lif-2026",
+      "extractor": "federal",
+      "sigla": "LIF 2026",
+      "etiqueta": "Ley de Ingresos de la Federación 2026",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2026.pdf",
+      "archivos": "(LIF_2026)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lif-2027",
+      "extractor": "federal",
+      "sigla": "LIF_2027",
+      "etiqueta": "Ley de Ingresos de la Federación para el Ejercicio Fiscal de 2027",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2027.pdf",
+      "archivos": "(LIF_2027)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lifnct",
+      "extractor": "federal",
+      "sigla": "LIFNCT",
+      "etiqueta": "Ley del Instituto del Fondo Nacional para el Consumo de los Trabajadores",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNCT.pdf",
+      "archivos": "(LIFNCT)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lifnvt",
+      "extractor": "federal",
+      "sigla": "LIFNVT",
+      "etiqueta": "Ley del Instituto del Fondo Nacional de la Vivienda para los Trabajadores",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIFNVT.pdf",
+      "archivos": "(LIFNVT|86)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "liispcen",
+      "extractor": "federal",
+      "sigla": "LIISPCEN",
+      "etiqueta": "Ley para Impulsar el Incremento Sostenido de la Productividad y la Competitividad de la Economía Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIISPCEN.pdf",
+      "archivos": "(LIISPCEN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "limj",
+      "extractor": "federal",
+      "sigla": "LIMJ",
+      "etiqueta": "Ley del Instituto Mexicano de la Juventud",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIMJ.pdf",
+      "archivos": "(LIMJ|87)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "linbal",
+      "extractor": "federal",
+      "sigla": "LINBAL",
+      "etiqueta": "Ley que crea el Instituto Nacional de Bellas Artes y Literatura",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/193_171215.pdf",
+      "archivos": "(193_171215|193)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "linpi",
+      "extractor": "federal",
+      "sigla": "LINPI",
+      "etiqueta": "Ley del Instituto Nacional de los Pueblos Indígenas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LINPI.pdf",
+      "archivos": "(LINPI)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lins",
+      "extractor": "federal",
+      "sigla": "LINS",
+      "etiqueta": "Ley de los Institutos Nacionales de Salud",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LINS.pdf",
+      "archivos": "(LINS|51)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lisf",
+      "extractor": "federal",
+      "sigla": "LISF",
+      "etiqueta": "Ley de Instituciones de Seguros y de Fianzas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISF.pdf",
+      "archivos": "(LISF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lish",
+      "extractor": "federal",
+      "sigla": "LISH",
+      "etiqueta": "Ley de Ingresos sobre Hidrocarburos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIH.pdf",
+      "archivos": "(LIH)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lisipl",
+      "extractor": "federal",
+      "sigla": "LISIPL",
+      "etiqueta": "Impuesto sobre Servicios Expresamente Declarados de Interés Público por Ley, en los que Intervengan Empresas Concesionarias de Bienes del Dominio Directo de la Nación (LEY que establece, reforma y adiciona las disposiciones relativas a diversos impuestos)",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/79.pdf",
+      "archivos": "(79|79)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lisr",
+      "extractor": "federal",
+      "sigla": "LISR",
+      "etiqueta": "Ley del Impuesto sobre la Renta",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf",
+      "archivos": "(LISR|82)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lissfam",
+      "extractor": "federal",
+      "sigla": "LISSFAM",
+      "etiqueta": "Ley del Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSFAM.pdf",
+      "archivos": "(LISSFAM|84)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lissste",
+      "extractor": "federal",
+      "sigla": "LISSSTE",
+      "etiqueta": "Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISSSTE.pdf",
+      "archivos": "(LISSSTE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "liva",
+      "extractor": "federal",
+      "sigla": "LIVA",
+      "etiqueta": "Ley del Impuesto al Valor Agregado",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf",
+      "archivos": "(LIVA|77)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lmccbdc",
+      "extractor": "federal",
+      "sigla": "LMCCBDC",
+      "etiqueta": "Ley que Aprueba la Adhesión de México al Convenio Constitutivo del Banco de Desarrollo del Caribe y su Ejecución",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/187_291214.pdf",
+      "archivos": "(187_291214|187)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lmeum",
+      "extractor": "federal",
+      "sigla": "LMEUM",
+      "etiqueta": "Ley Monetaria de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMEUM.pdf",
+      "archivos": "(LMEUM|152)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lmigra",
+      "extractor": "federal",
+      "sigla": "LMigra",
+      "etiqueta": "Ley de Migración",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMigra.pdf",
+      "archivos": "(LMigra)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lmin",
+      "extractor": "federal",
+      "sigla": "LMin",
+      "etiqueta": "Ley de Minería",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMin.pdf",
+      "archivos": "(LMin|151)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lmtr",
+      "extractor": "federal",
+      "sigla": "LMTR",
+      "etiqueta": "Ley en Materia de Telecomunicaciones y Radiodifusión",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMTR.pdf",
+      "archivos": "(LMTR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lmv",
+      "extractor": "federal",
+      "sigla": "LMV",
+      "etiqueta": "Ley del Mercado de Valores",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LMV.pdf",
+      "archivos": "(LMV)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnac",
+      "extractor": "federal",
+      "sigla": "LNAC",
+      "etiqueta": "Ley de Nacionalidad",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/53.pdf",
+      "archivos": "(53|53)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lncm",
+      "extractor": "federal",
+      "sigla": "LNCM",
+      "etiqueta": "Ley de Navegación y Comercio Marítimos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNCM.pdf",
+      "archivos": "(LNCM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lned",
+      "extractor": "federal",
+      "sigla": "LNED",
+      "etiqueta": "Ley Nacional de Extinción de Dominio",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNED.pdf",
+      "archivos": "(LNED)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnep",
+      "extractor": "federal",
+      "sigla": "LNEP",
+      "etiqueta": "Ley Nacional de Ejecución Penal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNEP.pdf",
+      "archivos": "(LNEP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnetb",
+      "extractor": "federal",
+      "sigla": "LNETB",
+      "etiqueta": "Ley Nacional para Eliminar Trámites Burocráticos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNETB.pdf",
+      "archivos": "(LNETB)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnmascmp",
+      "extractor": "federal",
+      "sigla": "LNMASCMP",
+      "etiqueta": "Ley Nacional de Mecanismos Alternativos de Solución de Controversias en Materia Penal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNMASCMP.pdf",
+      "archivos": "(LNMASCMP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnrd",
+      "extractor": "federal",
+      "sigla": "LNRD",
+      "etiqueta": "Ley Nacional del Registro de Detenciones",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNRD_270519.pdf",
+      "archivos": "(LNRD_270519)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnsijpa",
+      "extractor": "federal",
+      "sigla": "LNSIJPA",
+      "etiqueta": "Ley Nacional del Sistema Integral de Justicia Penal para Adolescentes",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNSIJPA.pdf",
+      "archivos": "(LNSIJPA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lnuf",
+      "extractor": "federal",
+      "sigla": "LNUF",
+      "etiqueta": "Ley Nacional sobre el Uso de la Fuerza",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNUF.pdf",
+      "archivos": "(LNUF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loam",
+      "extractor": "federal",
+      "sigla": "LOAM",
+      "etiqueta": "Ley Orgánica de la Armada de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOAM.pdf",
+      "archivos": "(LOAM|249)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loapf",
+      "extractor": "federal",
+      "sigla": "LOAPF",
+      "etiqueta": "Ley Orgánica de la Administración Pública Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOAPF.pdf",
+      "archivos": "(LOAPF|153)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lobb",
+      "extractor": "federal",
+      "sigla": "LOBB",
+      "etiqueta": "Ley Orgánica del Banco del Bienestar",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/164_190719.pdf",
+      "archivos": "(164_190719|164)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lobnce",
+      "extractor": "federal",
+      "sigla": "LOBNCE",
+      "etiqueta": "Ley Orgánica del Banco Nacional de Comercio Exterior",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOBNCE.pdf",
+      "archivos": "(LOBNCE|165)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lobnefaa",
+      "extractor": "federal",
+      "sigla": "LOBNEFAA",
+      "etiqueta": "Ley Orgánica del Banco Nacional del Ejército, Fuerza Aérea y Armada",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/167.pdf",
+      "archivos": "(167|167)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lobnosp",
+      "extractor": "federal",
+      "sigla": "LOBNOSP",
+      "etiqueta": "Ley Orgánica del Banco Nacional de Obras y Servicios Públicos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOBNOSP.pdf",
+      "archivos": "(LOBNOSP|166)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "locfcrl",
+      "extractor": "federal",
+      "sigla": "LOCFCRL",
+      "etiqueta": "Ley Orgánica del Centro Federal de Conciliación y Registro Laboral",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOCFCRL_060120.pdf",
+      "archivos": "(LOCFCRL_060120)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "locg",
+      "extractor": "federal",
+      "sigla": "LOCGEUM",
+      "etiqueta": "Ley Orgánica del Congreso General de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOCGEUM.pdf",
+      "archivos": "(LOCGEUM|168)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loefam",
+      "extractor": "federal",
+      "sigla": "LOEFAM",
+      "etiqueta": "Ley Orgánica del Ejército y Fuerza Aérea Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOEFAM.pdf",
+      "archivos": "(LOEFAM|169)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "log",
+      "extractor": "federal",
+      "sigla": "LOG",
+      "etiqueta": "Ley de Organizaciones Ganaderas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/57.pdf",
+      "archivos": "(57|57)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loinah",
+      "extractor": "federal",
+      "sigla": "LOINAH",
+      "etiqueta": "Ley Orgánica del Instituto Nacional de Antropología e Historia",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/170_171215.pdf",
+      "archivos": "(170_171215|170)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loipn",
+      "extractor": "federal",
+      "sigla": "LOIPN",
+      "etiqueta": "Ley Orgánica del Instituto Politécnico Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/171.pdf",
+      "archivos": "(171|171)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lonf",
+      "extractor": "federal",
+      "sigla": "LONF",
+      "etiqueta": "Ley Orgánica de Nacional Financiera",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/162.pdf",
+      "archivos": "(162|162)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lopdc",
+      "extractor": "federal",
+      "sigla": "LOPDC",
+      "etiqueta": "Ley Orgánica de la Procuraduría de la Defensa del Contribuyente",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPDC.pdf",
+      "archivos": "(LOPDC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lopgjdf",
+      "extractor": "federal",
+      "sigla": "LOPGJDF",
+      "etiqueta": "Ley Orgánica de la Procuraduría General de Justicia del Distrito Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPGJDF.pdf",
+      "archivos": "(LOPGJDF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lopjf",
+      "extractor": "federal",
+      "sigla": "LOPJF",
+      "etiqueta": "Ley Orgánica del Poder Judicial de la Federación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf",
+      "archivos": "(LOPJF|172)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lopsrm",
+      "extractor": "federal",
+      "sigla": "LOPSRM",
+      "etiqueta": "Ley de Obras Públicas y Servicios Relacionados con las Mismas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPSRM.pdf",
+      "archivos": "(LOPSRM|56)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loscm",
+      "extractor": "federal",
+      "sigla": "LOSCM",
+      "etiqueta": "Ley Orgánica del Seminario de Cultura Mexicana",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOSCM.pdf",
+      "archivos": "(LOSCM|173)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "loshf",
+      "extractor": "federal",
+      "sigla": "LOSHF",
+      "etiqueta": "Ley Orgánica de Sociedad Hipotecaria Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOSHF.pdf",
+      "archivos": "(LOSHF|234)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lota",
+      "extractor": "federal",
+      "sigla": "LOTA",
+      "etiqueta": "Ley Orgánica de los Tribunales Agrarios",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/159.pdf",
+      "archivos": "(159|159)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lotfja",
+      "extractor": "federal",
+      "sigla": "LOTFJA",
+      "etiqueta": "Ley Orgánica del Tribunal Federal de Justicia Administrativa",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOTFJA.pdf",
+      "archivos": "(LOTFJA)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "louaaan",
+      "extractor": "federal",
+      "sigla": "LOUAAAN",
+      "etiqueta": "Ley Orgánica de la Universidad Autónoma Agraria Antonio Narro",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LOUAAAN.pdf",
+      "archivos": "(LOUAAAN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "louam",
+      "extractor": "federal",
+      "sigla": "LOUAM",
+      "etiqueta": "Ley Orgánica de la Universidad Autónoma Metropolitana",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/157.pdf",
+      "archivos": "(157|157)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lounam",
+      "extractor": "federal",
+      "sigla": "LOUNAM",
+      "etiqueta": "Ley Orgánica de la Universidad Nacional Autónoma de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/158.pdf",
+      "archivos": "(158|158)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpab",
+      "extractor": "federal",
+      "sigla": "LPAB",
+      "etiqueta": "Ley de Protección al Ahorro Bancario",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPAB.pdf",
+      "archivos": "(LPAB|62)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpcinecdi",
+      "extractor": "federal",
+      "sigla": "LPCINECDI",
+      "etiqueta": "Ley de Protección al Comercio y la Inversión de Normas Extranjeras que Contravengan el Derecho Internacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/63.pdf",
+      "archivos": "(63|63)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpdusf",
+      "extractor": "federal",
+      "sigla": "LPDUSF",
+      "etiqueta": "Ley de Protección y Defensa al Usuario de Servicios Financieros",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPDUSF.pdf",
+      "archivos": "(LPDUSF|64)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpeam",
+      "extractor": "federal",
+      "sigla": "LPEAM",
+      "etiqueta": "Ley de Protección del Espacio Aéreo Mexicano",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPEAM.pdf",
+      "archivos": "(LPEAM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lperc",
+      "extractor": "federal",
+      "sigla": "LPERC",
+      "etiqueta": "Ley de Premios, Estímulos y Recompensas Civiles",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPERC.pdf",
+      "archivos": "(LPERC|60)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpf",
+      "extractor": "federal",
+      "sigla": "LPF",
+      "etiqueta": "Ley de la Policía Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPF.pdf",
+      "archivos": "(LPF|49)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lplan",
+      "extractor": "federal",
+      "sigla": "LPlan",
+      "etiqueta": "Ley de Planeación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPlan.pdf",
+      "archivos": "(LPlan|59)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpo",
+      "extractor": "federal",
+      "sigla": "LPO",
+      "etiqueta": "Ley de Productos Orgánicos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPO.pdf",
+      "archivos": "(LPO)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lppddhp",
+      "extractor": "federal",
+      "sigla": "LPPDDHP",
+      "etiqueta": "Ley para la Protección de Personas Defensoras de Derechos Humanos y Periodistas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPPDDHP.pdf",
+      "archivos": "(LPPDDHP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpte",
+      "extractor": "federal",
+      "sigla": "LPTE",
+      "etiqueta": "Ley de Planeación y Transición Energética",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LPTE.pdf",
+      "archivos": "(LPTE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lpue",
+      "extractor": "federal",
+      "sigla": "LPUE",
+      "etiqueta": "Ley de Puertos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/65_071220.pdf",
+      "archivos": "(65_071220|65)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lraf",
+      "extractor": "federal",
+      "sigla": "LRAF",
+      "etiqueta": "Ley para Regular las Agrupaciones Financieras",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRAF.pdf",
+      "archivos": "(LRAF|186)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lram",
+      "extractor": "federal",
+      "sigla": "LRAM",
+      "etiqueta": "Ley de Recompensas de la Armada de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRAM.pdf",
+      "archivos": "(LRAM|66)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrart27-mn",
+      "extractor": "federal",
+      "sigla": "LRART27_MN",
+      "etiqueta": "Ley Reglamentaria del Artículo 27 Constitucional en Materia Nuclear",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/207.pdf",
+      "archivos": "(207|207)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrart3-mmce",
+      "extractor": "federal",
+      "sigla": "LRArt3_MMCE",
+      "etiqueta": "Ley Reglamentaria del Artículo 3o. de la Constitución Política de los Estados Unidos Mexicanos, en materia de Mejora Continua de la Educación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRArt3_MMCE_300919.pdf",
+      "archivos": "(LRArt3_MMCE_300919)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrart5-prof",
+      "extractor": "federal",
+      "sigla": "LRART5_PROF",
+      "etiqueta": "Ley Reglamentaria del Artículo 5o. Constitucional, relativo al ejercicio de las profesiones en la Ciudad de México",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/208_190118.pdf",
+      "archivos": "(208_190118|208)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrart6-mdr",
+      "extractor": "federal",
+      "sigla": "LRArt6_MDR",
+      "etiqueta": "Ley Reglamentaria del artículo 6o., párrafo primero, de la Constitución Política de los Estados Unidos Mexicanos, en materia del Derecho de Réplica",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRArt6_MDR.pdf",
+      "archivos": "(LRArt6_MDR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrart76-fracvi",
+      "extractor": "federal",
+      "sigla": "LRArt76_fracVI",
+      "etiqueta": "Ley Reglamentaria de la fracción VI del artículo 76 de la Constitución Política de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRArt76_fracVI.pdf",
+      "archivos": "(LRArt76_fracVI)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrascap",
+      "extractor": "federal",
+      "sigla": "LRASCAP",
+      "etiqueta": "Ley para Regular las Actividades de las Sociedades Cooperativas de Ahorro y Préstamo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRASCAP.pdf",
+      "archivos": "(LRASCAP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrcdn",
+      "extractor": "federal",
+      "sigla": "LRCDN",
+      "etiqueta": "Ley de Responsabilidad Civil por Daños Nucleares",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRCDN.pdf",
+      "archivos": "(LRCDN|67)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrfiyii-art105",
+      "extractor": "federal",
+      "sigla": "LRFIyII_Art105",
+      "etiqueta": "Ley Reglamentaria de las Fracciones I y II del Artículo 105 de la Constitución Política de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRFIyII_Art105.pdf",
+      "archivos": "(LRFIyII_Art105|205)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrfv-art76",
+      "extractor": "federal",
+      "sigla": "LRFV_ART76",
+      "etiqueta": "Ley Reglamentaria de la Fracción V del Artículo 76 de la Constitución General de la República",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/202.pdf",
+      "archivos": "(202|202)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrfxiiib-art123",
+      "extractor": "federal",
+      "sigla": "LRFXIIIB_Art123",
+      "etiqueta": "Ley Reglamentaria de la Fracción XIII Bis del Apartado B, del Artículo 123 de la Constitución Política de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRFXIIIB_Art123.pdf",
+      "archivos": "(LRFXIIIB_Art123|203)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrfxviii-art73",
+      "extractor": "federal",
+      "sigla": "LRFXVIII_ART73",
+      "etiqueta": "Ley Reglamentaria de la Fracción XVIII del Artículo 73 Constitucional, en lo que se Refiere a la Facultad del Congreso para Dictar Reglas para Determinar el Valor Relativo de la Moneda Extranjera",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/204.pdf",
+      "archivos": "(204|204)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lritf",
+      "extractor": "federal",
+      "sigla": "LRITF",
+      "etiqueta": "Ley para Regular las Instituciones de Tecnología Financiera",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRITF.pdf",
+      "archivos": "(LRITF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrmnyut",
+      "extractor": "federal",
+      "sigla": "LRMNYUT",
+      "etiqueta": "Ley que Declara Reservas Mineras Nacionales los Yacimientos de Uranio, Torio y las demás Substancias de las cuales se Obtengan Isótopos Hendibles que puedan Producir Energía Nuclear",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/197.pdf",
+      "archivos": "(197|197)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrpcap",
+      "extractor": "federal",
+      "sigla": "LRPCAP",
+      "etiqueta": "Ley sobre Refugiados, Protección Complementaria y Asilo Político",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRPCAP.pdf",
+      "archivos": "(LRPCAP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrpv",
+      "extractor": "federal",
+      "sigla": "LRPV",
+      "etiqueta": "Ley del Registro Público Vehicular",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/269_200521.pdf",
+      "archivos": "(269_200521|269)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrsf",
+      "extractor": "federal",
+      "sigla": "LRSF",
+      "etiqueta": "Ley Reglamentaria del Servicio Ferroviario",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRSF.pdf",
+      "archivos": "(LRSF|209)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lrsic",
+      "extractor": "federal",
+      "sigla": "LRSIC",
+      "etiqueta": "Ley para Regular las Sociedades de Información Crediticia",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LRSIC.pdf",
+      "archivos": "(LRSIC|237)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsar",
+      "extractor": "federal",
+      "sigla": "LSAR",
+      "etiqueta": "Ley de los Sistemas de Ahorro para el Retiro",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSAR.pdf",
+      "archivos": "(LSAR|52)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsat",
+      "extractor": "federal",
+      "sigla": "LSAT",
+      "etiqueta": "Ley del Servicio de Administración Tributaria",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/93_041218.pdf",
+      "archivos": "(93_041218|93)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsct",
+      "extractor": "federal",
+      "sigla": "LSCT",
+      "etiqueta": "Ley sobre la Celebración de Tratados",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSCT.pdf",
+      "archivos": "(LSCT|216)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lse",
+      "extractor": "federal",
+      "sigla": "LSE",
+      "etiqueta": "Ley del Sector Eléctrico",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSE.pdf",
+      "archivos": "(LSE)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsem",
+      "extractor": "federal",
+      "sigla": "LSEM",
+      "etiqueta": "Ley del Servicio Exterior Mexicano",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/96_190418.pdf",
+      "archivos": "(96_190418|96)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsh",
+      "extractor": "federal",
+      "sigla": "LSH",
+      "etiqueta": "Ley del Sector Hidrocarburos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSH.pdf",
+      "archivos": "(LSH)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsint",
+      "extractor": "federal",
+      "sigla": "LSInt",
+      "etiqueta": "Ley de Seguridad Interior",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSInt_300519.pdf",
+      "archivos": "(LSInt_300519)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsm",
+      "extractor": "federal",
+      "sigla": "LSM",
+      "etiqueta": "Ley del Servicio Militar",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSM.pdf",
+      "archivos": "(LSM|97)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsn",
+      "extractor": "federal",
+      "sigla": "LSN",
+      "etiqueta": "Ley de Seguridad Nacional",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSN.pdf",
+      "archivos": "(LSN)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsnieg",
+      "extractor": "federal",
+      "sigla": "LSNIEG",
+      "etiqueta": "Ley del Sistema Nacional de Información Estadística y Geográfica",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSNIEG.pdf",
+      "archivos": "(LSNIEG)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsniimsp",
+      "extractor": "federal",
+      "sigla": "LSNIIMSP",
+      "etiqueta": "Ley del Sistema Nacional de Investigación e Inteligencia en Materia de Seguridad Pública",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSNIIMSP.pdf",
+      "archivos": "(LSNIIMSP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsp",
+      "extractor": "federal",
+      "sigla": "LSP",
+      "etiqueta": "Ley de Sistemas de Pagos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSP.pdf",
+      "archivos": "(LSP|255)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lspcapf",
+      "extractor": "federal",
+      "sigla": "LSPCAPF",
+      "etiqueta": "Ley del Servicio Profesional de Carrera en la Administración Pública Federal",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/260.pdf",
+      "archivos": "(260|260)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lspm",
+      "extractor": "federal",
+      "sigla": "LSPM",
+      "etiqueta": "Ley del Servicio Postal Mexicano",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSPM.pdf",
+      "archivos": "(LSPM|98)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsprem",
+      "extractor": "federal",
+      "sigla": "LSPREM",
+      "etiqueta": "Ley del Sistema Público de Radiodifusión del Estado Mexicano",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSPREM.pdf",
+      "archivos": "(LSPREM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsrlip",
+      "extractor": "federal",
+      "sigla": "LSRLIP",
+      "etiqueta": "Ley de Sociedades de Responsabilidad Limitada de Interés Público",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/70.pdf",
+      "archivos": "(70|70)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lss",
+      "extractor": "federal",
+      "sigla": "LSS",
+      "etiqueta": "Ley del Seguro Social",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf",
+      "archivos": "(LSS|92)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lsss",
+      "extractor": "federal",
+      "sigla": "LSSS",
+      "etiqueta": "Ley de Sociedades de Solidaridad Social",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/71_240418.pdf",
+      "archivos": "(71_240418|71)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ltf",
+      "extractor": "federal",
+      "sigla": "LTF",
+      "etiqueta": "Ley de Tesorería de la Federación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LTF.pdf",
+      "archivos": "(LTF)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ltfccg",
+      "extractor": "federal",
+      "sigla": "LTFCCG",
+      "etiqueta": "Ley de Transparencia y de Fomento a la Competencia en el Crédito Garantizado",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/256.pdf",
+      "archivos": "(256|256)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ltosf",
+      "extractor": "federal",
+      "sigla": "LTOSF",
+      "etiqueta": "Ley para la Transparencia y Ordenamiento de los Servicios Financieros",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LTOSF.pdf",
+      "archivos": "(LTOSF|265)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "ltpcpimcp",
+      "extractor": "federal",
+      "sigla": "LTPCPIMCP",
+      "etiqueta": "Ley para la Transparencia, Prevención y Combate de Prácticas Indebidas en Materia de Contratación de Publicidad",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LTPCPIMCP.pdf",
+      "archivos": "(LTPCPIMCP)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "luach",
+      "extractor": "federal",
+      "sigla": "LUACH",
+      "etiqueta": "Ley que crea la Universidad Autónoma Chapingo",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/195.pdf",
+      "archivos": "(195|195)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "luc",
+      "extractor": "federal",
+      "sigla": "LUC",
+      "etiqueta": "Ley de Uniones de Crédito",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LUC.pdf",
+      "archivos": "(LUC)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "luefa",
+      "extractor": "federal",
+      "sigla": "LUEFA",
+      "etiqueta": "Ley que Crea la Universidad del Ejército y Fuerza Aérea",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/196.pdf",
+      "archivos": "(196|196)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lupdecr",
+      "extractor": "federal",
+      "sigla": "LUPDECR",
+      "etiqueta": "Ley para el uso y protección de la denominación y del emblema de la Cruz Roja",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LUPDECR.pdf",
+      "archivos": "(LUPDECR)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lvgc",
+      "extractor": "federal",
+      "sigla": "LVGC",
+      "etiqueta": "Ley de Vías Generales de Comunicación",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LVGC.pdf",
+      "archivos": "(LVGC|73)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lviv",
+      "extractor": "federal",
+      "sigla": "LViv",
+      "etiqueta": "Ley de Vivienda",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LViv.pdf",
+      "archivos": "(LViv)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "lvzmm",
+      "extractor": "federal",
+      "sigla": "LVZMM",
+      "etiqueta": "Ley de Vertimientos en las Zonas Marinas Mexicanas",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LVZMM.pdf",
+      "archivos": "(LVZMM)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "oga",
+      "extractor": "federal",
+      "sigla": "OGA",
+      "etiqueta": "Ordenanza General de la Armada",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/218.pdf",
+      "archivos": "(218|218)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "pef-2026",
+      "extractor": "federal",
+      "sigla": "PEF_2026",
+      "etiqueta": "Presupuesto de Egresos de la Federación para el Ejercicio Fiscal 2026",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/PEF_2026.pdf",
+      "archivos": "(PEF_2026)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "reg-diputados",
+      "extractor": "federal",
+      "sigla": "Reg_Diputados",
+      "etiqueta": "Reglamento de la Cámara de Diputados",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/Reg_Diputados.pdf",
+      "archivos": "(Reg_Diputados)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "reg-senado",
+      "extractor": "federal",
+      "sigla": "Reg_Senado",
+      "etiqueta": "Reglamento del Senado de la República",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/Reg_Senado.pdf",
+      "archivos": "(Reg_Senado)(_\\d{6})?\\.pdf"
+    },
+    {
+      "clave": "rgic",
+      "extractor": "federal",
+      "sigla": "RGIC",
+      "etiqueta": "Reglamento para el Gobierno Interior del Congreso General de los Estados Unidos Mexicanos",
+      "tipo": "ley",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/219.pdf",
+      "archivos": "(219|219)(_\\d{6})?\\.pdf"
     }
   ]
 }

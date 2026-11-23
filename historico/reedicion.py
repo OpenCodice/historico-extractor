@@ -58,6 +58,21 @@ def texto_del_pdf(pdf: pathlib.Path, cache: pathlib.Path) -> str:
     return texto
 
 
+def lector(clave: str, capturas: pathlib.Path):
+    """sha256 de una captura → el texto de su PDF, bajándola si hace falta."""
+    from . import RAIZ
+    from .capturas import asegurar, leer_manifiesto
+    por_sha = {f["sha256"]: f for f in leer_manifiesto(clave)}
+    textos = {}
+
+    def texto_de(sha: str) -> str:
+        if sha not in textos:
+            textos[sha] = texto_del_pdf(asegurar(por_sha[sha], capturas / clave),
+                                        RAIZ / "_trabajo" / "texto")
+        return textos[sha]
+    return texto_de
+
+
 def palabras(articulo: str) -> list[str]:
     """Las palabras del cuerpo, sin el rótulo ni las notas (que se miden aparte)."""
     from .coherencia import sin_notas

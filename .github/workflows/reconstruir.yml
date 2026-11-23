@@ -1,0 +1,130 @@
+name: Reconstruir el histórico
+run-name: "reconstruir claves=[${{ inputs.claves }}] lote=[${{ inputs.lote }}] desde_cero=[${{ inputs.desde_cero }}] origen=[${{ inputs.origen }}]"
+
+# Una tanda del histórico: por cada documento, baja de Wayback las capturas
+# que falten, reconstruye su rama con los extractores vigentes, le pasa la
+# compuerta de coherencia y, si queda limpia, la publica en
+# OpenCodice/historico. Lo que pasó con cada documento queda en estado/.
+#
+# La lanza el supervisor (OpenCodice/supervisor): la primera vuelta, una tanda
+# tras otra hasta intentar todos los documentos declarados (`estado
+# pendiente=[true]`); después, una por semana con los que llevan más tiempo
+# sin revisarse. Ningún paso lanza otra corrida.
+on:
+  workflow_dispatch:
+    inputs:
+      claves:
+        description: 'Claves separadas por espacio; vacío = las que tocan'
+        required: false
+        default: ''
+      lote:
+        description: Documentos por tanda cuando no se dan claves
+        required: false
+        default: '6'
+      desde_cero:
+        description: Rehacer las ramas enteras aunque se puedan continuar
+        type: choice
+        options: ['no', si]
+        default: 'no'
+      origen:
+        description: 'Quién lanzó la corrida (supervisor); vacío = a mano'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+# De una en una: todas escriben estado/ en este repo.
+concurrency:
+  group: reconstruir
+  cancel-in-progress: false
+
+jobs:
+  reconstruir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    outputs:
+      pendiente: ${{ steps.tanda.outputs.pendiente }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: historico-extractor
+          token: ${{ secrets.PR_TOKEN }}
+      - uses: actions/checkout@v5
+        with:
+          repository: OpenCodice/constitucion-extractor
+          path: constitucion-extractor
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: OpenCodice/fiscal-extractor
+          path: fiscal-extractor
+          persist-credentials: false
+      - uses: actions/checkout@v5
+        with:
+          repository: OpenCodice/historico
+          path: historico
+          token: ${{ secrets.PR_TOKEN }}
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Entornos de los extractores
+        run: |
+          for repo in constitucion-extractor fiscal-extractor; do
+            python -m venv "$repo/.venv"
+            "$repo/.venv/bin/pip" install -q -r "$repo/requirements.txt"
+          done
+          pip install -q -r historico-extractor/requirements.txt
+
+      - name: Tanda
+        id: tanda
+        working-directory: historico-extractor
+        env:
+          CLAVES: ${{ inputs.claves }}
+          LOTE: ${{ inputs.lote }}
+          DESDE_CERO: ${{ inputs.desde_cero }}
+        run: |
+          set -o pipefail
+          extra=()
+          [ "$DESDE_CERO" = si ] && extra+=(--desde-cero)
+          python -m historico tanda --lote "${LOTE:-6}" --claves "$CLAVES" \
+            --out ../historico --extractores .. --publicar "${extra[@]}" | tee tanda.log
+          grep -E '^pendiente=(true|false)$' tanda.log | tail -1 >> "$GITHUB_OUTPUT"
+
+      - name: Guardar el estado
+        if: ${{ always() }}
+        working-directory: historico-extractor
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add estado manifiestos coherencia
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Estado del histórico: tanda $GITHUB_RUN_ID"
+          for intento in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
+
+  estado:
+    # El supervisor (OpenCodice/supervisor) lee el nombre de este job para saber si
+    # quedó otra tanda, y del artefacto `cadena`, el resultado de cada job.
+    name: "estado pendiente=[${{ needs.reconstruir.result == 'success' && needs.reconstruir.outputs.pendiente || 'false' }}]"
+    needs: [reconstruir]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    steps:
+      - name: Lo que declaró cada job
+        env:
+          NEEDS: ${{ toJSON(needs) }}
+        run: printf '%s' "$NEEDS" > cadena.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cadena
+          path: cadena.json
+          retention-days: 14

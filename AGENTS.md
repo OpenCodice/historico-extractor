@@ -33,6 +33,7 @@ Publicacion).
 |---|---|
 | `documentos.json` | Los documentos declarados (clave, extractor, nombres de archivo que ha tenido su PDF) y los encabezados de página de los formatos antiguos. |
 | `historico/capturas.py` | Lista en el CDX de Wayback las capturas distintas del PDF, las baja a `capturas/` (fuera de git) y lee de cada portada su «Última reforma». Deja `manifiestos/<clave>.tsv`, que sí se versiona: es la procedencia. |
+| `historico/declarar.py` | Declara en `documentos.json` las leyes federales del registro vigente (`leyes-federales/fuentes.json`), con el número que tuvo su PDF antes de nombrarse por sigla; lo saca de los índices de LeyesBiblio archivados. |
 | `historico/cadena.py` | Por cada versión, en orden: extrae, pasa las compuertas del extractor y hace el commit en la rama del documento, fechado el día del DOF. Continúa una rama a medias si es prefijo del plan con el mismo extractor. |
 | `historico/coherencia.py` | La compuerta de la cadena (ver abajo). |
 | `historico/reedicion.py` | Prueba, con el texto de los dos PDF, que un cambio sin reforma lo hizo la Cámara. |
@@ -42,6 +43,30 @@ Una versión es una fecha de portada; si hay varias capturas con la misma
 fecha se usa la más reciente (la Cámara corrige erratas y notas sin cambiar la
 portada). Las capturas que Wayback truncó no abren y quedan en el manifiesto
 como `ilegible`.
+
+## Tandas
+
+`reconstruir.yml` corre `python -m historico tanda`: por cada documento de la
+tanda, capturas, cadena, coherencia y, si queda limpia, `git push --force` de
+su rama a `OpenCodice/historico`; al final, la tabla de ramas del README de
+`main`. Lo que pasó con cada documento queda en `estado/<clave>.json` (fecha,
+versiones, las que quedaron fuera con su motivo, si se publicó), que el mismo
+workflow sube a este repo junto con los manifiestos y los informes.
+
+Qué toca: primero los documentos declarados que nunca se han intentado; cuando
+no quedan, los que llevan más tiempo sin revisarse. Mientras queden sin
+intentar, la corrida declara `estado pendiente=[true]` y el supervisor lanza
+la siguiente; después basta la cita semanal. Una rama publicada se continúa
+(solo se extraen las versiones nuevas) si nada anterior cambió; si no, se
+rehace entera. `desde_cero=si` la rehace siempre, por ejemplo para aprovechar
+una mejora de un extractor en las versiones viejas.
+
+Una ley abrogada y la que la sustituyó pueden compartir nombre y archivo (la
+LISR de 2002 y la de 2013). La portada dice cuándo se publicó la ley
+(`origen` en el manifiesto) y solo entran las capturas de la vigente.
+
+Los PDF no se guardan: el manifiesto dice de qué captura salió cada versión y
+`capturas.asegurar` la vuelve a bajar comprobando su sha256.
 
 ## Compuerta de coherencia
 

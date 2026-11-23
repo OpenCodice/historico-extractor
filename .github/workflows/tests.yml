@@ -1,0 +1,40 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+
+  infra:
+    # Los workflows: un error aquí no lo ve pytest y solo aparecería en una
+    # corrida real, a medias.
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - name: actionlint
+        run: |
+          bash <(curl -fsSL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.12/scripts/download-actionlint.bash) 1.7.12 /tmp
+          /tmp/actionlint -color
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Lint del supervisor
+        run: |
+          git clone -q --depth 1 https://github.com/OpenCodice/supervisor.git /tmp/supervisor
+          pip install -q -r /tmp/supervisor/requirements.txt
+          python /tmp/supervisor/supervisor/lint_workflows.py .

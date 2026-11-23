@@ -18,7 +18,7 @@ import shutil
 import subprocess
 
 from . import configuracion
-from .capturas import versiones
+from .capturas import asegurar, versiones
 
 # Identidad fija: con ella, las mismas capturas y el mismo extractor dan los
 # mismos hashes a quien regenere la rama.
@@ -132,25 +132,31 @@ def mensaje(doc: dict, fila: dict, extractor_sha: str, cambios: dict | None) -> 
 
 
 def construir(doc: dict, capturas: pathlib.Path, repo: pathlib.Path, extractor: pathlib.Path,
-              trabajo: pathlib.Path, desde_cero: bool = False, avisar=print) -> list[dict]:
+              trabajo: pathlib.Path, desde_cero: bool = False, avisar=print,
+              fuera_conocidas=()) -> list[dict]:
     """Deja en `repo` la rama del documento con un commit por versión que pasa
-    las compuertas. Devuelve una fila por versión con lo que pasó."""
+    las compuertas. Devuelve una fila por versión con lo que pasó.
+    `fuera_conocidas` son las (versión, sha256) que ya fallaron las compuertas
+    con esta configuración: no se reintentan al continuar una rama."""
     clave = doc["clave"]
     plan = versiones(clave)
     extractor_sha = _git(extractor, "rev-parse", "--short=12", "HEAD")
-    sello = f"{REPO_DE[doc['extractor']]}@{extractor_sha}"
     if not (repo / ".git").exists():
         repo.mkdir(parents=True, exist_ok=True)
         _git(repo, "init", "-q")
     hechas = [] if desde_cero else _hechas(repo, clave)
-    # Solo se continúa una rama que es prefijo exacto del plan con este mismo
-    # extractor; cualquier otra cosa es otra cadena y se rehace entera.
+    # Una rama se continúa si todo lo anterior a su punta ya está en ella o ya
+    # se sabe que falla: entonces solo faltan versiones nuevas. Lo demás (otra
+    # configuración, una captura nueva de una versión vieja) es otra cadena y
+    # se rehace entera. El extractor sí puede cambiar de un commit al
+    # siguiente; cada uno dice con cuál se hizo.
     previstas = [(v, f["sha256"]) for v, f in plan.items()]
     ya = [(t.get("Publicacion"), t.get("Fuente-Sha256")) for t in hechas]
-    continua = bool(hechas) and all(
-        t.get("Extractor") == sello and t.get("Configuracion") == sello_de_configuracion()
-        for t in hechas) \
-        and all(par in previstas for par in ya)
+    punta = max((v for v, _ in ya), default="")
+    continua = bool(hechas) \
+        and all(t.get("Configuracion") == sello_de_configuracion() for t in hechas) \
+        and all(par in previstas for par in ya) \
+        and all(par in ya or par in fuera_conocidas for par in previstas if par[0] <= punta)
     _git(repo, "symbolic-ref", "HEAD", f"refs/heads/{clave}")
     if continua:
         _git(repo, "reset", "-q", "--hard")
@@ -165,10 +171,9 @@ def construir(doc: dict, capturas: pathlib.Path, repo: pathlib.Path, extractor: 
     for version, fila in plan.items():
         if (version, fila["sha256"]) in ya:
             continue
-        if ya and version < max(v for v, _ in ya):
-            filas.append({"version": version, "estado": "fuera", "motivo": "anterior a la rama; rehacer con --desde-cero"})
+        if (version, fila["sha256"]) in fuera_conocidas and continua:
             continue
-        carpeta, motivo = extraer(doc, capturas / fila["archivo"], version, trabajo, extractor)
+        carpeta, motivo = extraer(doc, asegurar(fila, capturas), version, trabajo, extractor)
         if carpeta is None:
             filas.append({"version": version, "estado": "fuera", "motivo": motivo})
             avisar(f"{clave} {version}: fuera ({motivo})")

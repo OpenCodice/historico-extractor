@@ -106,3 +106,32 @@ def test_una_nota_intercalada_en_el_pdf_no_impide_la_prueba():
                    "Párrafo derogado DOF 13-11-2007 La Suprema Corte nombrará y removerá")
     assert reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_despues)
     assert not reedicion.esta("uno dos tres cuatro", "uno dos y luego mucho después tres cuatro")
+
+
+def test_la_portada_dice_de_que_ley_es_la_captura():
+    portada = ("LEY DEL IMPUESTO SOBRE LA RENTA\nNueva Ley publicada en el Diario Oficial de la Federación "
+               "el 1º de enero de 2002\nTEXTO VIGENTE\nÚltima reforma publicada DOF 18-07-2006")
+    assert capturas.origen_de_portada(portada) == "2002-01-01"
+    assert capturas.version_de_portada(portada) == "2006-07-18"
+    nueva = "Nueva Ley DOF 07-11-2025\nNueva Ley publicada en el Diario Oficial de la Federación el 7 de noviembre de 2025"
+    assert capturas.version_de_portada(nueva) == "2025-11-07"
+
+
+def test_las_capturas_de_la_ley_abrogada_no_entran_en_la_cadena(monkeypatch):
+    filas = [{"version": "2006-07-18", "origen": "2002-01-01", "captura": "1"},
+             {"version": "2013-12-11", "origen": "2013-12-11", "captura": "2"},
+             {"version": "2016-11-30", "origen": "2013-12-11", "captura": "3"}]
+    monkeypatch.setattr(capturas, "leer_manifiesto", lambda clave: filas)
+    assert list(capturas.versiones("lisr")) == ["2013-12-11", "2016-11-30"]
+
+
+def test_la_tanda_toma_primero_lo_nunca_intentado_y_luego_lo_mas_viejo(monkeypatch):
+    from historico import tanda
+    docs = [{"clave": c} for c in "abcd"]
+    estados = {"a": {"fecha": "2026-11-20"}, "c": {"fecha": "2026-11-01"}}
+    monkeypatch.setattr(tanda, "configuracion", lambda: {"documentos": docs})
+    monkeypatch.setattr(tanda, "leer_estado", estados.get)
+    assert [d["clave"] for d in tanda.elegir(5)] == ["b", "d"]
+    assert [d["clave"] for d in tanda.elegir(5, ["c"])] == ["c"]
+    estados |= {"b": {"fecha": "2026-11-22"}, "d": {"fecha": "2026-11-21"}}
+    assert [d["clave"] for d in tanda.elegir(2)] == ["c", "a"]
