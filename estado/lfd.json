@@ -1,0 +1,34 @@
+{
+ "fecha": "2026-11-24T08:58:22+00:00",
+ "configuracion": "5248bb54f469",
+ "publicada": false,
+ "capturas": 40,
+ "versiones_archivadas": 23,
+ "fuera": [
+  {
+   "version": "2005-12-21",
+   "sha256": "f370572935c3d8a1c55f5e4f7dc8bd0a7f297c3f6ada935f53d0f2d81b49b517",
+   "motivo": "auditar:   lfd/188: no_literal «lacomisionnacionaldelaguainformaratrimestralmentealhcongresodelaunionacercadelad»; texto_omitido «La Comisión Nacional del Agua informará, trimestralmente, al H. Congreso de la "
+  },
+  {
+   "version": "2006-12-27",
+   "sha256": "3d0ba3ace5f8b114b4a74a9e102b80c42dac18d1ceb5d832b748ecd733062377",
+   "motivo": "auditar:   lfd/188: no_literal «lacomisionnacionaldelaguainformaratrimestralmentealhcongresodelaunionacercadelad»; texto_omitido «La Comisión Nacional del Agua informará, trimestralmente, al H. Congreso de la "
+  },
+  {
+   "version": "2007-10-01",
+   "sha256": "59dca3551ef6160eaa072b647ec399acb61f1190b29d6ea773d5ba13e51bcc8e",
+   "motivo": "auditar:   lfd/188: no_literal «lacomisionnacionaldelaguainformaratrimestralmentealhcongresodelaunionacercadelad»; texto_omitido «La Comisión Nacional del Agua informará, trimestralmente, al H. Congreso de la "
+  },
+  {
+   "version": "2007-12-24",
+   "sha256": "14160943bb57162fab4293ffaddd38fb98105ab8814277cc7a2170991eecb735",
+   "motivo": "auditar:   lfd/188: no_literal «lacomisionnacionaldelaguainformaratrimestralmentealhcongresodelaunionacercadelad»; texto_omitido «La Comisión Nacional del Agua informará, trimestralmente, al H. Congreso de la "
+  }
+ ],
+ "versiones": 19,
+ "desde": "2008-11-13",
+ "hasta": "2025-11-07",
+ "sin_explicar": 9,
+ "motivo": "la coherencia deja artículos sin explicar"
+}

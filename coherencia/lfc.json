@@ -1,0 +1,100 @@
+[
+ {
+  "desde": "2006-01-26",
+  "hasta": "2010-04-28",
+  "fuente_antes": "58360340c703de5e9ddf443c677ce13a5d1a027954c5d7c374a183621bcdb6cf",
+  "fuente_despues": "87ac2cc844de5c7cb50f1f302c0f72222b4831f892aa92542915463756bf6e0d",
+  "pendientes": [],
+  "explicado": [
+   "043",
+   "044",
+   "045",
+   "046",
+   "047",
+   "048",
+   "049",
+   "050",
+   "051",
+   "052",
+   "053",
+   "054",
+   "055",
+   "056",
+   "057",
+   "058"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2010-04-28",
+  "hasta": "2015-12-17",
+  "fuente_antes": "87ac2cc844de5c7cb50f1f302c0f72222b4831f892aa92542915463756bf6e0d",
+  "fuente_despues": "df3e08b2cdc1169cee79f89e6b9ec9ff44f0b5cf2e81a5e145b85a10a7d95f27",
+  "pendientes": [],
+  "explicado": [
+   "041",
+   "052",
+   "053"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2015-12-17",
+  "hasta": "2020-11-06",
+  "fuente_antes": "df3e08b2cdc1169cee79f89e6b9ec9ff44f0b5cf2e81a5e145b85a10a7d95f27",
+  "fuente_despues": "0d0be94478c935ba7c36989bee5d1a85f5c8c6ec20c66f6163a28f806c0b6b02",
+  "pendientes": [],
+  "explicado": [
+   "033",
+   "034",
+   "035",
+   "036",
+   "037",
+   "038"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2020-11-06",
+  "hasta": "2021-03-22",
+  "fuente_antes": "0d0be94478c935ba7c36989bee5d1a85f5c8c6ec20c66f6163a28f806c0b6b02",
+  "fuente_despues": "0eede83f8f84e6d12074963f84dd94d8e3ab5a2b38ce11e789e6afd54b77606e",
+  "pendientes": [],
+  "explicado": [
+   "008"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]

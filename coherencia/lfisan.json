@@ -1,0 +1,92 @@
+[
+ {
+  "desde": "2005-12-26",
+  "hasta": "2006-12-27",
+  "fuente_antes": "4825b64ac74ea68d70608032c6f8452e7141d72d83db95303c0e19abddaed545",
+  "fuente_despues": "c0caa7a102403e6a725c63cb166735fe6fc7a6905af3e07b4d86a8830c4d6158",
+  "pendientes": [],
+  "explicado": [
+   "008",
+   "014"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [
+   "002"
+  ],
+  "nota_en_el_cuerpo": [
+   "003"
+  ],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2006-12-27",
+  "hasta": "2011-07-15",
+  "fuente_antes": "c0caa7a102403e6a725c63cb166735fe6fc7a6905af3e07b4d86a8830c4d6158",
+  "fuente_despues": "4982bec14c9ad80ff317302ad8e92b6cd7435a4801beb9dd495b369871ad911f",
+  "pendientes": [],
+  "explicado": [
+   "008"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [
+   "002"
+  ],
+  "nota_en_el_cuerpo": [
+   "003"
+  ],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2011-07-15",
+  "hasta": "2016-11-30",
+  "fuente_antes": "4982bec14c9ad80ff317302ad8e92b6cd7435a4801beb9dd495b369871ad911f",
+  "fuente_despues": "69804627f9c14812e25cce52b110a4950125d4ce626a27c48cf5d51e4014420e",
+  "pendientes": [],
+  "explicado": [
+   "003",
+   "008"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [
+   "002"
+  ],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2016-11-30",
+  "hasta": "2021-11-12",
+  "fuente_antes": "69804627f9c14812e25cce52b110a4950125d4ce626a27c48cf5d51e4014420e",
+  "fuente_despues": "ef658aa6a3b15e99a4d19edaa6713598a37523f4179ae69a4462bcb8ca870eb1",
+  "pendientes": [],
+  "explicado": [
+   "002",
+   "003",
+   "008"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]
