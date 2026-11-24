@@ -47,14 +47,15 @@ def patrones_de_ruido(encabezados: dict) -> list[str]:
 
 
 def encabezados_de(clave: str) -> dict:
-    """Los encabezados antiguos que valen para un documento: los de todos más,
-    si su PDF llevó un tiempo el número de página suelto al pie (`paginas_sueltas`:
-    clave → hasta qué página), un renglón por cada número."""
+    """Los encabezados antiguos que valen para un documento: los de todos más
+    los suyos (`por_documento`): renglones exactos y, si su PDF llevó un
+    tiempo el número de página suelto al pie (`paginas_sueltas`: hasta qué
+    página), un renglón por cada número."""
     config = configuracion()
     encabezados = dict(config["encabezados_antiguos"])
-    hasta = config.get("paginas_sueltas", {}).get(clave)
-    if hasta:
-        encabezados["renglones"] = encabezados["renglones"] + [str(n) for n in range(1, hasta + 1)]
+    propio = config.get("por_documento", {}).get(clave, {})
+    encabezados["renglones"] = (encabezados["renglones"] + propio.get("renglones", [])
+                                + [str(n) for n in range(1, propio.get("paginas_sueltas", 0) + 1)])
     return encabezados
 
 

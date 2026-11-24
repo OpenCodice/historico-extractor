@@ -21,8 +21,15 @@
       "2024-12-16": "el artículo 810 pierde un renglón que empieza con «Secretaría General» y cae justo bajo el encabezado de la página (OpenCodice/fiscal-extractor#9)"
     }
   },
-  "paginas_sueltas": {
-    "lacp": 200
+  "por_documento": {
+    "lacp": {
+      "paginas_sueltas": 200
+    },
+    "cpf": {
+      "renglones": [
+        "Capacidad para Resistirlo."
+      ]
+    }
   },
   "documentos": [
     {

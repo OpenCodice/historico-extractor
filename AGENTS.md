@@ -142,9 +142,11 @@ Un defecto de lectura de una versión antigua se resuelve declarando algo en
 `documentos.json` o dejando esa versión fuera (`versiones_fuera` de
 `documentos.json`: clave → versión → motivo); nunca parchando el extractor.
 Lo declarado en `encabezados_antiguos` vale para todos los documentos y
-cambiarlo rehace todas las ramas; lo que es de una sola ley se declara por
-clave (`paginas_sueltas`: su PDF llevó el número de página suelto al pie) y
-solo rehace la suya.
+cambiarlo rehace todas las ramas; lo que es de una sola ley se declara en
+`por_documento` (`renglones`: renglones exactos que no son texto de ningún
+artículo, como el último de un título de capítulo que quedaba pegado al
+artículo anterior; `paginas_sueltas`: su PDF llevó el número de página suelto
+al pie) y solo rehace la suya.
 Si el defecto también está en el texto vigente, es del extractor: va como
 issue a su repo y la rama espera a que se corrija.
 
