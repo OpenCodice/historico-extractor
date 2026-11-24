@@ -18,6 +18,9 @@
       "2022-03-30": "el artículo 10 Bis pierde su tercer párrafo y su nota: el PDF los trae tras el corchete de la porción invalidada"
     }
   },
+  "paginas_sueltas": {
+    "lacp": 200
+  },
   "documentos": [
     {
       "clave": "cpeum",

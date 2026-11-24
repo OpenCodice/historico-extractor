@@ -50,7 +50,7 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
     clave = doc["clave"]
     previo = leer_estado(clave) or {}
     estado = {"fecha": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
-              "configuracion": cadena.sello_de_configuracion(), "publicada": False}
+              "configuracion": cadena.sello_de_configuracion(clave), "publicada": False}
     try:
         filas = capturas.descargar(clave, doc["archivos"], carpeta_capturas / clave)
         plan = capturas.versiones(clave)

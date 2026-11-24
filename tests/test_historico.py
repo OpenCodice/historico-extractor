@@ -178,7 +178,7 @@ def test_una_rama_publicada_sin_capturas_nuevas_no_se_rehace(tmp_path, monkeypat
     from historico import tanda
     monkeypatch.setattr(tanda.capturas, "descargar", lambda *a: [{}] * 3)
     monkeypatch.setattr(tanda.capturas, "versiones", lambda clave: {"2020-01-01": {}, "2021-01-01": {}})
-    monkeypatch.setattr(tanda.cadena, "sello_de_configuracion", lambda: "abc")
+    monkeypatch.setattr(tanda.cadena, "sello_de_configuracion", lambda clave: "abc")
     monkeypatch.setattr(tanda.cadena, "construir", lambda *a, **k: 1 / 0)
     previo = {"fecha": "2026-11-01", "configuracion": "abc", "capturas": 3, "versiones_archivadas": 2,
               "publicada": True, "versiones": 2}
@@ -188,3 +188,12 @@ def test_una_rama_publicada_sin_capturas_nuevas_no_se_rehace(tmp_path, monkeypat
     assert estado["publicada"] and estado["versiones"] == 2 and estado["fecha"] > "2026-11-01"
     previo["capturas"] = 2
     assert "ZeroDivisionError" in tanda.procesar(doc, tmp_path, tmp_path, tmp_path, publicar=True)["motivo"]
+
+
+def test_una_formula_leida_de_otro_modo_no_es_un_cambio_de_la_ley():
+    marca = "[Fórmula: consultar el PDF oficial, página {}]"
+    antes = f"se calculará así:\n\n{marca.format(58)}\n\ndonde ME = Margen de error."
+    assert coherencia.lectura_menor(antes, antes.replace("58", "63")) == "formula"
+    texto = "se calculará así:\n\nCE ¡Error! Marcador no definido.ME 100 CE CDV donde ME = Margen de error."
+    assert coherencia.lectura_menor(texto, antes) == "formula"
+    assert coherencia.lectura_menor(antes, antes.replace("Margen", "Rango").replace("58", "63")) is None

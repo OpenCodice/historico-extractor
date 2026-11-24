@@ -23,15 +23,19 @@ Un artículo que cambia queda en una de tres clases:
   solo puntuación  las mismas letras y cifras; cambian espacios o signos
               (un guion de fin de renglón, un punto junto al salto de página);
   otro orden  las mismas palabras en otro orden (las celdas de una tabla);
+  fórmula     lo que cambia es una fórmula: la marca que la sustituye apunta
+              a otra página, o una versión la lee como texto y la otra deja
+              la marca;
   juzgado     un agente comparó las dos versiones contra sus dos PDF y dejó
               en `verificaciones/<clave>.json` que el cambio es de la fuente;
   sin explicar  lo demás.
 
 Solo la última clase detiene la publicación. «Nota en el cuerpo», «solo
-puntuación» y «otro orden»
+puntuación», «otro orden» y «fórmula»
 son lecturas distintas del mismo contenido: pasan, y quedan a la vista en el
 informe (`coherencia/<clave>.json`).
 """
+import difflib
 import hashlib
 import json
 import pathlib
@@ -46,8 +50,11 @@ NOTA = re.compile(r"DOF[^\n]*")
 FECHA = re.compile(r"(\d{2})-(\d{2})-(\d{4})")
 LINEA_DE_NOTA = re.compile(r"_.*_")
 ALFANUMERICO = re.compile(r"[^\W_]")
+MARCA_DE_FORMULA = re.compile(r"\[Fórmula: consultar el PDF oficial, página \d+\]")
+FORMULA = "⟦fórmula⟧"
+PALABRAS_DE_FORMULA = 40
 CLASES = ("explicado", "solo_notas", "solo_forma", "reedicion", "nota_en_el_cuerpo", "solo_puntuacion",
-          "otro_orden",
+          "otro_orden", "formula",
           "juzgado", "sin_explicar")
 
 
@@ -81,7 +88,25 @@ def lectura_menor(antes: str, despues: str) -> str | None:
         return "solo_puntuacion"
     if sorted(a.split()) == sorted(b.split()):
         return "otro_orden"
+    if solo_formulas(a, b):
+        return "formula"
     return None
+
+
+def solo_formulas(a: str, b: str) -> bool:
+    """Cada diferencia toca una marca de fórmula: la misma marca con otra
+    página, o la marca frente a las pocas palabras con que la otra versión
+    leyó la fórmula."""
+    if not (MARCA_DE_FORMULA.search(a) or MARCA_DE_FORMULA.search(b)):
+        return False
+    v, n = (MARCA_DE_FORMULA.sub(f" {FORMULA} ", t).split() for t in (a, b))
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, v, n, autojunk=False).get_opcodes():
+        if op == "equal":
+            continue
+        lados = v[i1:i2], n[j1:j2]
+        if not any(FORMULA in l for l in lados) or any(len(l) > PALABRAS_DE_FORMULA for l in lados):
+            return False
+    return True
 
 
 def blob(texto: str) -> str:

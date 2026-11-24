@@ -96,12 +96,14 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
   signos (un guion de fin de renglón);
 - **otro orden**, si son las mismas palabras en otro orden (las celdas de una
   tabla);
+- **fórmula**, si cada diferencia toca una marca de fórmula: apunta a otra
+  página, o una versión leyó la fórmula como texto y la otra dejó la marca;
 - **juzgado**, si un agente dejó su veredicto (ver abajo);
 - **sin explicar**, en cualquier otro caso.
 
 Solo «sin explicar» detiene la publicación de la rama:
 `python -m historico coherencia <clave> --out <repo>` sale con 1. «Nota en el
-cuerpo», «solo puntuación» y «otro orden» son lecturas distintas del mismo contenido; pasan,
+cuerpo», «solo puntuación», «otro orden» y «fórmula» son lecturas distintas del mismo contenido; pasan,
 y quedan a la vista en el informe versionado `coherencia/<clave>.json`.
 
 Medido el 2026-11-23, ambas ramas pasan sin ningún veredicto de agente:
@@ -139,6 +141,10 @@ El veredicto va ligado a las huellas: si la extracción cambia, deja de aplicar.
 Un defecto de lectura de una versión antigua se resuelve declarando algo en
 `documentos.json` o dejando esa versión fuera (`versiones_fuera` de
 `documentos.json`: clave → versión → motivo); nunca parchando el extractor.
+Lo declarado en `encabezados_antiguos` vale para todos los documentos y
+cambiarlo rehace todas las ramas; lo que es de una sola ley se declara por
+clave (`paginas_sueltas`: su PDF llevó el número de página suelto al pie) y
+solo rehace la suya.
 Si el defecto también está en el texto vigente, es del extractor: va como
 issue a su repo y la rama espera a que se corrija.
 

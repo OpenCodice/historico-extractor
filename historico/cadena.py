@@ -46,10 +46,22 @@ def patrones_de_ruido(encabezados: dict) -> list[str]:
             + encabezados.get("patrones", []))
 
 
-def sello_de_configuracion() -> str:
-    """Cambia cuando cambia lo que se le declara a los extractores: una rama
-    hecha con otra configuración es otra cadena."""
-    canonico = json.dumps(configuracion()["encabezados_antiguos"], sort_keys=True, ensure_ascii=False)
+def encabezados_de(clave: str) -> dict:
+    """Los encabezados antiguos que valen para un documento: los de todos más,
+    si su PDF llevó un tiempo el número de página suelto al pie (`paginas_sueltas`:
+    clave → hasta qué página), un renglón por cada número."""
+    config = configuracion()
+    encabezados = dict(config["encabezados_antiguos"])
+    hasta = config.get("paginas_sueltas", {}).get(clave)
+    if hasta:
+        encabezados["renglones"] = encabezados["renglones"] + [str(n) for n in range(1, hasta + 1)]
+    return encabezados
+
+
+def sello_de_configuracion(clave: str) -> str:
+    """Cambia cuando cambia lo que se le declara a los extractores para ese
+    documento: una rama hecha con otra configuración es otra cadena."""
+    canonico = json.dumps(encabezados_de(clave), sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(canonico.encode()).hexdigest()[:12]
 
 
@@ -62,7 +74,7 @@ def extraer(doc: dict, pdf: pathlib.Path, version: str, trabajo: pathlib.Path,
     salida = trabajo / "salida"
     salida.mkdir(parents=True)
     py = extractor / ".venv/bin/python"
-    encabezados = configuracion()["encabezados_antiguos"]
+    encabezados = encabezados_de(doc["clave"])
     auditoria = trabajo / "auditoria.json"
     if doc["extractor"] == "constitucion":
         (salida / "fuente").mkdir()
@@ -127,7 +139,7 @@ def mensaje(doc: dict, fila: dict, extractor_sha: str, cambios: dict | None) -> 
     lineas += [f"Fuente: https://web.archive.org/web/{fila['captura']}id_/{fila['url']}",
                f"Fuente-Sha256: {fila['sha256']}",
                f"Extractor: {REPO_DE[doc['extractor']]}@{extractor_sha}",
-               f"Configuracion: {sello_de_configuracion()}"]
+               f"Configuracion: {sello_de_configuracion(doc['clave'])}"]
     return "\n".join(lineas) + "\n"
 
 
@@ -154,7 +166,7 @@ def construir(doc: dict, capturas: pathlib.Path, repo: pathlib.Path, extractor: 
     ya = [(t.get("Publicacion"), t.get("Fuente-Sha256")) for t in hechas]
     punta = max((v for v, _ in ya), default="")
     continua = bool(hechas) \
-        and all(t.get("Configuracion") == sello_de_configuracion() for t in hechas) \
+        and all(t.get("Configuracion") == sello_de_configuracion(clave) for t in hechas) \
         and all(par in previstas for par in ya) \
         and all(par in ya or par in fuera_conocidas for par in previstas if par[0] <= punta)
     _git(repo, "symbolic-ref", "HEAD", f"refs/heads/{clave}")
