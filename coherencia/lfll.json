@@ -1,0 +1,95 @@
+[
+ {
+  "desde": "2008-07-24",
+  "hasta": "2015-04-02",
+  "fuente_antes": "66e1de8dacb4a83820fe7b5268c91df69a2448ccb9dd2313c0f2ef13893d1b47",
+  "fuente_despues": "19552876f208e6463d7550a7161e1c0a2a3abd31e04f7da70bea3813c1e1f909",
+  "pendientes": [],
+  "explicado": [
+   "014"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2015-04-02",
+  "hasta": "2015-12-17",
+  "fuente_antes": "19552876f208e6463d7550a7161e1c0a2a3abd31e04f7da70bea3813c1e1f909",
+  "fuente_despues": "dc4ea4e61ae64adbc5085a97f80bc4d03696b4e748ec4b078df30936a133ea16",
+  "pendientes": [],
+  "explicado": [
+   "002",
+   "005",
+   "006",
+   "011",
+   "012",
+   "014",
+   "019",
+   "020"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2015-12-17",
+  "hasta": "2018-01-19",
+  "fuente_antes": "dc4ea4e61ae64adbc5085a97f80bc4d03696b4e748ec4b078df30936a133ea16",
+  "fuente_despues": "d8bcc3ba436e74fe4c98dab16bcad6689b38b19a1939cfbe943aa31c0131ad4c",
+  "pendientes": [],
+  "explicado": [
+   "003",
+   "005",
+   "011",
+   "014"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2018-01-19",
+  "hasta": "2023-11-29",
+  "fuente_antes": "d8bcc3ba436e74fe4c98dab16bcad6689b38b19a1939cfbe943aa31c0131ad4c",
+  "fuente_despues": "1e1d42f23bc87d8b6c3d094e5b49b4a1cf14cb984956590f7d0b708485fef3fd",
+  "pendientes": [],
+  "explicado": [
+   "002",
+   "005",
+   "011",
+   "015",
+   "023",
+   "026",
+   "027",
+   "028"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]

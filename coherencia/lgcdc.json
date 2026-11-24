@@ -1,0 +1,87 @@
+[
+ {
+  "desde": "2017-06-19",
+  "hasta": "2021-05-04",
+  "fuente_antes": "8745dccaaced99414fa06b8b265722fb9590b8c22b3615149fec40a85acd54f7",
+  "fuente_despues": "8518e4d4c47457b7478243620a40fafa15d7041c67de525ba3c836db961d6005",
+  "pendientes": [],
+  "explicado": [
+   "035"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2021-05-04",
+  "hasta": "2023-12-29",
+  "fuente_antes": "8518e4d4c47457b7478243620a40fafa15d7041c67de525ba3c836db961d6005",
+  "fuente_despues": "46d2aa3d666f9328f2df25a83b49464a00461fd7a469eed7205877e22606b214",
+  "pendientes": [],
+  "explicado": [
+   "005",
+   "007",
+   "012",
+   "019"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2023-12-29",
+  "hasta": "2024-04-01",
+  "fuente_antes": "46d2aa3d666f9328f2df25a83b49464a00461fd7a469eed7205877e22606b214",
+  "fuente_despues": "fbd80b6975b214ea7f3ef8a01b376fad362162076b46296dd93c188d5e5cb4b4",
+  "pendientes": [],
+  "explicado": [
+   "005",
+   "007",
+   "021",
+   "037"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2024-04-01",
+  "hasta": "2026-01-15",
+  "fuente_antes": "fbd80b6975b214ea7f3ef8a01b376fad362162076b46296dd93c188d5e5cb4b4",
+  "fuente_despues": "3ed6ba180b725dbd80971ee60ac0e365a9df437b1ae45639ad0f040653497d1d",
+  "pendientes": [],
+  "explicado": [
+   "005",
+   "007",
+   "013",
+   "019"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]
