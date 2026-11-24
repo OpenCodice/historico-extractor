@@ -1,0 +1,39 @@
+[
+ {
+  "desde": "2006-02-09",
+  "hasta": "2009-06-12",
+  "fuente_antes": "ec6ed1bcf931b97ac346b9f7985bfd748d8c4aaf4ae1c7be8d3b888f7010e401",
+  "fuente_despues": "7dc5f3fb83d634dacc34b90bb7ea175eef72e96c12c90f0271f544ea3632678e",
+  "pendientes": [],
+  "explicado": [
+   "018",
+   "020"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2009-06-12",
+  "hasta": "2024-05-03",
+  "fuente_antes": "7dc5f3fb83d634dacc34b90bb7ea175eef72e96c12c90f0271f544ea3632678e",
+  "fuente_despues": "93f2f807af3fd78f9e7ffcc4b1b544b2c7eecca463efcd7adaa16a0f8716049f",
+  "pendientes": [],
+  "explicado": [
+   "015"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]
