@@ -146,7 +146,11 @@ cambiarlo rehace todas las ramas; lo que es de una sola ley se declara en
 `por_documento` (`renglones`: renglones exactos que no son texto de ningún
 artículo, como el último de un título de capítulo que quedaba pegado al
 artículo anterior; `paginas_sueltas`: su PDF llevó el número de página suelto
-al pie) y solo rehace la suya.
+al pie; `registro`: opciones del registro del extractor, como `huecos`
+cuando una errata del PDF en un rótulo, «Artículo 29l», rompe la numeración;
+`version_por_notas`: la portada no cambia con cada publicación y la versión
+es la fecha más reciente que anotan los artículos, con
+`Publicacion-Origen: notas`) y solo rehace la suya.
 Si el defecto también está en el texto vigente, es del extractor: va como
 issue a su repo y la rama espera a que se corrija.
 

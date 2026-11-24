@@ -214,3 +214,26 @@ def test_la_ventana_que_empieza_antes_de_una_nota_se_prueba_con_mas_contexto():
     pdf_despues = ("cuando el valor no exceda de diez veces el salario; Fracción reformada DOF 30-12-1991 "
                    "II.- Con Prisión de 6 meses a 3 años y multa")
     assert reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_despues)
+
+
+def test_un_articulo_que_una_errata_del_rotulo_tenia_dentro_del_anterior():
+    nuevo = "# Artículo 291.\n\nEl comisionista deberá observar lo establecido en las leyes."
+    pdf_antes = "sin demora. Artículo 29l.- El comisionista deberá observar lo establecido en las leyes. Artículo 292"
+    pdf_despues = pdf_antes.replace("29l", "291")
+    assert reedicion.clase("", nuevo, pdf_antes, pdf_despues) == "reedicion"
+    assert reedicion.clase("", nuevo, pdf_despues, pdf_despues) is None
+
+
+def test_la_version_por_notas_no_pasa_del_dia_de_la_captura(tmp_path, monkeypatch):
+    class Pagina:
+        def __init__(self, t): self.t = t
+        def extract_text(self): return self.t
+    class Pdf:
+        pages = [Pagina("CÓDIGO Última Reforma DOF 28-03-2018"), Pagina("Cantidad actualizada DOF 31-12-2018"),
+                 Pagina("Cantidad actualizada DOF 24-12-2020")]
+        def __enter__(self): return self
+        def __exit__(self, *a): pass
+    monkeypatch.setattr(capturas.pdfplumber, "open", lambda ruta: Pdf())
+    assert capturas.leer_portada(tmp_path)[0] == "2018-03-28"
+    assert capturas.leer_portada(tmp_path, True, "2019-02-14")[0] == "2018-12-31"
+    assert capturas.leer_portada(tmp_path, True)[0] == "2020-12-24"

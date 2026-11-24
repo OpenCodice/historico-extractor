@@ -129,6 +129,16 @@ def clase(antes: str, despues: str, pdf_antes: str, pdf_despues: str) -> str | N
     tramos = [op for op in difflib.SequenceMatcher(None, v, n, autojunk=False).get_opcodes()
               if op[0] != "equal"]
     notas = 0
+    if not antes or not despues:
+        # Un artículo que aparece o desaparece con el mismo texto en los dos
+        # PDF: una errata en el rótulo («Artículo 29l») lo tenía dentro del
+        # anterior. Lo prueba el rótulo, que solo está en el PDF de su versión.
+        rotulo, suyo, ajeno = ((_rotulo(despues), pdf_despues, pdf_antes) if despues
+                               else (_rotulo(antes), pdf_antes, pdf_despues))
+        cuerpo = n if despues else v
+        if (_veces(rotulo, suyo) > _veces(rotulo, ajeno)
+                and all(esta(t, suyo) for t in _ventanas(cuerpo, 0, min(len(cuerpo), VENTANA), 0))):
+            return "reedicion"
     for _, i1, i2, j1, j2 in tramos:
         if (_es_nota(v[i1:i2], pdf_antes, notas_despues) and _es_nota(n[j1:j2], pdf_despues, notas_antes)
                 and (i2 > i1 or j2 > j1)):
@@ -139,8 +149,8 @@ def clase(antes: str, despues: str, pdf_antes: str, pdf_despues: str) -> str | N
     rotulos = _rotulo(antes), _rotulo(despues)
     if antes and despues and rotulos[0] != rotulos[1]:
         # El rótulo no entra en las palabras del cuerpo: se prueba aparte.
-        if not (pdf_antes.count(rotulos[0]) > pdf_despues.count(rotulos[0])
-                and pdf_despues.count(rotulos[1]) > pdf_antes.count(rotulos[1])):
+        if not (_veces(rotulos[0], pdf_antes) > _veces(rotulos[0], pdf_despues)
+                and _veces(rotulos[1], pdf_despues) > _veces(rotulos[1], pdf_antes)):
             return None
     elif not tramos:
         return None
@@ -173,6 +183,11 @@ def _rotulo(articulo: str) -> str:
     """«Artículo 420 Quáter», sin el punto final que el PDF no siempre trae."""
     primera = next((l for l in articulo.splitlines() if l.strip()), "")
     return normalizar(primera.lstrip("# ")).rstrip(".")
+
+
+def _veces(rotulo: str, pdf: str) -> int:
+    """Apariciones del rótulo completo: «Artículo 29» no cuenta en «Artículo 291»."""
+    return len(re.findall(re.escape(rotulo) + r"(?!\w)", pdf))
 
 
 def _notas(articulo: str) -> str:

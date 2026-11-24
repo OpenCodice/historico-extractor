@@ -48,14 +48,18 @@ def patrones_de_ruido(encabezados: dict) -> list[str]:
 
 def encabezados_de(clave: str) -> dict:
     """Los encabezados antiguos que valen para un documento: los de todos más
-    los suyos (`por_documento`): renglones exactos y, si su PDF llevó un
-    tiempo el número de página suelto al pie (`paginas_sueltas`: hasta qué
-    página), un renglón por cada número."""
+    los suyos (`por_documento`): renglones exactos; si su PDF llevó un tiempo
+    el número de página suelto al pie (`paginas_sueltas`: hasta qué página),
+    un renglón por cada número; y las opciones del registro del extractor que
+    su PDF necesite (`registro`: por ejemplo `huecos`, cuando una errata en un
+    rótulo rompe la numeración)."""
     config = configuracion()
     encabezados = dict(config["encabezados_antiguos"])
     propio = config.get("por_documento", {}).get(clave, {})
     encabezados["renglones"] = (encabezados["renglones"] + propio.get("renglones", [])
                                 + [str(n) for n in range(1, propio.get("paginas_sueltas", 0) + 1)])
+    if propio.get("registro"):
+        encabezados["registro"] = propio["registro"]
     return encabezados
 
 
@@ -92,6 +96,7 @@ def extraer(doc: dict, pdf: pathlib.Path, version: str, trabajo: pathlib.Path,
         registro = trabajo / "registro.json"
         entrada = {k: doc[k] for k in ("clave", "etiqueta", "sigla", "tipo", "url")}
         entrada |= {"parser": "articulado", "titulos_encabezado": encabezados["renglones"]}
+        entrada |= encabezados.get("registro", {})
         registro.write_text(json.dumps({"documentos": [entrada]}, ensure_ascii=False))
         pdfs = trabajo / "pdf"
         pdfs.mkdir()
@@ -133,7 +138,8 @@ def _cambios(repo) -> dict[str, list[str]]:
 def mensaje(doc: dict, fila: dict, extractor_sha: str, cambios: dict | None) -> str:
     lineas = [f"Versión {doc['sigla']} (DOF {fila['version']})", "",
               f"Documento: {doc['clave']}", "Tipo: version",
-              f"Publicacion: {fila['version']}", "Publicacion-Origen: portada", "Medio: DOF"]
+              f"Publicacion: {fila['version']}",
+              f"Publicacion-Origen: {fila.get('fechada_por') or 'portada'}", "Medio: DOF"]
     for estado, nombre in (("A", "Adicionados"), ("M", "Modificados"), ("D", "Retirados")):
         if cambios and cambios[estado]:
             lineas.append(f"Articulos-{nombre}: {', '.join(cambios[estado])}")

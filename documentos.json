@@ -29,6 +29,12 @@
       "renglones": [
         "Capacidad para Resistirlo."
       ]
+    },
+    "ccom": {
+      "version_por_notas": true,
+      "registro": {
+        "huecos": true
+      }
     }
   },
   "documentos": [

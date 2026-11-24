@@ -19,7 +19,8 @@ from . import MANIFIESTOS, configuracion
 
 CDX = "https://web.archive.org/cdx/search/cdx"
 CARPETA_PDF = "diputados.gob.mx/LeyesBiblio/pdf/"
-COLUMNAS = ("archivo", "captura", "url", "sha256", "bytes", "version", "paginas", "origen")
+COLUMNAS = ("archivo", "captura", "url", "sha256", "bytes", "version", "paginas", "origen", "fechada_por")
+NOTA_DOF = re.compile(r"DOF (\d{2})-(\d{2})-\s?(\d{4})")
 PORTADA = re.compile(
     r"[ÚU]ltimas?\s+[Rr]eformas?\s+(?:publicadas?\s+)?(?:en\s+el\s+)?(?:DOF|D\.O\.F\.)?"
     r"\s*:?\s*(\d{1,2})[-/](\d{1,2})[-/](\d{4})", re.S)
@@ -51,13 +52,29 @@ def origen_de_portada(texto: str) -> str:
     return f"{m[3]}-{MESES[m[2].lower()]:02d}-{int(m[1]):02d}"
 
 
-def leer_portada(pdf: pathlib.Path) -> tuple[str, int, str]:
+def fechada_por(clave: str) -> str:
+    """'portada', o 'notas' en los documentos declarados con `version_por_notas`:
+    la Cámara no siempre cambia la portada (en el Código de Comercio, cuando
+    solo se actualizan sus cantidades), y la versión es entonces la fecha más
+    reciente que anotan sus artículos."""
+    propio = configuracion().get("por_documento", {}).get(clave, {})
+    return "notas" if propio.get("version_por_notas") else "portada"
+
+
+def leer_portada(pdf: pathlib.Path, por_notas: bool = False, tope: str = "9999") -> tuple[str, int, str]:
     """(versión, páginas, origen). Wayback trunca algunas capturas a 1 MB: esas
-    no abren y quedan sin versión, con el motivo en su lugar."""
+    no abren y quedan sin versión, con el motivo en su lugar. Con `por_notas`,
+    la versión es la mayor entre la portada y las notas, sin pasar de `tope`
+    (el día de la captura)."""
     try:
         with pdfplumber.open(pdf) as doc:
             portada = doc.pages[0].extract_text() or ""
-            return version_de_portada(portada), len(doc.pages), origen_de_portada(portada)
+            version = version_de_portada(portada)
+            if por_notas:
+                anotadas = {f"{a}-{m}-{d}" for p in doc.pages
+                            for d, m, a in NOTA_DOF.findall(p.extract_text() or "")}
+                version = max([version] + [f for f in anotadas if f <= tope])
+            return version, len(doc.pages), origen_de_portada(portada)
     except Exception as e:
         return f"ilegible: {type(e).__name__}", 0, ""
 
@@ -120,10 +137,12 @@ def descargar(clave: str, patron: str, destino: pathlib.Path, capturas=None) -> 
     hacen falta). Se puede relanzar."""
     destino.mkdir(parents=True, exist_ok=True)
     filas = {f["archivo"]: f for f in leer_manifiesto(clave)}
+    modo = fechada_por(clave)
     for ts, url in capturas if capturas is not None else listar(patron, destino.parent / "_cdx.txt"):
         archivo = f"{ts}_{url.rsplit('/', 1)[-1]}"
         ruta = destino / archivo
-        if archivo in filas and "origen" in filas[archivo]:
+        if archivo in filas and "origen" in filas[archivo] \
+                and (filas[archivo].get("fechada_por") or "portada") == modo:
             continue
         if not ruta.exists():
             datos = _bajar(f"https://web.archive.org/web/{ts}id_/{url}")
@@ -132,10 +151,11 @@ def descargar(clave: str, patron: str, destino: pathlib.Path, capturas=None) -> 
             ruta.write_bytes(datos)
             time.sleep(PAUSA)
         datos = ruta.read_bytes()
-        version, paginas, origen = leer_portada(ruta)
+        version, paginas, origen = leer_portada(ruta, modo == "notas", f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}")
         filas[archivo] = {"archivo": archivo, "captura": ts, "url": url,
                           "sha256": hashlib.sha256(datos).hexdigest(), "bytes": len(datos),
-                          "version": version, "paginas": paginas, "origen": origen}
+                          "version": version, "paginas": paginas, "origen": origen,
+                          "fechada_por": modo}
         escribir_manifiesto(clave, list(filas.values()))
     return list(filas.values())
 
