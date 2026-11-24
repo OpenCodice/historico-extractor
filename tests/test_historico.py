@@ -197,3 +197,20 @@ def test_una_formula_leida_de_otro_modo_no_es_un_cambio_de_la_ley():
     texto = "se calculará así:\n\nCE ¡Error! Marcador no definido.ME 100 CE CDV donde ME = Margen de error."
     assert coherencia.lectura_menor(texto, antes) == "formula"
     assert coherencia.lectura_menor(antes, antes.replace("Margen", "Rango").replace("58", "63")) is None
+
+
+def test_un_rotulo_reeditado_se_prueba_con_los_dos_pdf():
+    antes = "# Artículo 420 Quater\n\nSe impondrá pena de uno a cuatro años."
+    despues = antes.replace("Quater", "Quáter")
+    pdf = "ambiental Artículo 420 {}.- Se impondrá pena de uno a cuatro años. Artículo 421"
+    assert reedicion.es_de_la_fuente(antes, despues, pdf.format("Quater"), pdf.format("Quáter"))
+    assert not reedicion.es_de_la_fuente(antes, despues, pdf.format("Quater"), pdf.format("Quater"))
+
+
+def test_la_ventana_que_empieza_antes_de_una_nota_se_prueba_con_mas_contexto():
+    antes = "# Artículo 386\n\ncuando el valor no exceda de diez veces el salario;\n\nII.- Con prisión de 6 meses a 3 años"
+    despues = antes.replace("prisión", "Prisión")
+    pdf_antes = "cuando el valor no exceda de diez veces el salario; II.- Con prisión de 6 meses a 3 años y multa"
+    pdf_despues = ("cuando el valor no exceda de diez veces el salario; Fracción reformada DOF 30-12-1991 "
+                   "II.- Con Prisión de 6 meses a 3 años y multa")
+    assert reedicion.es_de_la_fuente(antes, despues, pdf_antes, pdf_despues)

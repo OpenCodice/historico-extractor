@@ -136,7 +136,13 @@ def clase(antes: str, despues: str, pdf_antes: str, pdf_despues: str) -> str | N
             continue
         if not _probado(v, i1, i2, n, j1, j2, pdf_antes, pdf_despues):
             return None
-    if not tramos:
+    rotulos = _rotulo(antes), _rotulo(despues)
+    if antes and despues and rotulos[0] != rotulos[1]:
+        # El rótulo no entra en las palabras del cuerpo: se prueba aparte.
+        if not (pdf_antes.count(rotulos[0]) > pdf_despues.count(rotulos[0])
+                and pdf_despues.count(rotulos[1]) > pdf_antes.count(rotulos[1])):
+            return None
+    elif not tramos:
         return None
     return "nota_en_el_cuerpo" if notas else "reedicion"
 
@@ -150,14 +156,23 @@ def _probado(v, i1, i2, n, j1, j2, pdf_antes, pdf_despues) -> bool:
     los PDF no distinguen las versiones."""
     for contexto in CONTEXTO:
         viejas, nuevas = _ventanas(v, i1, i2, contexto), _ventanas(n, j1, j2, contexto)
+        # Con poco contexto la ventana puede empezar justo antes de una nota
+        # intercalada y no hallarse: se intenta con el siguiente.
         if not all(esta(t, pdf_antes) for t in viejas) or not all(esta(t, pdf_despues) for t in nuevas):
-            return False
+            continue
         if not (all(esta(t, pdf_despues) for t in viejas) and all(esta(t, pdf_antes) for t in nuevas)):
             return True
+    viejas, nuevas = _ventanas(v, i1, i2, CONTEXTO[0]), _ventanas(n, j1, j2, CONTEXTO[0])
     de_mas = [any(suyo.count(t) > ajeno.count(t) for t in ventanas)
               for ventanas, suyo, ajeno, hay in ((viejas, pdf_antes, pdf_despues, i2 > i1),
                                                  (nuevas, pdf_despues, pdf_antes, j2 > j1)) if hay]
     return all(de_mas)
+
+
+def _rotulo(articulo: str) -> str:
+    """«Artículo 420 Quáter», sin el punto final que el PDF no siempre trae."""
+    primera = next((l for l in articulo.splitlines() if l.strip()), "")
+    return normalizar(primera.lstrip("# ")).rstrip(".")
 
 
 def _notas(articulo: str) -> str:
