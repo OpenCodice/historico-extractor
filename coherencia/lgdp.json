@@ -1,0 +1,88 @@
+[
+ {
+  "desde": "1995-12-21",
+  "hasta": "2012-04-09",
+  "fuente_antes": "a18913c2e5c6330a68398640845cca00474bb3744de7df47ec93b5ccd46822bb",
+  "fuente_despues": "22d6bbaac722febfbf96514ca4af513003ced753e32b4b9d1d79049dac43bf46",
+  "pendientes": [],
+  "explicado": [
+   "001",
+   "007",
+   "009",
+   "010",
+   "011",
+   "026"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2012-04-09",
+  "hasta": "2014-08-11",
+  "fuente_antes": "22d6bbaac722febfbf96514ca4af513003ced753e32b4b9d1d79049dac43bf46",
+  "fuente_despues": "c87fd64dd971fb5bfe6f9736553f88c4415b897257b7a822405d9c0f1be0088c",
+  "pendientes": [],
+  "explicado": [
+   "001"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2014-08-11",
+  "hasta": "2016-04-27",
+  "fuente_antes": "c87fd64dd971fb5bfe6f9736553f88c4415b897257b7a822405d9c0f1be0088c",
+  "fuente_despues": "5840ce13a86e9d4b6a369a0c8fd27d781aac28a1b29079f7af1c28ef0032c51f",
+  "pendientes": [],
+  "explicado": [
+   "004",
+   "010",
+   "012",
+   "013",
+   "019",
+   "030",
+   "031",
+   "032"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2016-04-27",
+  "hasta": "2018-01-30",
+  "fuente_antes": "5840ce13a86e9d4b6a369a0c8fd27d781aac28a1b29079f7af1c28ef0032c51f",
+  "fuente_despues": "be4e1666f8a8b3dfdcbbc047aed6542b4982972d1297e2e04dee839e30cc0ce1",
+  "pendientes": [],
+  "explicado": [],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]
