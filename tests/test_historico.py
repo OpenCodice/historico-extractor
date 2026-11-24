@@ -203,6 +203,10 @@ def test_una_formula_leida_de_otro_modo_no_es_un_cambio_de_la_ley():
     literal = "I. Fórmula:\n\nIGPj = Pj1 + Pj2\n\nla participación (PE ) que se asignará a cada Estado."
     assert coherencia.lectura_menor(literal, literal.replace("que se", "que k se")) == "formula"
     assert coherencia.lectura_menor(literal, literal.replace("que se", "que no se")) is None
+    tabla = "Zona:\n\n[Tabla: consultar el PDF oficial, página 172]\n\nLas cuotas se actualizan."
+    assert coherencia.lectura_menor(tabla, tabla.replace("172", "173")) == "formula"
+    assert coherencia.lectura_menor(tabla.replace("[Tabla: consultar el PDF oficial, página 172]",
+                                                  "ZD 1 2 1 $2.5072 2 $1.3750 $1.1543"), tabla) == "formula"
 
 
 def test_un_rotulo_reeditado_se_prueba_con_los_dos_pdf():

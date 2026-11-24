@@ -101,7 +101,7 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
   signos (un guion de fin de renglón);
 - **otro orden**, si son las mismas palabras en otro orden (las celdas de una
   tabla);
-- **fórmula**, si cada diferencia es de una fórmula: su marca apunta a otra
+- **fórmula**, si cada diferencia es de una fórmula o de una tabla: su marca apunta a otra
   página, una versión la leyó como texto y la otra dejó la marca, o cambian
   restos sueltos de ella (un subíndice, nunca una palabra);
 - **juzgado**, si un agente dejó su veredicto (ver abajo);

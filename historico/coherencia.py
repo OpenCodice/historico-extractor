@@ -23,9 +23,10 @@ Un artículo que cambia queda en una de tres clases:
   solo puntuación  las mismas letras y cifras; cambian espacios o signos
               (un guion de fin de renglón, un punto junto al salto de página);
   otro orden  las mismas palabras en otro orden (las celdas de una tabla);
-  fórmula     lo que cambia es una fórmula: la marca que la sustituye apunta
-              a otra página, una versión la lee como texto y la otra deja
-              la marca, o cambian restos sueltos de ella (un subíndice);
+  fórmula     lo que cambia es una fórmula o una tabla: la marca que la
+              sustituye apunta a otra página, una versión la lee como texto
+              y la otra deja la marca, o cambian restos sueltos de ella (un
+              subíndice);
   juzgado     un agente comparó las dos versiones contra sus dos PDF y dejó
               en `verificaciones/<clave>.json` que el cambio es de la fuente;
   sin explicar  lo demás.
@@ -50,7 +51,7 @@ NOTA = re.compile(r"DOF[^\n]*")
 FECHA = re.compile(r"(\d{2})-(\d{2})-(\d{4})")
 LINEA_DE_NOTA = re.compile(r"_.*_")
 ALFANUMERICO = re.compile(r"[^\W_]")
-MARCA_DE_FORMULA = re.compile(r"\[Fórmula: consultar el PDF oficial, página \d+\]")
+MARCA_DE_FORMULA = re.compile(r"\[(?:Fórmula|Tabla): consultar el PDF oficial, página \d+\]")
 FORMULA = "⟦fórmula⟧"
 PALABRAS_DE_FORMULA = 40
 CLASES = ("explicado", "solo_notas", "solo_forma", "reedicion", "nota_en_el_cuerpo", "solo_puntuacion",
@@ -113,9 +114,10 @@ def solo_formulas(a: str, b: str) -> bool:
 
 
 def _resto_de_formula(palabra: str) -> bool:
-    """Una variable o un subíndice: una consonante suelta, o algo con cifras
-    o signos. Nunca una palabra: «no», «o» e «y» cambian lo que dice la ley."""
-    return (len(palabra) == 1 and palabra.lower() not in "aeiouy") or not palabra.isalpha()
+    """Una variable o un subíndice: una letra suelta que no es palabra, o algo
+    con cifras o signos. Nunca una palabra: «no», «o» e «y» cambian lo que
+    dice la ley."""
+    return (len(palabra) == 1 and palabra.lower() not in "aeouy") or not palabra.isalpha()
 
 
 def blob(texto: str) -> str:

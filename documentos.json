@@ -17,6 +17,9 @@
       "2021-11-22": "el artículo 10 Bis pierde su tercer párrafo y su nota: el PDF los trae tras el corchete de la porción invalidada",
       "2022-03-30": "el artículo 10 Bis pierde su tercer párrafo y su nota: el PDF los trae tras el corchete de la porción invalidada"
     },
+    "lfd": {
+      "2020-12-08": "esa edición del PDF no trae las notas de reforma: el artículo 221 pierde su último párrafo y el 238-C queda con párrafos pegados"
+    },
     "cnpcf": {
       "2024-12-16": "el artículo 810 pierde un renglón que empieza con «Secretaría General» y cae justo bajo el encabezado de la página (OpenCodice/fiscal-extractor#9)"
     }
