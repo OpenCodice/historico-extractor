@@ -46,6 +46,9 @@ def patrones_de_ruido(encabezados: dict) -> list[str]:
             + encabezados.get("patrones", []))
 
 
+PRIMER_DIA_DE_GIT = "1970-01-02"
+
+
 def encabezados_de(clave: str) -> dict:
     """Los encabezados antiguos que valen para un documento: los de todos más
     los suyos (`por_documento`): renglones exactos; si su PDF llevó un tiempo
@@ -61,6 +64,22 @@ def encabezados_de(clave: str) -> dict:
     if propio.get("registro"):
         encabezados["registro"] = propio["registro"]
     return encabezados
+
+
+def membretes(pdf: pathlib.Path, prefijos: list[str], paginas: int = 3, renglones: int = 8) -> list[str]:
+    """Los renglones del membrete de ese PDF que empiezan con un prefijo
+    declarado («Cámara de Diputados del H. Congreso de la Unión Última Reforma
+    DOF 07-05-1997»). El extractor los quita solos cuando se repiten en muchas
+    páginas; en una ley de cuatro páginas no los reconoce."""
+    import pdfplumber
+    hallados = []
+    with pdfplumber.open(pdf) as doc:
+        for pagina in doc.pages[:paginas]:
+            for renglon in (pagina.extract_text() or "").splitlines()[:renglones]:
+                renglon = renglon.strip()
+                if renglon.startswith(tuple(prefijos)) and renglon not in hallados:
+                    hallados.append(renglon)
+    return hallados
 
 
 def sello_de_configuracion(clave: str) -> str:
@@ -95,7 +114,8 @@ def extraer(doc: dict, pdf: pathlib.Path, version: str, trabajo: pathlib.Path,
     else:
         registro = trabajo / "registro.json"
         entrada = {k: doc[k] for k in ("clave", "etiqueta", "sigla", "tipo", "url")}
-        entrada |= {"parser": "articulado", "titulos_encabezado": encabezados["renglones"]}
+        entrada |= {"parser": "articulado",
+                    "titulos_encabezado": encabezados["renglones"] + membretes(pdf, encabezados["prefijos"])}
         entrada |= encabezados.get("registro", {})
         registro.write_text(json.dumps({"documentos": [entrada]}, ensure_ascii=False))
         pdfs = trabajo / "pdf"
@@ -204,7 +224,9 @@ def construir(doc: dict, capturas: pathlib.Path, repo: pathlib.Path, extractor: 
         _git(repo, "add", "-A")
         primera = _correr("git", "rev-parse", "-q", "--verify", "HEAD", cwd=repo)[0] != 0
         cambios = None if primera else _cambios(repo)
-        fecha = f"{version}T12:00:00+00:00"
+        # Git no admite fechas anteriores a 1970: una ley sin reformas de
+        # 1936 se fecha en el primer día posible; la real va en el trailer.
+        fecha = f"{max(version, PRIMER_DIA_DE_GIT)}T12:00:00+00:00"
         _git(repo, "commit", "-q", "--allow-empty", "-m", mensaje(doc, fila, extractor_sha, cambios),
              env={**os.environ, **FIRMA, "GIT_AUTHOR_DATE": fecha, "GIT_COMMITTER_DATE": fecha})
         unidades = len(list(destino.glob("*.md")))

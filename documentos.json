@@ -35,6 +35,9 @@
       "registro": {
         "huecos": true
       }
+    },
+    "lcnbv": {
+      "paginas_sueltas": 150
     }
   },
   "documentos": [

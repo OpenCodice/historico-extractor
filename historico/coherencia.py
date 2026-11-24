@@ -24,8 +24,8 @@ Un artículo que cambia queda en una de tres clases:
               (un guion de fin de renglón, un punto junto al salto de página);
   otro orden  las mismas palabras en otro orden (las celdas de una tabla);
   fórmula     lo que cambia es una fórmula: la marca que la sustituye apunta
-              a otra página, o una versión la lee como texto y la otra deja
-              la marca;
+              a otra página, una versión la lee como texto y la otra deja
+              la marca, o cambian restos sueltos de ella (un subíndice);
   juzgado     un agente comparó las dos versiones contra sus dos PDF y dejó
               en `verificaciones/<clave>.json` que el cambio es de la fuente;
   sin explicar  lo demás.
@@ -94,19 +94,28 @@ def lectura_menor(antes: str, despues: str) -> str | None:
 
 
 def solo_formulas(a: str, b: str) -> bool:
-    """Cada diferencia toca una marca de fórmula: la misma marca con otra
+    """Cada diferencia es de una fórmula: toca su marca (la misma con otra
     página, o la marca frente a las pocas palabras con que la otra versión
-    leyó la fórmula."""
-    if not (MARCA_DE_FORMULA.search(a) or MARCA_DE_FORMULA.search(b)):
+    leyó la fórmula) o son restos sueltos de ella («k», «j=1 i,t−j−1»)."""
+    marcada = MARCA_DE_FORMULA.search(a) or MARCA_DE_FORMULA.search(b)
+    if not marcada and not ("órmula" in a and "órmula" in b):
         return False
     v, n = (MARCA_DE_FORMULA.sub(f" {FORMULA} ", t).split() for t in (a, b))
     for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, v, n, autojunk=False).get_opcodes():
         if op == "equal":
             continue
         lados = v[i1:i2], n[j1:j2]
-        if not any(FORMULA in l for l in lados) or any(len(l) > PALABRAS_DE_FORMULA for l in lados):
+        if any(len(l) > PALABRAS_DE_FORMULA for l in lados):
+            return False
+        if not any(FORMULA in l for l in lados) and not all(_resto_de_formula(p) for l in lados for p in l):
             return False
     return True
+
+
+def _resto_de_formula(palabra: str) -> bool:
+    """Una variable o un subíndice: una consonante suelta, o algo con cifras
+    o signos. Nunca una palabra: «no», «o» e «y» cambian lo que dice la ley."""
+    return (len(palabra) == 1 and palabra.lower() not in "aeiouy") or not palabra.isalpha()
 
 
 def blob(texto: str) -> str:

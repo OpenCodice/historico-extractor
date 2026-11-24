@@ -197,6 +197,12 @@ def test_una_formula_leida_de_otro_modo_no_es_un_cambio_de_la_ley():
     texto = "se calculará así:\n\nCE ¡Error! Marcador no definido.ME 100 CE CDV donde ME = Margen de error."
     assert coherencia.lectura_menor(texto, antes) == "formula"
     assert coherencia.lectura_menor(antes, antes.replace("Margen", "Rango").replace("58", "63")) is None
+    suelto = antes + "\n\ndonde k es el coeficiente"
+    assert coherencia.lectura_menor(suelto, suelto.replace("donde k", "donde j=1 i,t−j−1 k")) == "formula"
+    assert coherencia.lectura_menor(suelto, suelto.replace("donde k", "donde no k")) is None
+    literal = "I. Fórmula:\n\nIGPj = Pj1 + Pj2\n\nla participación (PE ) que se asignará a cada Estado."
+    assert coherencia.lectura_menor(literal, literal.replace("que se", "que k se")) == "formula"
+    assert coherencia.lectura_menor(literal, literal.replace("que se", "que no se")) is None
 
 
 def test_un_rotulo_reeditado_se_prueba_con_los_dos_pdf():
