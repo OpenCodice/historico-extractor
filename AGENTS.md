@@ -53,9 +53,9 @@ su rama a `OpenCodice/historico`; al final, la tabla de ramas del README de
 versiones, las que quedaron fuera con su motivo, si se publicó), que el mismo
 workflow sube a este repo junto con los manifiestos y los informes.
 
-Qué toca: primero los documentos declarados que nunca se han intentado, de
-seis en seis; cuando no quedan, todos, del que lleva más tiempo sin revisarse
-al más reciente, hasta agotar cuatro horas. La revisión de una rama publicada
+Qué toca: primero los documentos declarados que nunca se han intentado, hasta
+cuarenta por tanda; cuando no quedan, todos, del que lleva más tiempo sin
+revisarse al más reciente. Cualquier tanda se detiene al agotar cuatro horas. La revisión de una rama publicada
 sin capturas nuevas ni cambios en lo declarado no rehace nada. Mientras queden sin
 intentar, la corrida declara `estado pendiente=[true]` y el supervisor lanza
 la siguiente; después basta la cita semanal. Una rama publicada se continúa

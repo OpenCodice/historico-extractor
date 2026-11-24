@@ -20,7 +20,7 @@ on:
       lote:
         description: Documentos por tanda cuando no se dan claves
         required: false
-        default: '6'
+        default: '40'
       desde_cero:
         description: Rehacer las ramas enteras aunque se puedan continuar
         type: choice
@@ -90,7 +90,7 @@ jobs:
           set -o pipefail
           extra=()
           [ "$DESDE_CERO" = si ] && extra+=(--desde-cero)
-          python -m historico tanda --lote "${LOTE:-6}" --claves "$CLAVES" \
+          python -m historico tanda --lote "${LOTE:-40}" --claves "$CLAVES" \
             --out ../historico --extractores .. --publicar "${extra[@]}" | tee tanda.log
           grep -E '^pendiente=(true|false)$' tanda.log | tail -1 >> "$GITHUB_OUTPUT"
 

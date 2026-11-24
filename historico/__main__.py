@@ -37,7 +37,7 @@ def main(argv=None) -> int:
     sp.add_argument("--capturas", default=RAIZ / "capturas", type=pathlib.Path)
 
     sp = sub.add_parser("tanda", help="procesa unos cuantos documentos de punta a punta")
-    sp.add_argument("--lote", type=int, default=6)
+    sp.add_argument("--lote", type=int, default=40)
     sp.add_argument("--claves", default="", help="claves separadas por espacio; vacío = las que tocan")
     sp.add_argument("--out", required=True, type=pathlib.Path, help="clon de OpenCodice/historico")
     sp.add_argument("--capturas", default=RAIZ / "capturas", type=pathlib.Path)
