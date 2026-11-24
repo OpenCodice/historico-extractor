@@ -22,9 +22,6 @@
     }
   },
   "por_documento": {
-    "lacp": {
-      "paginas_sueltas": 200
-    },
     "cpf": {
       "renglones": [
         "Capacidad para Resistirlo."
@@ -35,9 +32,6 @@
       "registro": {
         "huecos": true
       }
-    },
-    "lcnbv": {
-      "paginas_sueltas": 150
     }
   },
   "documentos": [

@@ -243,3 +243,25 @@ def test_la_version_por_notas_no_pasa_del_dia_de_la_captura(tmp_path, monkeypatc
     assert capturas.leer_portada(tmp_path)[0] == "2018-03-28"
     assert capturas.leer_portada(tmp_path, True, "2019-02-14")[0] == "2018-12-31"
     assert capturas.leer_portada(tmp_path, True)[0] == "2020-12-24"
+
+
+def test_el_membrete_y_el_numero_de_pagina_suelto_se_leen_de_cada_pdf(tmp_path, monkeypatch):
+    import pdfplumber
+    from historico import cadena
+
+    class Pagina:
+        def __init__(self, t): self.t = t
+        def extract_text(self): return self.t
+
+    class Pdf:
+        def __init__(self, paginas): self.pages = [Pagina(t) for t in paginas]
+        def __enter__(self): return self
+        def __exit__(self, *a): pass
+
+    membrete = "Cámara de Diputados del H. Congreso de la Unión Última Reforma DOF 07-05-1997"
+    sueltas = [f"LEY\n{membrete}\nArtículo {n}.- Texto.\n{n}" for n in range(1, 9)]
+    monkeypatch.setattr(pdfplumber, "open", lambda ruta: Pdf(sueltas))
+    assert cadena.membretes(tmp_path, ["Cámara de Diputados del H. Congreso"]) == [membrete] + [str(n) for n in range(1, 9)]
+    de_m = [t.rsplit("\n", 1)[0] + f"\n{n} de 8" for n, t in enumerate(sueltas, 1)]
+    monkeypatch.setattr(pdfplumber, "open", lambda ruta: Pdf(de_m))
+    assert cadena.membretes(tmp_path, ["Cámara de Diputados del H. Congreso"]) == [membrete]

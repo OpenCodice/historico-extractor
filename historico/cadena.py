@@ -51,34 +51,37 @@ PRIMER_DIA_DE_GIT = "1970-01-02"
 
 def encabezados_de(clave: str) -> dict:
     """Los encabezados antiguos que valen para un documento: los de todos más
-    los suyos (`por_documento`): renglones exactos; si su PDF llevó un tiempo
-    el número de página suelto al pie (`paginas_sueltas`: hasta qué página),
-    un renglón por cada número; y las opciones del registro del extractor que
-    su PDF necesite (`registro`: por ejemplo `huecos`, cuando una errata en un
-    rótulo rompe la numeración)."""
+    los suyos (`por_documento`): renglones exactos y las opciones del registro
+    del extractor que su PDF necesite (`registro`: por ejemplo `huecos`,
+    cuando una errata en un rótulo rompe la numeración)."""
     config = configuracion()
     encabezados = dict(config["encabezados_antiguos"])
     propio = config.get("por_documento", {}).get(clave, {})
-    encabezados["renglones"] = (encabezados["renglones"] + propio.get("renglones", [])
-                                + [str(n) for n in range(1, propio.get("paginas_sueltas", 0) + 1)])
+    encabezados["renglones"] = encabezados["renglones"] + propio.get("renglones", [])
     if propio.get("registro"):
         encabezados["registro"] = propio["registro"]
     return encabezados
 
 
-def membretes(pdf: pathlib.Path, prefijos: list[str], paginas: int = 3, renglones: int = 8) -> list[str]:
-    """Los renglones del membrete de ese PDF que empiezan con un prefijo
-    declarado («Cámara de Diputados del H. Congreso de la Unión Última Reforma
-    DOF 07-05-1997»). El extractor los quita solos cuando se repiten en muchas
-    páginas; en una ley de cuatro páginas no los reconoce."""
+def membretes(pdf: pathlib.Path, prefijos: list[str], paginas: int = 6, renglones: int = 8) -> list[str]:
+    """Renglones de ese PDF que no son texto y que el extractor no reconoce
+    solo. Los del membrete que empiezan con un prefijo declarado («Cámara de
+    Diputados del H. Congreso de la Unión Última Reforma DOF 07-05-1997»): en
+    una ley de cuatro páginas no se repiten lo bastante. Y el número de página
+    suelto al pie, si las primeras páginas cierran cada una con el suyo: un
+    renglón por cada número."""
     import pdfplumber
-    hallados = []
+    hallados, con_numero = [], 0
     with pdfplumber.open(pdf) as doc:
-        for pagina in doc.pages[:paginas]:
-            for renglon in (pagina.extract_text() or "").splitlines()[:renglones]:
-                renglon = renglon.strip()
+        total = len(doc.pages)
+        for n, pagina in enumerate(doc.pages[:paginas], 1):
+            lineas = [l.strip() for l in (pagina.extract_text() or "").splitlines() if l.strip()]
+            for renglon in lineas[:renglones]:
                 if renglon.startswith(tuple(prefijos)) and renglon not in hallados:
                     hallados.append(renglon)
+            con_numero += bool(lineas) and lineas[-1] == str(n)
+    if total > 2 and con_numero >= min(total, paginas) - 1:
+        hallados += [str(n) for n in range(1, total + 1)]
     return hallados
 
 

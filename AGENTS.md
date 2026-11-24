@@ -70,6 +70,11 @@ LISR de 2002 y la de 2013). La portada dice cuándo se publicó la ley
 Los PDF no se guardan: el manifiesto dice de qué captura salió cada versión y
 `capturas.asegurar` la vuelve a bajar comprobando su sha256.
 
+Dos cosas se leen de cada PDF sin declarar nada (`cadena.membretes`): el
+renglón del membrete con la fecha de esa versión, que en una ley de pocas
+páginas no se repite lo bastante para que el extractor lo reconozca, y el
+número de página suelto al pie que algunos PDF llevaron entre 2005 y 2012.
+
 ## Compuerta de coherencia
 
 Las compuertas de los extractores comparan una versión contra su propio PDF,
@@ -146,11 +151,10 @@ Lo declarado en `encabezados_antiguos` vale para todos los documentos y
 cambiarlo rehace todas las ramas; lo que es de una sola ley se declara en
 `por_documento` (`renglones`: renglones exactos que no son texto de ningún
 artículo, como el último de un título de capítulo que quedaba pegado al
-artículo anterior; `paginas_sueltas`: su PDF llevó el número de página suelto
-al pie; `registro`: opciones del registro del extractor, como `huecos`
-cuando una errata del PDF en un rótulo, «Artículo 29l», rompe la numeración;
-`version_por_notas`: la portada no cambia con cada publicación y la versión
-es la fecha más reciente que anotan los artículos, con
+artículo anterior; `registro`: opciones del registro del extractor, como
+`huecos` cuando una errata del PDF en un rótulo, «Artículo 29l», rompe la
+numeración; `version_por_notas`: la portada no cambia con cada publicación y
+la versión es la fecha más reciente que anotan los artículos, con
 `Publicacion-Origen: notas`) y solo rehace la suya.
 Si el defecto también está en el texto vigente, es del extractor: va como
 issue a su repo y la rama espera a que se corrija.
