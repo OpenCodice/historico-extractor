@@ -10,8 +10,10 @@ hay prueba.
 """
 import collections
 import difflib
+import json
 import pathlib
 import re
+import subprocess
 
 import pdfplumber
 
@@ -46,20 +48,43 @@ def sin_mobiliario(paginas: list[str]) -> str:
     return normalizar(" ".join(limpio))
 
 
-def texto_del_pdf(pdf: pathlib.Path, cache: pathlib.Path) -> str:
-    """El texto del PDF en una sola línea. Tarda; se guarda por nombre de captura."""
-    guardado = cache / f"{pdf.stem}.txt"
+def por_celdas(pdf: pathlib.Path, extractor: pathlib.Path) -> list[str]:
+    """El texto de cada página con las tablas leídas por celdas, como las lee
+    el extractor federal."""
+    orden = ("import json, sys, pdfplumber\n"
+             "from extractor import tablas\n"
+             "with pdfplumber.open(sys.argv[1]) as pdf:\n"
+             "    print(json.dumps(tablas.textos(pdf)))")
+    salida = subprocess.run([extractor / ".venv/bin/python", "-c", orden, pdf.resolve()],
+                            cwd=extractor, capture_output=True, text=True, check=True).stdout
+    return json.loads(salida)
+
+
+def texto_del_pdf(pdf: pathlib.Path, cache: pathlib.Path, extractor: pathlib.Path | None = None) -> str:
+    """El texto del PDF en una sola línea. Tarda; se guarda por nombre de captura.
+
+    Con `extractor`, le sigue el mismo texto con las tablas leídas por celdas:
+    una fila sale ahí en otro orden que en el texto corrido de la página, y el
+    artículo extraído trae el de las celdas. Buscar en las dos lecturas no
+    facilita la prueba: una redacción tiene que faltar en ambas para faltar."""
+    guardado = cache / f"{pdf.stem}{'.celdas' if extractor else ''}.txt"
     if guardado.exists():
         return guardado.read_text()
     with pdfplumber.open(pdf) as doc:
-        texto = sin_mobiliario([p.extract_text() or "" for p in doc.pages])
+        paginas = [p.extract_text() or "" for p in doc.pages]
+    texto = sin_mobiliario(paginas)
+    if extractor:
+        celdas = por_celdas(pdf, extractor)
+        if celdas != paginas:
+            texto += " " + sin_mobiliario(celdas)
     cache.mkdir(parents=True, exist_ok=True)
     guardado.write_text(texto)
     return texto
 
 
-def lector(clave: str, capturas: pathlib.Path):
-    """sha256 de una captura → el texto de su PDF, bajándola si hace falta."""
+def lector(clave: str, capturas: pathlib.Path, extractor: pathlib.Path | None = None):
+    """sha256 de una captura → el texto de su PDF, bajándola si hace falta.
+    `extractor`: el federal, cuando el documento se extrae con él."""
     from . import RAIZ
     from .capturas import asegurar, leer_manifiesto
     por_sha = {f["sha256"]: f for f in leer_manifiesto(clave)}
@@ -68,7 +93,7 @@ def lector(clave: str, capturas: pathlib.Path):
     def texto_de(sha: str) -> str:
         if sha not in textos:
             textos[sha] = texto_del_pdf(asegurar(por_sha[sha], capturas / clave),
-                                        RAIZ / "_trabajo" / "texto")
+                                        RAIZ / "_trabajo" / "texto", extractor)
         return textos[sha]
     return texto_de
 

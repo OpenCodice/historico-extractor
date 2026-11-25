@@ -79,7 +79,9 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
         estado["fuera"] = fuera
         if cadena._correr("git", "rev-parse", "-q", "--verify", f"refs/heads/{clave}", cwd=repo)[0]:
             return estado | {"motivo": "ninguna versión pasó las compuertas del extractor"}
-        pasos = coherencia.medir(repo, clave, reedicion.lector(clave, carpeta_capturas))
+        pasos = coherencia.medir(repo, clave, reedicion.lector(
+            clave, carpeta_capturas,
+            extractores / EXTRACTOR["federal"] if doc["extractor"] == "federal" else None))
         INFORMES.mkdir(exist_ok=True)
         (INFORMES / f"{clave}.json").write_text(json.dumps(pasos, ensure_ascii=False, indent=1) + "\n")
         fechas = [t["Publicacion"] for t in cadena._hechas(repo, clave)]

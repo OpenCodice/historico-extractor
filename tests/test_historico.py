@@ -288,3 +288,25 @@ def test_una_fecha_anotada_sin_version_es_una_version_que_falta(tmp_path, monkey
     monkeypatch.setattr(faltantes, "anotadas", lambda repo, rama: {
         "2006-07-18", "2010-05-25", "2012-04-09", "2014-01-10"})
     assert faltantes.medir(tmp_path, "lic") == {"faltan": ["2012-04-09"], "anteriores": 1}
+
+
+def test_una_fila_de_tabla_se_prueba_con_la_lectura_por_celdas(tmp_path, monkeypatch):
+    # El texto corrido de la página parte la fila en renglones («Todos los
+    # municipios de $3,030.02 / Baja California.»); el artículo la trae por
+    # celdas. Sin esa lectura, la cuota que cambió no está literal en su PDF.
+    class Pdf:
+        def __init__(self, cuota):
+            self.pages = [type("P", (), {"extract_text": lambda s: f"Tabla B\nTodos los municipios de {cuota}\nBaja California."})()]
+        __enter__ = lambda s: s
+        __exit__ = lambda s, *a: None
+    cuotas = {"antes.pdf": "$3,030.02", "despues.pdf": "$3,147.07"}
+    monkeypatch.setattr(reedicion.pdfplumber, "open", lambda pdf: Pdf(cuotas[pdf.name]))
+    monkeypatch.setattr(reedicion, "por_celdas", lambda pdf, extractor: [
+        f"Tabla B\nTodos los municipios de Baja California. {cuotas[pdf.name]}"])
+    articulo = "# Artículo 244-E\n\nTabla B Todos los municipios de Baja California. {}\n"
+    antes, despues = articulo.format("$3,030.02"), articulo.format("$3,147.07")
+    crudo = [reedicion.texto_del_pdf(tmp_path / n, tmp_path / "cache") for n in cuotas]
+    assert not reedicion.es_de_la_fuente(antes, despues, *crudo)
+    celdas = [reedicion.texto_del_pdf(tmp_path / n, tmp_path / "cache", tmp_path) for n in cuotas]
+    assert reedicion.es_de_la_fuente(antes, despues, *celdas)
+    assert not reedicion.es_de_la_fuente(antes, despues, celdas[0], celdas[0])

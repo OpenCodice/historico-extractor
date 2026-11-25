@@ -107,7 +107,9 @@ DOF. Un artículo que cambia entre dos versiones consecutivas queda:
   un artículo adicionado o retirado, y es la única prueba en las leyes cuyo
   PDF no anota las reformas (el CFF): ahí caen sus reformas. Si la frase
   está repetida en otro artículo, se prueba con más contexto y contando sus
-  apariciones en cada PDF;
+  apariciones en cada PDF. En las leyes del extractor federal el texto de
+  cada PDF lleva también sus tablas leídas por celdas, que es como las trae
+  el artículo (las cuotas de la LFD);
 - **nota en el cuerpo**, si lo que cambia es texto de una nota de reforma
   que una versión dejó como texto del artículo: cita su DOF o la otra
   versión lo lleva entre sus notas (la ley no cambia);

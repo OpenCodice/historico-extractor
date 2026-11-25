@@ -27,6 +27,7 @@ def main(argv=None) -> int:
     sp.add_argument("--informe", type=pathlib.Path, help="escribe aquí lo que pasó con cada versión")
 
     sp = sub.add_parser("coherencia", help="compuerta: ningún artículo cambia sin causa")
+    sp.add_argument("--extractores", default=RAIZ.parent, type=pathlib.Path)
     sp.add_argument("clave")
     sp.add_argument("--out", required=True, type=pathlib.Path)
     sp.add_argument("--capturas", default=RAIZ / "capturas", type=pathlib.Path)
@@ -83,7 +84,9 @@ def main(argv=None) -> int:
         print(f"{doc['clave']}: {len(filas) - len(fuera)} versiones nuevas, {len(fuera)} fuera")
         return 0
 
-    pasos = coherencia.medir(args.out, doc["clave"], reedicion.lector(doc["clave"], args.capturas))
+    pasos = coherencia.medir(args.out, doc["clave"], reedicion.lector(
+        doc["clave"], args.capturas,
+        args.extractores / EXTRACTOR["federal"] if doc["extractor"] == "federal" else None))
     if args.json:
         args.json.write_text(json.dumps(pasos, ensure_ascii=False, indent=1) + "\n")
     print(coherencia.informe(pasos))
