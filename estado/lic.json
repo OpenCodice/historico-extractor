@@ -1,13 +1,22 @@
 {
- "fecha": "2026-11-24T23:28:36+00:00",
+ "fecha": "2026-11-25T15:34:15+00:00",
  "configuracion": "5248bb54f469",
- "publicada": false,
+ "publicada": true,
  "capturas": 22,
  "versiones_archivadas": 15,
  "fuera": [],
  "versiones": 15,
  "desde": "2006-07-18",
  "hasta": "2025-11-14",
- "sin_explicar": 4,
- "motivo": "la coherencia deja artículos sin explicar"
+ "sin_explicar": 0,
+ "faltan": [
+  "2007-06-15",
+  "2008-02-01",
+  "2008-06-26",
+  "2009-03-23",
+  "2009-05-06",
+  "2009-06-25",
+  "2009-08-13"
+ ],
+ "anteriores": 26
 }

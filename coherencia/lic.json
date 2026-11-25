@@ -203,18 +203,7 @@
   "hasta": "2008-07-01",
   "fuente_antes": "b8ae55d3108016f93533a095f004cd12a2d7e4b8526b46c9f5a6140d07ae30fb",
   "fuente_despues": "ee87a55df55f8005f034e43af59f834e6c69acd1ff884a07f529c790bf47f547",
-  "pendientes": [
-   {
-    "articulo": "085-bis",
-    "antes": "43d4137975edfe1f",
-    "despues": "2bd37f8907409ef5"
-   },
-   {
-    "articulo": "115",
-    "antes": "c521eb073fb76af6",
-    "despues": "e6190e085503a5f3"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "112-bis",
    "112-quater",
@@ -238,11 +227,11 @@
   "solo_puntuacion": [],
   "otro_orden": [],
   "formula": [],
-  "juzgado": [],
-  "sin_explicar": [
+  "juzgado": [
    "085-bis",
    "115"
-  ]
+  ],
+  "sin_explicar": []
  },
  {
   "desde": "2008-07-01",
@@ -299,18 +288,7 @@
   "hasta": "2014-01-10",
   "fuente_antes": "73a9de3ce21437327677b4bc98d6d8777c7e6007db5e58b0ee9046846567e831",
   "fuente_despues": "ab800b87ce0a023b8ab24e2b74bff1d61a2a9150e93ce87401781dc1e4986576",
-  "pendientes": [
-   {
-    "articulo": "045-k",
-    "antes": "f3bd6f8995f57889",
-    "despues": "8da4e8f4343b9f7c"
-   },
-   {
-    "articulo": "085-bis",
-    "antes": "2bd37f8907409ef5",
-    "despues": "34bead3a74810e94"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "003",
    "005-bis-5",
@@ -662,11 +640,11 @@
   "solo_puntuacion": [],
   "otro_orden": [],
   "formula": [],
-  "juzgado": [],
-  "sin_explicar": [
+  "juzgado": [
    "045-k",
    "085-bis"
-  ]
+  ],
+  "sin_explicar": []
  },
  {
   "desde": "2014-01-10",
