@@ -19,6 +19,7 @@ from . import MANIFIESTOS, configuracion
 
 CDX = "https://web.archive.org/cdx/search/cdx"
 CARPETA_PDF = "diputados.gob.mx/LeyesBiblio/pdf/"
+CARPETA_MOVIL = "diputados.gob.mx/LeyesBiblio/pdf_mov/"
 COLUMNAS = ("archivo", "captura", "url", "sha256", "bytes", "version", "paginas", "origen", "fechada_por")
 NOTA_DOF = re.compile(r"DOF (\d{2})-(\d{2})-\s?(\d{4})")
 PORTADA = re.compile(
@@ -83,14 +84,15 @@ def leer_portada(pdf: pathlib.Path, por_notas: bool = False, tope: str = "9999")
         return f"ilegible: {type(e).__name__}", 0, ""
 
 
-def listar(patron: str, cache: pathlib.Path | None = None) -> list[tuple[str, str]]:
+def listar(patron: str, cache: pathlib.Path | None = None,
+           carpeta: str = CARPETA_PDF) -> list[tuple[str, str]]:
     """(captura, url) de cada contenido distinto archivado para ese nombre de
-    archivo. El listado es el de toda la carpeta de PDF de LeyesBiblio; con
-    `cache` se pide una vez al día y sirve para todos los documentos."""
+    archivo. El listado es el de toda la carpeta de LeyesBiblio; con `cache`
+    se pide una vez al día y sirve para todos los documentos."""
     if cache and cache.exists() and time.time() - cache.stat().st_mtime < 86400:
         return filtrar(cache.read_text().splitlines(), patron)
     consulta = urllib.parse.urlencode({
-        "url": CARPETA_PDF, "matchType": "prefix", "collapse": "digest",
+        "url": carpeta, "matchType": "prefix", "collapse": "digest",
         "fl": "timestamp,original,digest", "filter": "statuscode:200"})
     pedido = urllib.request.Request(f"{CDX}?{consulta}", headers=AGENTE)
     for intento in range(4):
@@ -135,14 +137,25 @@ def escribir_manifiesto(clave: str, filas: list[dict]) -> None:
     (MANIFIESTOS / f"{clave}.tsv").write_text("\n".join(cuerpo) + "\n")
 
 
-def descargar(clave: str, patron: str, destino: pathlib.Path, capturas=None) -> list[dict]:
+def es_movil(fila: dict) -> bool:
+    return "/pdf_mov/" in fila.get("url", "")
+
+
+def descargar(clave: str, patron: str, destino: pathlib.Path, capturas=None,
+              movil: str | None = None) -> list[dict]:
     """Deja el manifiesto al día: baja y fecha las capturas que aún no están
     en él. Las ya registradas no se vuelven a pedir (`asegurar` las trae si
-    hacen falta). Se puede relanzar."""
+    hacen falta). Se puede relanzar. `movil`: el patrón del nombre de la edición para
+    móvil de la ley, que la Cámara publica en otra carpeta desde 2019 y se
+    archivó en otros días que el PDF principal."""
     destino.mkdir(parents=True, exist_ok=True)
     filas = {f["archivo"]: f for f in leer_manifiesto(clave)}
     modo = fechada_por(clave)
-    for ts, url in capturas if capturas is not None else listar(patron, destino.parent / "_cdx.txt"):
+    if capturas is None:
+        capturas = listar(patron, destino.parent / "_cdx.txt")
+        if movil:
+            capturas += listar(movil, destino.parent / "_cdx_movil.txt", CARPETA_MOVIL)
+    for ts, url in capturas:
         archivo = f"{ts}_{url.rsplit('/', 1)[-1]}"
         ruta = destino / archivo
         # Una portada de la que no se leyó cuándo se publicó la ley se vuelve
@@ -195,7 +208,9 @@ def _bajar(url: str) -> bytes | None:
 
 def versiones(clave: str) -> dict[str, dict]:
     """Versión → su captura más reciente: la Cámara corrige erratas y notas
-    sin cambiar la fecha de la portada, y la última captura las trae. Solo
+    sin cambiar la fecha de la portada, y la última captura las trae. La
+    edición para móvil solo entra en las versiones sin captura del PDF
+    principal: es el mismo texto con otros renglones. Solo
     cuentan las capturas de la ley vigente: las de otra con otro día de
     publicación son de la ley que esta abrogó. Las versiones declaradas en
     `versiones_fuera` no entran: su lectura no es fiel al PDF."""
@@ -203,7 +218,8 @@ def versiones(clave: str) -> dict[str, dict]:
     vigente = next((f["origen"] for f in reversed(filas) if f.get("origen")), "")
     elegidas = {}
     for f in filas:
-        if f.get("origen", "") in ("", vigente):
+        principal = f["version"] in elegidas and not es_movil(elegidas[f["version"]])
+        if f.get("origen", "") in ("", vigente) and not (es_movil(f) and principal):
             elegidas[f["version"]] = f
     fuera = configuracion().get("versiones_fuera", {}).get(clave, {})
     return dict(sorted((v, f) for v, f in elegidas.items() if v not in fuera))

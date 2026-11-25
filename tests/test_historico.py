@@ -178,7 +178,7 @@ def test_una_version_declarada_fuera_no_entra_al_plan(tmp_path, monkeypatch):
 
 def test_una_rama_publicada_sin_capturas_nuevas_no_se_rehace(tmp_path, monkeypatch):
     from historico import tanda
-    monkeypatch.setattr(tanda.capturas, "descargar", lambda *a: [{}] * 3)
+    monkeypatch.setattr(tanda.capturas, "descargar", lambda *a, **k: [{}] * 3)
     monkeypatch.setattr(tanda.capturas, "versiones", lambda clave: {"2020-01-01": {}, "2021-01-01": {}})
     monkeypatch.setattr(tanda.cadena, "sello_de_configuracion", lambda clave: "abc")
     monkeypatch.setattr(tanda.cadena, "construir", lambda *a, **k: 1 / 0)
@@ -310,3 +310,27 @@ def test_una_fila_de_tabla_se_prueba_con_la_lectura_por_celdas(tmp_path, monkeyp
     celdas = [reedicion.texto_del_pdf(tmp_path / n, tmp_path / "cache", tmp_path) for n in cuotas]
     assert reedicion.es_de_la_fuente(antes, despues, *celdas)
     assert not reedicion.es_de_la_fuente(antes, despues, celdas[0], celdas[0])
+
+
+def test_la_edicion_para_movil_solo_cubre_versiones_sin_pdf_principal(monkeypatch):
+    def fila(captura, carpeta, version):
+        return {"archivo": f"{captura}_x.pdf", "captura": captura, "version": version, "origen": "1984-02-07",
+                "url": f"http://www.diputados.gob.mx/LeyesBiblio/{carpeta}/x.pdf"}
+    filas = [fila("2020", "pdf", "2020-01-01"), fila("2021", "pdf_mov", "2020-01-01"),
+             fila("2022", "pdf_mov", "2021-01-07"), fila("2023", "pdf_mov", "2022-05-05"),
+             fila("2024", "pdf", "2022-05-05")]
+    monkeypatch.setattr(capturas, "leer_manifiesto", lambda clave: filas)
+    elegidas = {v: f["captura"] for v, f in capturas.versiones("ninguna").items()}
+    assert elegidas == {"2020-01-01": "2020", "2021-01-07": "2022", "2022-05-05": "2024"}
+
+
+def test_el_indice_liga_cada_ley_con_su_edicion_para_movil():
+    from historico import declarar
+    fila = '<tr><td><a href="pdf/{}.pdf"></a> <a href="pdf_mov/{}.pdf"></a></td></tr>'
+    paginas = [fila.format("142_010620", "Ley_General_de_Salud") + fila.format("9", "Ley_Compartida"),
+               fila.format("LGS", "Ley_General_de_Salud") + fila.format("LFT", "Ley_Compartida")]
+    leyes = [{"clave": c, "sigla": s, "etiqueta": s, "tipo": "ley", "estado": "incluida",
+              "url": f"https://www.diputados.gob.mx/LeyesBiblio/pdf/{s}.pdf"} for c, s in (("lgs", "LGS"), ("lft", "LFT"), ("lx", "LX"))]
+    hechas = {e["clave"]: e.get("movil") for e in declarar.entradas(
+        leyes, {"LGS": ["142"], "LX": ["9"]}, declarar.moviles(paginas))}
+    assert hechas == {"lgs": "(Ley_General_de_Salud)\\.pdf", "lft": None, "lx": None}

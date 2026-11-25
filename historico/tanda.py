@@ -52,7 +52,7 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
     estado = {"fecha": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
               "configuracion": cadena.sello_de_configuracion(clave), "publicada": False}
     try:
-        filas = capturas.descargar(clave, doc["archivos"], carpeta_capturas / clave)
+        filas = capturas.descargar(clave, doc["archivos"], carpeta_capturas / clave, movil=doc.get("movil"))
         plan = capturas.versiones(clave)
         estado |= {"capturas": len(filas), "versiones_archivadas": len(plan)}
         if not plan:

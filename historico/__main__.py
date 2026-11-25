@@ -66,7 +66,8 @@ def main(argv=None) -> int:
     doc = documento(args.clave)
 
     if args.orden == "capturas":
-        filas = capturas.descargar(doc["clave"], doc["archivos"], args.capturas / doc["clave"])
+        filas = capturas.descargar(doc["clave"], doc["archivos"], args.capturas / doc["clave"],
+                                   movil=doc.get("movil"))
         con = capturas.versiones(doc["clave"])
         print(f"{doc['clave']}: {len(filas)} capturas, {len(con)} versiones"
               f" ({min(con, default='—')} a {max(con, default='—')}),"

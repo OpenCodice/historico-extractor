@@ -20,7 +20,7 @@ from . import RAIZ
 from .capturas import AGENTE, FALLO_DE_RED
 
 INDICE = "http://www.diputados.gob.mx/LeyesBiblio/index.htm"
-ANIOS = range(2007, 2023)
+ANIOS = range(2007, 2027)
 CARPETA_PDF = "/LeyesBiblio/pdf/"
 
 
@@ -75,7 +75,22 @@ def numeros(paginas: list[str], leyes: list[dict]) -> dict[str, list[str]]:
     return {s: sorted(n for n in nums if de_quien[n] == 1) for s, nums in hallados.items()}
 
 
-def entradas(leyes: list[dict], numeros_de: dict[str, list[str]]) -> list[dict]:
+def moviles(paginas: list[str]) -> dict[str, list[str]]:
+    """Nombre del PDF principal (sin fecha ni extensión, en minúsculas) → los
+    nombres que tuvo su edición para móvil. Los liga la fila del índice que
+    enlaza un solo PDF de cada carpeta."""
+    hallados = collections.defaultdict(set)
+    for pagina in paginas:
+        for fila in re.split(r"(?i)<tr\b", pagina):
+            pdf = set(re.findall(r'(?i)href="pdf/([\w-]+?)(?:_\d{6})?\.pdf"', fila))
+            movil = set(re.findall(r'(?i)href="pdf_mov/([^"/]+)\.pdf"', fila))
+            if len(pdf) == 1 and len(movil) == 1:
+                hallados[next(iter(pdf)).lower()] |= movil
+    return hallados
+
+
+def entradas(leyes: list[dict], numeros_de: dict[str, list[str]],
+             moviles_de: dict[str, list[str]] | None = None) -> list[dict]:
     salida = []
     for ley in leyes:
         if ley.get("estado") != "incluida" or CARPETA_PDF not in (ley.get("url") or ""):
@@ -86,14 +101,23 @@ def entradas(leyes: list[dict], numeros_de: dict[str, list[str]]) -> list[dict]:
             "etiqueta": ley["etiqueta"], "tipo": ley["tipo"], "url": ley["url"],
             "archivos": f"({'|'.join(nombres)})(_\\d{{6}})?\\.pdf",
         })
+        principal = [ley["url"].rsplit("/", 1)[-1][:-4].lower()] + numeros_de.get(ley["sigla"], [])
+        salida[-1]["movil"] = {m for p in principal for m in (moviles_de or {}).get(p, [])}
+    # Una edición para móvil que dos leyes reclaman no es de ninguna.
+    de_quien = collections.Counter(m for e in salida for m in e["movil"])
+    for e in salida:
+        movil = sorted(m for m in e.pop("movil") if de_quien[m] == 1)
+        if movil:
+            e["movil"] = f"({'|'.join(re.escape(m) for m in movil)})\\.pdf"
     return salida
 
 
 def declarar(registro: pathlib.Path, cache: pathlib.Path) -> tuple[int, int]:
     """Reescribe las entradas federales de documentos.json. Devuelve (leyes, con número)."""
     leyes = json.loads(registro.read_text(encoding="utf-8"))["documentos"]
-    numeros_de = numeros(indices(cache), leyes)
-    nuevas = entradas(leyes, numeros_de)
+    paginas = indices(cache)
+    numeros_de = numeros(paginas, leyes)
+    nuevas = entradas(leyes, numeros_de, moviles(paginas))
     ruta = RAIZ / "documentos.json"
     config = json.loads(ruta.read_text(encoding="utf-8"))
     config["documentos"] = [d for d in config["documentos"] if d["extractor"] != "federal"] + nuevas

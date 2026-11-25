@@ -88,6 +88,12 @@ tabla del README de `historico` lleva la cuenta por rama.
 `python -m historico faltantes --out <clon de historico>` lo mide en las
 ramas ya publicadas sin rehacerlas.
 
+Desde 2019 la Cámara publica cada ley también en una edición para móvil
+(`LeyesBiblio/pdf_mov/`), que Wayback archivó en otros días. `declarar` liga
+cada ley con ese archivo por el índice de LeyesBiblio (`movil` en
+`documentos.json`) y sus capturas entran al manifiesto; una de ellas hace
+versión solo cuando no hay captura del PDF principal con esa fecha.
+
 ## Compuerta de coherencia
 
 Las compuertas de los extractores comparan una versión contra su propio PDF,
