@@ -1,0 +1,18 @@
+{
+ "fecha": "2026-11-25T06:38:04+00:00",
+ "configuracion": "5248bb54f469",
+ "publicada": true,
+ "capturas": 2,
+ "versiones_archivadas": 2,
+ "fuera": [
+  {
+   "version": "2021-05-20",
+   "sha256": "fad39c566bd6eedb21c7825929a31bf950014121f50a7683997eb3de24e5d630",
+   "motivo": "auditar:   lsn/005: encabezado_pegado «Fracción declarada inválida por sentencia de la SCJN a Acción de Inconstituciona»"
+  }
+ ],
+ "versiones": 1,
+ "desde": "2025-11-14",
+ "hasta": "2025-11-14",
+ "sin_explicar": 0
+}

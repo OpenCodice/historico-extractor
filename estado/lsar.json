@@ -1,0 +1,18 @@
+{
+ "fecha": "2026-11-25T06:08:32+00:00",
+ "configuracion": "5248bb54f469",
+ "publicada": true,
+ "capturas": 16,
+ "versiones_archivadas": 9,
+ "fuera": [
+  {
+   "version": "2005-01-11",
+   "sha256": "70ae8741080452a8f0d84d4b053fe752125e153a0f00747e8631aada9b11cab0",
+   "motivo": "auditar:   lsar/073: texto_omitido «CAPITULO IV De la Cuenta Individual y de los Planes de Pensiones Establecidos po»"
+  }
+ ],
+ "versiones": 8,
+ "desde": "2007-06-28",
+ "hasta": "2025-11-14",
+ "sin_explicar": 0
+}
