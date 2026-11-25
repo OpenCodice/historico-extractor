@@ -19,6 +19,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -38,6 +39,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -45,7 +47,7 @@
   "desde": "2016-01-12",
   "hasta": "2016-06-17",
   "fuente_antes": "3307e507669b7af4cb3265e1337db7449f05cc205329f4597c19ca46b249304f",
-  "fuente_despues": "5608bff9d12cb9a69bda085adc4d9cbdd9f3a66cb243669600db8bfb0087716f",
+  "fuente_despues": "0296c50fcb45207900a3fbc0fc149ac4638332f1306204da846010757bfac7d3",
   "pendientes": [],
   "explicado": [
    "022",
@@ -98,18 +100,36 @@
   ],
   "solo_notas": [],
   "solo_forma": [],
-  "reedicion": [
-   "242",
-   "249"
-  ],
+  "reedicion": [],
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
  {
   "desde": "2016-06-17",
+  "hasta": "2018-06-25",
+  "fuente_antes": "0296c50fcb45207900a3fbc0fc149ac4638332f1306204da846010757bfac7d3",
+  "fuente_despues": "5608bff9d12cb9a69bda085adc4d9cbdd9f3a66cb243669600db8bfb0087716f",
+  "pendientes": [],
+  "explicado": [
+   "242",
+   "249"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2018-06-25",
   "hasta": "2019-08-09",
   "fuente_antes": "5608bff9d12cb9a69bda085adc4d9cbdd9f3a66cb243669600db8bfb0087716f",
   "fuente_despues": "c7077e9570ace3fa7d51047bf5ba401b459503b9e05de6fd74fb4ae65924b351",
@@ -130,6 +150,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -151,6 +172,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -167,6 +189,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -199,6 +222,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  }
