@@ -1,0 +1,38 @@
+[
+ {
+  "desde": "2008-02-06",
+  "hasta": "2008-07-01",
+  "articulo": "085-bis",
+  "antes": "43d4137975edfe1f",
+  "despues": "2bd37f8907409ef5",
+  "veredicto": "fuente",
+  "detalle": "el PDF de febrero trae al final «Texto del artículo 85-Bis de esta Ley, que seguirá vigente hasta el 18 de julio de 2013»; el de julio lo reparte en notas por párrafo («Párrafo primero, reformado por DOF 18-07-2006, que seguirá vigente…»)"
+ },
+ {
+  "desde": "2008-02-06",
+  "hasta": "2008-07-01",
+  "articulo": "115",
+  "antes": "c521eb073fb76af6",
+  "despues": "e6190e085503a5f3",
+  "veredicto": "fuente",
+  "detalle": "el PDF de febrero trae al final el texto de los párrafos que siguen vigentes hasta el 18 de julio de 2013; el de julio lo reparte en notas por párrafo"
+ },
+ {
+  "desde": "2010-05-25",
+  "hasta": "2014-01-10",
+  "articulo": "045-k",
+  "antes": "f3bd6f8995f57889",
+  "despues": "8da4e8f4343b9f7c",
+  "veredicto": "fuente",
+  "detalle": "el PDF de 2014 ya no trae el párrafo séptimo que seguía vigente hasta el 18 de julio de 2013; lo sustituye la nota «Reforma DOF 18-07-2006: Derogó del artículo el entonces párrafo séptimo»"
+ },
+ {
+  "desde": "2010-05-25",
+  "hasta": "2014-01-10",
+  "articulo": "085-bis",
+  "antes": "2bd37f8907409ef5",
+  "despues": "34bead3a74810e94",
+  "veredicto": "fuente",
+  "detalle": "el PDF de 2014 ya no trae los párrafos que seguían vigentes hasta el 18 de julio de 2013; queda la nota «Reforma DOF 18-07-2006: Derogó del artículo el entonces párrafo segundo»"
+ }
+]
