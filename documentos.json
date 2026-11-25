@@ -32,6 +32,273 @@
       "registro": {
         "huecos": true
       }
+    },
+    "cff": {
+      "version_por_notas": true
+    },
+    "cnpp": {
+      "version_por_notas": true
+    },
+    "laam": {
+      "version_por_notas": true
+    },
+    "laero": {
+      "version_por_notas": true
+    },
+    "lagra": {
+      "version_por_notas": true
+    },
+    "lamp": {
+      "version_por_notas": true
+    },
+    "lapp": {
+      "version_por_notas": true
+    },
+    "lcmm": {
+      "version_por_notas": true
+    },
+    "lcndh": {
+      "version_por_notas": true
+    },
+    "lcpaf": {
+      "version_por_notas": true
+    },
+    "ldofgg": {
+      "version_por_notas": true
+    },
+    "ldpam": {
+      "version_por_notas": true
+    },
+    "ldsca": {
+      "version_por_notas": true
+    },
+    "lebhn": {
+      "version_por_notas": true
+    },
+    "lexp": {
+      "version_por_notas": true
+    },
+    "lfc": {
+      "version_por_notas": true
+    },
+    "lfcdo": {
+      "version_por_notas": true
+    },
+    "lfcsq": {
+      "version_por_notas": true
+    },
+    "lfda": {
+      "version_por_notas": true
+    },
+    "lfdefp": {
+      "version_por_notas": true
+    },
+    "lfep": {
+      "version_por_notas": true
+    },
+    "lffaosc": {
+      "version_por_notas": true
+    },
+    "lffmaa": {
+      "version_por_notas": true
+    },
+    "lfi": {
+      "version_por_notas": true
+    },
+    "lfisan": {
+      "version_por_notas": true
+    },
+    "lfm": {
+      "version_por_notas": true
+    },
+    "lfmzaah": {
+      "version_por_notas": true
+    },
+    "lfpc": {
+      "version_por_notas": true
+    },
+    "lfpca": {
+      "version_por_notas": true
+    },
+    "lfped": {
+      "version_por_notas": true
+    },
+    "lfprh": {
+      "version_por_notas": true
+    },
+    "lfpsdmh": {
+      "version_por_notas": true
+    },
+    "lfrcf": {
+      "version_por_notas": true
+    },
+    "lfrpe": {
+      "version_por_notas": true
+    },
+    "lfsp": {
+      "version_por_notas": true
+    },
+    "lfsv": {
+      "version_por_notas": true
+    },
+    "lft": {
+      "version_por_notas": true
+    },
+    "lftse": {
+      "version_por_notas": true
+    },
+    "lgamvlv": {
+      "version_por_notas": true
+    },
+    "lgappcea": {
+      "version_por_notas": true
+    },
+    "lgbn": {
+      "version_por_notas": true
+    },
+    "lgcc": {
+      "version_por_notas": true
+    },
+    "lgcdc": {
+      "version_por_notas": true
+    },
+    "lgcfd": {
+      "version_por_notas": true
+    },
+    "lgcg": {
+      "version_por_notas": true
+    },
+    "lgdfs": {
+      "version_por_notas": true
+    },
+    "lgdlpi": {
+      "version_por_notas": true
+    },
+    "lgdnna": {
+      "version_por_notas": true
+    },
+    "lgds": {
+      "version_por_notas": true
+    },
+    "lgeepa": {
+      "version_por_notas": true
+    },
+    "lgipd": {
+      "version_por_notas": true
+    },
+    "lgipe": {
+      "version_por_notas": true
+    },
+    "lgp": {
+      "version_por_notas": true
+    },
+    "lgpas": {
+      "version_por_notas": true
+    },
+    "lgpgir": {
+      "version_por_notas": true
+    },
+    "lgpp": {
+      "version_por_notas": true
+    },
+    "lgs": {
+      "version_por_notas": true
+    },
+    "lgsmime": {
+      "version_por_notas": true
+    },
+    "lgt": {
+      "version_por_notas": true
+    },
+    "lgtoc": {
+      "version_por_notas": true
+    },
+    "lgvs": {
+      "version_por_notas": true
+    },
+    "lie": {
+      "version_por_notas": true
+    },
+    "lieps": {
+      "version_por_notas": true
+    },
+    "lifnvt": {
+      "version_por_notas": true
+    },
+    "lissfam": {
+      "version_por_notas": true
+    },
+    "lissste": {
+      "version_por_notas": true
+    },
+    "lmigra": {
+      "version_por_notas": true
+    },
+    "lmv": {
+      "version_por_notas": true
+    },
+    "lncm": {
+      "version_por_notas": true
+    },
+    "lnep": {
+      "version_por_notas": true
+    },
+    "loapf": {
+      "version_por_notas": true
+    },
+    "loefam": {
+      "version_por_notas": true
+    },
+    "loipn": {
+      "version_por_notas": true
+    },
+    "lopdc": {
+      "version_por_notas": true
+    },
+    "lopgjdf": {
+      "version_por_notas": true
+    },
+    "lpdusf": {
+      "version_por_notas": true
+    },
+    "lperc": {
+      "version_por_notas": true
+    },
+    "lpf": {
+      "version_por_notas": true
+    },
+    "lpue": {
+      "version_por_notas": true
+    },
+    "lrart6-mdr": {
+      "version_por_notas": true
+    },
+    "lrascap": {
+      "version_por_notas": true
+    },
+    "lrfiyii-art105": {
+      "version_por_notas": true
+    },
+    "lrfxiiib-art123": {
+      "version_por_notas": true
+    },
+    "lrsf": {
+      "version_por_notas": true
+    },
+    "lss": {
+      "version_por_notas": true
+    },
+    "ltosf": {
+      "version_por_notas": true
+    },
+    "lviv": {
+      "version_por_notas": true
+    },
+    "reg-diputados": {
+      "version_por_notas": true
+    },
+    "reg-senado": {
+      "version_por_notas": true
     }
   },
   "documentos": [
