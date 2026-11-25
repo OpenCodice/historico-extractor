@@ -83,7 +83,8 @@ evidencia: la Cámara anota cada reforma al pie del artículo con su fecha del
 DOF. Un artículo que cambia entre dos versiones consecutivas queda:
 
 - **explicado**, si alguna versión de la cadena le anota una reforma de ese
-  periodo;
+  periodo (o una sentencia de la SCJN notificada en él: su nota cita la
+  fecha de notificación, que es cuando el texto cambia);
 - **solo notas**, si el texto es idéntico y cambiaron las líneas de notas;
 - **solo forma**, si son las mismas palabras en el mismo orden, partidas en
   otros párrafos (una nota nueva corta el párrafo donde antes seguía);

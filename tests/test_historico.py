@@ -269,3 +269,11 @@ def test_el_membrete_y_el_numero_de_pagina_suelto_se_leen_de_cada_pdf(tmp_path, 
     de_m = [t.rsplit("\n", 1)[0] + f"\n{n} de 8" for n, t in enumerate(sueltas, 1)]
     monkeypatch.setattr(pdfplumber, "open", lambda ruta: Pdf(de_m))
     assert cadena.membretes(tmp_path, ["Cámara de Diputados del H. Congreso"]) == [membrete]
+
+
+def test_la_notificacion_de_una_sentencia_explica_el_cambio():
+    nota = ("Fracción declarada inválida por Resolutivos de la SCJN a Acción de Inconstitucionalidad "
+            "notificados para efectos legales el 08-05-2023 Fracción que recupera su vigencia por Engrose "
+            "de sentencia de la SCJN notificado el 31-05-2023 y publicado DOF 24-11-2023")
+    assert coherencia.fechas_anotadas(nota) == {"2023-05-08", "2023-05-31", "2023-11-24"}
+    assert coherencia.fechas_anotadas("vigente hasta el 08-05-2023 conforme al decreto") == set()

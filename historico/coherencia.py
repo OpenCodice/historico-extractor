@@ -47,7 +47,10 @@ from . import RAIZ
 
 from . import reedicion
 
-NOTA = re.compile(r"DOF[^\n]*")
+# Una nota de reforma cita su DOF. La de una sentencia cita además la fecha
+# en que se notificó, que es cuando el texto cambia: «declarado inválido por
+# Resolutivos de la SCJN … notificados para efectos legales el 08-05-2023».
+NOTA = re.compile(r"[^\n]*SCJN[^\n]*|DOF[^\n]*")
 FECHA = re.compile(r"(\d{2})-(\d{2})-(\d{4})")
 LINEA_DE_NOTA = re.compile(r"_.*_")
 ALFANUMERICO = re.compile(r"[^\W_]")
@@ -144,8 +147,8 @@ def medir(repo: pathlib.Path, rama: str, texto_de=None) -> list[dict]:
         fuente[h] = re.search(r"^Fuente-Sha256: (\S+)", cuerpo, re.M)[1]
     anotadas: dict[str, set[str]] = {}
     for h, _ in commits:
-        # Una sola búsqueda por versión: «<commit>:<ruta>:<renglón con DOF>».
-        hallado = subprocess.run(["git", "grep", "-I", "DOF", h, "--", "*.md"],
+        # Una sola búsqueda por versión: «<commit>:<ruta>:<renglón de nota>».
+        hallado = subprocess.run(["git", "grep", "-I", "-e", "DOF", "-e", "SCJN", h, "--", "*.md"],
                                  cwd=repo, capture_output=True, text=True).stdout
         for linea in hallado.splitlines():
             _, ruta, renglon = linea.split(":", 2)
