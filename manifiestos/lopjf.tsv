@@ -31,5 +31,5 @@ archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
 20230929181555_LOPJF.pdf	20230929181555	http://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	83f8abe3df81feae284cf6efce4e1e1b105a52501e1a7e9d5d1c25afbf5bc628	1048576	ilegible: PdfminerException	0		portada
 20231102181105_LOPJF.pdf	20231102181105	https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	a431c50433b1626b0f508d0b748bce5cfa44fadabf900163e0dbc4e21bbfe773	1181987	2023-10-27	96	2021-06-07	portada
 20240203064747_LOPJF.pdf	20240203064747	https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	3e9e6593b7c703d81e636366344d1d423bc8753f5d028c76ffee6df9e8819172	1219480	2024-01-26	101	2021-06-07	portada
-20241221181321_LOPJF.pdf	20241221181321	https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	d5525a8ed2205176e9e0686fc5fdd20d2acf56f96c136032cf68ee3c40faa4c2	766901		83		portada
-20251202060946_LOPJF.pdf	20251202060946	https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	6569965cdfc64e4c223fc12d5a8ac885b7fad6cb432a0370d70f4dd7b8343fd1	885319	2025-11-28	84		portada
+20241221181321_LOPJF.pdf	20241221181321	https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	d5525a8ed2205176e9e0686fc5fdd20d2acf56f96c136032cf68ee3c40faa4c2	766901	2024-12-20	83	2024-12-20	portada
+20251202060946_LOPJF.pdf	20251202060946	https://www.diputados.gob.mx/LeyesBiblio/pdf/LOPJF.pdf	6569965cdfc64e4c223fc12d5a8ac885b7fad6cb432a0370d70f4dd7b8343fd1	885319	2025-11-28	84	2024-12-20	portada

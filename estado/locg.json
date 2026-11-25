@@ -1,13 +1,6 @@
 {
- "fecha": "2026-11-25T02:25:33+00:00",
+ "fecha": "2026-11-25T15:15:15+00:00",
  "configuracion": "5248bb54f469",
  "publicada": false,
- "capturas": 25,
- "versiones_archivadas": 23,
- "fuera": [],
- "versiones": 23,
- "desde": "2006-09-13",
- "hasta": "2025-07-07",
- "sin_explicar": 2,
- "motivo": "la coherencia deja artículos sin explicar"
+ "motivo": "HTTPError: HTTP Error 503: Service Unavailable"
 }
