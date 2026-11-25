@@ -33,7 +33,7 @@ MESES = {m: n for n, m in enumerate(
     "enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(), 1)}
 ORIGEN = re.compile(
     r"publicad[oa]s?\s+en\s+el\s+Diario\s+Oficial\s+de\s+la\s+Federación\s+(?:el\s+(?:día\s+)?)?"
-    r"(\d{1,2})\s*[º°o]?\.?\s+de\s+([a-z]+)\s+de\s+(\d{4})", re.I)
+    r"(\d{1,2})\s*[º°o]?\.?\s+de\s+([a-z]+)\s+(?:del?\s+)?(\d{4})", re.I)
 
 
 def version_de_portada(texto: str) -> str:
@@ -50,6 +50,10 @@ def origen_de_portada(texto: str) -> str:
     if not m or m[2].lower() not in MESES:
         return ""
     return f"{m[3]}-{MESES[m[2].lower()]:02d}-{int(m[1]):02d}"
+
+
+def _ilegible(fila: dict) -> bool:
+    return (fila.get("version") or "").startswith("ilegible")
 
 
 def fechada_por(clave: str) -> str:
@@ -141,7 +145,9 @@ def descargar(clave: str, patron: str, destino: pathlib.Path, capturas=None) -> 
     for ts, url in capturas if capturas is not None else listar(patron, destino.parent / "_cdx.txt"):
         archivo = f"{ts}_{url.rsplit('/', 1)[-1]}"
         ruta = destino / archivo
-        if archivo in filas and "origen" in filas[archivo] \
+        # Una portada de la que no se leyó cuándo se publicó la ley se vuelve
+        # a leer: sin ese dato sus capturas se mezclan con las de otra ley.
+        if archivo in filas and (filas[archivo].get("origen") or _ilegible(filas[archivo])) \
                 and (filas[archivo].get("fechada_por") or "portada") == modo:
             continue
         if not ruta.exists():

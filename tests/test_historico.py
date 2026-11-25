@@ -113,6 +113,8 @@ def test_la_portada_dice_de_que_ley_es_la_captura():
                "el 1º de enero de 2002\nTEXTO VIGENTE\nÚltima reforma publicada DOF 18-07-2006")
     assert capturas.origen_de_portada(portada) == "2002-01-01"
     assert capturas.version_de_portada(portada) == "2006-07-18"
+    sin_de = "Nueva Ley publicada en el Diario Oficial de la Federación el 20 de diciembre 2024"
+    assert capturas.origen_de_portada(sin_de) == "2024-12-20"
     nueva = "Nueva Ley DOF 07-11-2025\nNueva Ley publicada en el Diario Oficial de la Federación el 7 de noviembre de 2025"
     assert capturas.version_de_portada(nueva) == "2025-11-07"
 
