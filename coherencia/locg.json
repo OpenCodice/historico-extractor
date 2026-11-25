@@ -207,13 +207,7 @@
   "hasta": "2013-10-15",
   "fuente_antes": "049c1c7156633b7eb067d701c5e53d1ac5ec98e3ef09cee2b7c87052b8e19182",
   "fuente_despues": "dcbba075224b3e5577df16616f13795efb4826a2c140db6c456f6cef52e0b6fc",
-  "pendientes": [
-   {
-    "articulo": "038",
-    "antes": "c2e2426d2ef933c7",
-    "despues": "96845f3788065c0d"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "100-bis"
   ],
@@ -233,22 +227,14 @@
   "otro_orden": [],
   "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "038"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2013-10-15",
   "hasta": "2014-05-20",
   "fuente_antes": "dcbba075224b3e5577df16616f13795efb4826a2c140db6c456f6cef52e0b6fc",
   "fuente_despues": "82d12a05159506960490fa76afd460a208b2c4bf7efa0aa2f9c456123f17e11a",
-  "pendientes": [
-   {
-    "articulo": "038",
-    "antes": "96845f3788065c0d",
-    "despues": "c2e2426d2ef933c7"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "020",
    "023",
@@ -282,9 +268,7 @@
   "otro_orden": [],
   "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "038"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2014-05-20",

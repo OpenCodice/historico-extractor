@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-25T13:44:52+00:00",
+ "fecha": "2026-11-25T16:03:07+00:00",
  "configuracion": "5248bb54f469",
  "publicada": false,
  "capturas": 40,
@@ -29,6 +29,15 @@
  "versiones": 18,
  "desde": "2008-11-13",
  "hasta": "2025-11-07",
- "sin_explicar": 65,
+ "sin_explicar": 2,
+ "faltan": [
+  "2009-06-05",
+  "2009-11-27",
+  "2011-12-12",
+  "2015-11-18",
+  "2020-11-06",
+  "2020-12-08"
+ ],
+ "anteriores": 29,
  "motivo": "la coherencia deja artículos sin explicar"
 }

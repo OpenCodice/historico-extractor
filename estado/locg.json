@@ -1,6 +1,22 @@
 {
- "fecha": "2026-11-25T15:15:15+00:00",
+ "fecha": "2026-11-25T17:29:39+00:00",
  "configuracion": "5248bb54f469",
- "publicada": false,
- "motivo": "HTTPError: HTTP Error 503: Service Unavailable"
+ "publicada": true,
+ "capturas": 25,
+ "versiones_archivadas": 23,
+ "fuera": [],
+ "versiones": 23,
+ "desde": "2006-09-13",
+ "hasta": "2025-07-07",
+ "sin_explicar": 0,
+ "faltan": [
+  "2012-10-08",
+  "2013-04-02",
+  "2016-10-04",
+  "2016-12-28",
+  "2017-01-27",
+  "2017-12-07",
+  "2025-07-02"
+ ],
+ "anteriores": 12
 }
