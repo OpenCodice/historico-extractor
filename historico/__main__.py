@@ -45,7 +45,14 @@ def main(argv=None) -> int:
     sp.add_argument("--publicar", action="store_true", help="empuja las ramas que pasen y el índice")
     sp.add_argument("--desde-cero", action="store_true")
 
+    sp = sub.add_parser("faltantes", help="mide qué versiones le faltan a cada rama publicada")
+    sp.add_argument("claves", nargs="*", help="vacío = todas las publicadas")
+    sp.add_argument("--out", required=True, type=pathlib.Path, help="clon de OpenCodice/historico")
+
     args = p.parse_args(argv)
+    if args.orden == "faltantes":
+        print(tanda.medir_faltantes(args.out, args.claves or None))
+        return 0
     if args.orden == "tanda":
         quedan = tanda.correr(args.lote, args.claves.split() or None,
                               args.capturas, args.out, args.extractores, args.publicar, args.desde_cero)

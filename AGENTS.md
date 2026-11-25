@@ -36,6 +36,7 @@ Publicacion).
 | `historico/declarar.py` | Declara en `documentos.json` las leyes federales del registro vigente (`leyes-federales/fuentes.json`), con el número que tuvo su PDF antes de nombrarse por sigla; lo saca de los índices de LeyesBiblio archivados. |
 | `historico/cadena.py` | Por cada versión, en orden: extrae, pasa las compuertas del extractor y hace el commit en la rama del documento, fechado el día del DOF. Continúa una rama a medias si es prefijo del plan con el mismo extractor. |
 | `historico/coherencia.py` | La compuerta de la cadena (ver abajo). |
+| `historico/faltantes.py` | Las publicaciones que anotan los artículos y no tienen versión en la rama. |
 | `historico/reedicion.py` | Prueba, con el texto de los dos PDF, que un cambio sin reforma lo hizo la Cámara. |
 | `coherencia/<clave>.json`, `verificaciones/<clave>.json` | El informe de la compuerta de cada rama y los veredictos del agente. |
 
@@ -74,6 +75,18 @@ Dos cosas se leen de cada PDF sin declarar nada (`cadena.membretes`): el
 renglón del membrete con la fecha de esa versión, que en una ley de pocas
 páginas no se repite lo bastante para que el extractor lo reconozca, y el
 número de página suelto al pie que algunos PDF llevaron entre 2005 y 2012.
+
+## Versiones que faltan
+
+El histórico solo tiene las versiones que alguien archivó. Las notas al pie
+de los artículos anotan todas las fechas del DOF en que se reformaron: una
+fecha anotada posterior a la primera versión que no es la de ninguna versión
+de la rama es una publicación cuyo PDF no se capturó (`historico/faltantes.py`).
+Cada tanda lo mide y lo deja en `estado/<clave>.json` (`faltan`: las fechas;
+`anteriores`: cuántas publicaciones hubo antes de la primera versión), y la
+tabla del README de `historico` lleva la cuenta por rama.
+`python -m historico faltantes --out <clon de historico>` lo mide en las
+ramas ya publicadas sin rehacerlas.
 
 ## Compuerta de coherencia
 

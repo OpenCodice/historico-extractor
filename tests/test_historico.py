@@ -279,3 +279,12 @@ def test_la_notificacion_de_una_sentencia_explica_el_cambio():
             "de sentencia de la SCJN notificado el 31-05-2023 y publicado DOF 24-11-2023")
     assert coherencia.fechas_anotadas(nota) == {"2023-05-08", "2023-05-31", "2023-11-24"}
     assert coherencia.fechas_anotadas("vigente hasta el 08-05-2023 conforme al decreto") == set()
+
+
+def test_una_fecha_anotada_sin_version_es_una_version_que_falta(tmp_path, monkeypatch):
+    from historico import faltantes
+    monkeypatch.setattr(faltantes.cadena, "_hechas", lambda repo, rama: [
+        {"Publicacion": "2010-05-25"}, {"Publicacion": "2014-01-10"}])
+    monkeypatch.setattr(faltantes, "anotadas", lambda repo, rama: {
+        "2006-07-18", "2010-05-25", "2012-04-09", "2014-01-10"})
+    assert faltantes.medir(tmp_path, "lic") == {"faltan": ["2012-04-09"], "anteriores": 1}

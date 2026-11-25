@@ -14,7 +14,7 @@ import subprocess
 import time
 
 from . import RAIZ, configuracion
-from . import cadena, capturas, coherencia, reedicion
+from . import cadena, capturas, coherencia, faltantes, reedicion
 
 ESTADO = RAIZ / "estado"
 INFORMES = RAIZ / "coherencia"
@@ -85,6 +85,7 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
         fechas = [t["Publicacion"] for t in cadena._hechas(repo, clave)]
         estado |= {"versiones": len(fechas), "desde": min(fechas), "hasta": max(fechas),
                    "sin_explicar": sum(len(p["sin_explicar"]) for p in pasos)}
+        estado |= faltantes.medir(repo, clave)
         if estado["sin_explicar"]:
             return estado | {"motivo": "la coherencia deja artículos sin explicar"}
         if publicar:
@@ -101,14 +102,34 @@ def guardar_estado(clave: str, estado: dict) -> None:
 
 
 def tabla_de_ramas() -> str:
-    filas = ["| Rama | Ley | Versiones | Periodo |", "|---|---|---|---|"]
+    """Una fila por rama publicada. «Faltan» son las publicaciones del periodo
+    que anotan los artículos y de las que nadie archivó el PDF."""
+    filas = ["| Rama | Ley | Versiones | Periodo | Faltan |", "|---|---|---|---|---|"]
     for doc in configuracion()["documentos"]:
         e = leer_estado(doc["clave"])
         if e and e.get("publicada"):
             nombre = doc.get("etiqueta", "Constitución Política de los Estados Unidos Mexicanos")
+            faltan = len(e["faltan"]) if "faltan" in e else ""
             filas.append(f"| [`{doc['clave']}`](../../tree/{doc['clave']}) | {nombre} | "
-                         f"{e['versiones']} | {e['desde']} a {e['hasta']} |")
+                         f"{e['versiones']} | {e['desde']} a {e['hasta']} | {faltan} |")
     return "\n".join(filas)
+
+
+def medir_faltantes(repo: pathlib.Path, claves: list[str] | None = None) -> str:
+    """Mide las ramas ya publicadas y lo deja en su estado: una rama sin
+    capturas nuevas no se rehace, y no pasaría por `procesar`."""
+    ramas = versiones = faltan = anteriores = 0
+    for doc in configuracion()["documentos"]:
+        clave, e = doc["clave"], leer_estado(doc["clave"])
+        if not e or not e.get("publicada") or (claves and clave not in claves):
+            continue
+        cadena._correr("git", "fetch", "-q", "origin", f"+refs/heads/{clave}:refs/heads/{clave}", cwd=repo)
+        e |= faltantes.medir(repo, clave)
+        guardar_estado(clave, e)
+        ramas, versiones = ramas + 1, versiones + e["versiones"]
+        faltan, anteriores = faltan + len(e["faltan"]), anteriores + e["anteriores"]
+    return (f"{ramas} ramas, {versiones} versiones; faltan {faltan} publicaciones del periodo "
+            f"y hubo {anteriores} antes de la primera versión")
 
 
 def publicar_indice(repo: pathlib.Path) -> bool:
