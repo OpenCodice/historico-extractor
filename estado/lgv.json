@@ -1,0 +1,18 @@
+{
+ "fecha": "2026-11-24T23:20:15+00:00",
+ "configuracion": "5248bb54f469",
+ "publicada": true,
+ "capturas": 11,
+ "versiones_archivadas": 9,
+ "fuera": [
+  {
+   "version": "2013-01-09",
+   "sha256": "55008a17884e3767146b6fe374d3f7be1678be2ac60eac2b0bdc53ecdb1dcb52",
+   "motivo": "auditar:   lgv/150: encabezado_pegado «El Fondo será fiscalizado anualmente por la Auditoría Superior de la Federación»"
+  }
+ ],
+ "versiones": 8,
+ "desde": "2013-05-03",
+ "hasta": "2024-04-01",
+ "sin_explicar": 0
+}

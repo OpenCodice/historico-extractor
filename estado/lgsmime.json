@@ -1,0 +1,18 @@
+{
+ "fecha": "2026-11-24T23:06:54+00:00",
+ "configuracion": "5248bb54f469",
+ "publicada": true,
+ "capturas": 18,
+ "versiones_archivadas": 9,
+ "fuera": [
+  {
+   "version": "2022-04-19",
+   "sha256": "4f2844d77ee66b19363dfee3fd888f838f2193d72896795a0ce7363ec6d90d58",
+   "motivo": "auditar:   lgsmime/010: encabezado_pegado «Inciso declarado inválido por sentencia de la SCJN a Acción de Inconstitucionali»"
+  }
+ ],
+ "versiones": 8,
+ "desde": "1996-11-22",
+ "hasta": "2025-11-14",
+ "sin_explicar": 0
+}

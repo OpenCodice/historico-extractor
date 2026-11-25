@@ -1,0 +1,109 @@
+[
+ {
+  "desde": "2013-04-04",
+  "hasta": "2014-01-10",
+  "fuente_antes": "d09ee43226395d1832abc1f0c3c62d2764ae73a5c5094c8827b7e5ecba25d014",
+  "fuente_despues": "bfa684b57753d7be3593838c47c9a12bf556b792cc592c4788bb616c80edbe72",
+  "pendientes": [],
+  "explicado": [
+   "049",
+   "050",
+   "051",
+   "080",
+   "369",
+   "372"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2014-01-10",
+  "hasta": "2018-06-22",
+  "fuente_antes": "bfa684b57753d7be3593838c47c9a12bf556b792cc592c4788bb616c80edbe72",
+  "fuente_despues": "a0e050d7c9fcd8647e5d9e4e0c81261c271f51d1d4799c4a0dc918dd2e4599fe",
+  "pendientes": [],
+  "explicado": [
+   "027"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2018-06-22",
+  "hasta": "2022-05-11",
+  "fuente_antes": "a0e050d7c9fcd8647e5d9e4e0c81261c271f51d1d4799c4a0dc918dd2e4599fe",
+  "fuente_despues": "2e1115fa64e392430ac555cfd2b1c8a44dd9b1154a6c47e710a946a832052cf3",
+  "pendientes": [],
+  "explicado": [
+   "368"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2022-05-11",
+  "hasta": "2024-01-24",
+  "fuente_antes": "2e1115fa64e392430ac555cfd2b1c8a44dd9b1154a6c47e710a946a832052cf3",
+  "fuente_despues": "46a46b7f20dd07a000aac9f4ca632ebc5e7f964a42422d8bf902488b2f09ea87",
+  "pendientes": [],
+  "explicado": [
+   "334",
+   "335",
+   "364",
+   "388",
+   "478"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2024-01-24",
+  "hasta": "2025-11-14",
+  "fuente_antes": "46a46b7f20dd07a000aac9f4ca632ebc5e7f964a42422d8bf902488b2f09ea87",
+  "fuente_despues": "1e049d88e21ced9b995b6727c474bcffdfd4e1a0dd4d09d2bb41ce994fe08416",
+  "pendientes": [],
+  "explicado": [
+   "193",
+   "280",
+   "281",
+   "479"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]
