@@ -8,5 +8,10 @@
  "versiones": 5,
  "desde": "1983-12-30",
  "hasta": "2021-07-31",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "1984-05-11",
+  "2025-11-14"
+ ],
+ "anteriores": 0
 }

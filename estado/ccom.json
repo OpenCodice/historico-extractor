@@ -54,5 +54,9 @@
  "versiones": 3,
  "desde": "2018-03-28",
  "hasta": "2025-11-14",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2018-12-31"
+ ],
+ "anteriores": 57
 }

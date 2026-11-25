@@ -8,5 +8,9 @@
  "versiones": 5,
  "desde": "1994-01-05",
  "hasta": "2022-05-11",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2008-11-18"
+ ],
+ "anteriores": 0
 }

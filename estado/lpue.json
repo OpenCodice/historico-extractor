@@ -8,5 +8,9 @@
  "versiones": 6,
  "desde": "1993-07-19",
  "hasta": "2020-12-07",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2013-12-26"
+ ],
+ "anteriores": 0
 }
