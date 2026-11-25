@@ -1,8 +1,12 @@
 {
- "fecha": "2026-11-23T23:58:13+00:00",
+ "fecha": "2026-11-25T13:04:57+00:00",
  "configuracion": "5248bb54f469",
- "publicada": false,
+ "publicada": true,
  "capturas": 7,
  "versiones_archivadas": 3,
- "motivo": "RuntimeError: git commit -q --allow-empty -m Versión LCAAA (DOF 1936-05-12)\n\nDocumento: lcaaa\nTipo: version\nPublicacion: 1936-05-12\nPublicacion-Origen: portada\nMedio: DOF\nFuente: https://web.archive.org/web/20081216104506id_/http://www.diputados.gob.mx/LeyesBiblio/pdf/23.pdf\nFuente-Sha256: c2ce97aaf"
+ "fuera": [],
+ "versiones": 3,
+ "desde": "1936-05-12",
+ "hasta": "2012-04-09",
+ "sin_explicar": 0
 }

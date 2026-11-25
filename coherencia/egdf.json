@@ -4,138 +4,7 @@
   "hasta": "2008-04-28",
   "fuente_antes": "5edc772b3b81db50d915e3a951163abf5b348a519c702f4042fe248def82e1e2",
   "fuente_despues": "a4ecfc096f78c4bde1af132602c7c342217224248c1e8c3ecd1b928ebff2d8a1",
-  "pendientes": [
-   {
-    "articulo": "010",
-    "antes": "420ac5a74a55a8f5",
-    "despues": "7594a538e471ead9"
-   },
-   {
-    "articulo": "011",
-    "antes": "4cb7bb95550f63cb",
-    "despues": "a8c04c9b7fc9a8d4"
-   },
-   {
-    "articulo": "012",
-    "antes": "11dde6a33f7c50e1",
-    "despues": "68a9a5716a870043"
-   },
-   {
-    "articulo": "017",
-    "antes": "1a88737464e5b330",
-    "despues": "63c6672a725556b5"
-   },
-   {
-    "articulo": "022",
-    "antes": "4b6dfea1b91b75b2",
-    "despues": "6935294d0d946c14"
-   },
-   {
-    "articulo": "032",
-    "antes": "5a951ce9d6d6194b",
-    "despues": "4e8d7d2530e5bb6c"
-   },
-   {
-    "articulo": "034",
-    "antes": "632ca09a593aff0f",
-    "despues": "b1b2a4f75e1e3906"
-   },
-   {
-    "articulo": "042",
-    "antes": "1ffbd07acb505afc",
-    "despues": "4f9c7d54a19c5688"
-   },
-   {
-    "articulo": "043",
-    "antes": "400349c64fdc9680",
-    "despues": "d2fc54e6bd11465d"
-   },
-   {
-    "articulo": "046",
-    "antes": "3388defaf83e616d",
-    "despues": "fd57481e2aba0f1e"
-   },
-   {
-    "articulo": "051",
-    "antes": "1c43360ade538b1d",
-    "despues": "3842b2d42cda01f1"
-   },
-   {
-    "articulo": "053",
-    "antes": "a6fd1c2dea04914e",
-    "despues": "37e8e906bb872c6c"
-   },
-   {
-    "articulo": "065",
-    "antes": "a734b10b3c6a0dbb",
-    "despues": "0e9845eb13bb7c50"
-   },
-   {
-    "articulo": "067",
-    "antes": "5715538397ffcde1",
-    "despues": "92fb44f9fbc45200"
-   },
-   {
-    "articulo": "068",
-    "antes": "7fbba7b2b80dc331",
-    "despues": "1596353c3200f32d"
-   },
-   {
-    "articulo": "073",
-    "antes": "bb83bc58c141dc85",
-    "despues": "f9a2e088adef359e"
-   },
-   {
-    "articulo": "078",
-    "antes": "c9f2fc90e4754d34",
-    "despues": "2903ce247742b755"
-   },
-   {
-    "articulo": "083",
-    "antes": "4863ed13b935fa1e",
-    "despues": "56f524c201491967"
-   },
-   {
-    "articulo": "093",
-    "antes": "8194e9ce8c27e7ac",
-    "despues": "6118d56f0e1f5271"
-   },
-   {
-    "articulo": "099",
-    "antes": "10f1b08460903df8",
-    "despues": "d2d32455d10aef45"
-   },
-   {
-    "articulo": "105",
-    "antes": "2c91e4c500e2db4d",
-    "despues": "a9cb63ec84bbc321"
-   },
-   {
-    "articulo": "108",
-    "antes": "7131408033580ddb",
-    "despues": "4908d00b436fc0cd"
-   },
-   {
-    "articulo": "115",
-    "antes": "4447f0e0afc435fe",
-    "despues": "27a1828adc155e43"
-   },
-   {
-    "articulo": "117",
-    "antes": "95cedeb5e9d7ea46",
-    "despues": "e85dd6f9c5c26c42"
-   },
-   {
-    "articulo": "118",
-    "antes": "54860055fe375eb0",
-    "despues": "0d4fdc1bcf727fc7"
-   },
-   {
-    "articulo": "138",
-    "antes": "7952338bf84d1015",
-    "despues": "66ccb3647d82bf29"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "037",
    "106",
@@ -148,43 +17,15 @@
    "132",
    "134"
   ],
-  "solo_notas": [
-   "025"
-  ],
+  "solo_notas": [],
   "solo_forma": [],
   "reedicion": [],
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "010",
-   "011",
-   "012",
-   "017",
-   "022",
-   "032",
-   "034",
-   "042",
-   "043",
-   "046",
-   "051",
-   "053",
-   "065",
-   "067",
-   "068",
-   "073",
-   "078",
-   "083",
-   "093",
-   "099",
-   "105",
-   "108",
-   "115",
-   "117",
-   "118",
-   "138"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2008-04-28",
@@ -202,6 +43,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -220,6 +62,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -256,6 +99,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  }

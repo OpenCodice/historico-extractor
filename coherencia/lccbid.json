@@ -4,18 +4,7 @@
   "hasta": "2012-05-14",
   "fuente_antes": "22468c96d4eea59529398be121d8afbd2c12544f2e168ddf2318bf5bebbb8b42",
   "fuente_despues": "cc272e09319abade44a6547a6173813aa6407fcbaebd583b97d07078b19e44ad",
-  "pendientes": [
-   {
-    "articulo": "006",
-    "antes": "dce7da5899779052",
-    "despues": "b9404e8565bc8c1c"
-   },
-   {
-    "articulo": "012",
-    "antes": "6fbcbc6fcdfe8323",
-    "despues": "5b88ab5a5665498c"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "002",
    "003"
@@ -26,11 +15,9 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "006",
-   "012"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2012-05-14",
@@ -56,6 +43,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  }

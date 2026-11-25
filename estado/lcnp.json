@@ -1,8 +1,12 @@
 {
- "fecha": "2026-11-24T01:47:58+00:00",
+ "fecha": "2026-11-25T13:33:58+00:00",
  "configuracion": "5248bb54f469",
- "publicada": false,
+ "publicada": true,
  "capturas": 7,
  "versiones_archivadas": 2,
- "motivo": "RuntimeError: git commit -q --allow-empty -m Versión LCNP (DOF 1939-11-10)\n\nDocumento: lcnp\nTipo: version\nPublicacion: 1939-11-10\nPublicacion-Origen: portada\nMedio: DOF\nFuente: https://web.archive.org/web/20130626030855id_/http://www.diputados.gob.mx/LeyesBiblio/pdf/176.pdf\nFuente-Sha256: e9b3a093b0"
+ "fuera": [],
+ "versiones": 2,
+ "desde": "1939-11-10",
+ "hasta": "2018-06-21",
+ "sin_explicar": 0
 }

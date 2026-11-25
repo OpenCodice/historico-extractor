@@ -1,0 +1,48 @@
+[
+ {
+  "desde": "1936-05-12",
+  "hasta": "2010-11-30",
+  "fuente_antes": "c2ce97aaf1517fd2e3c8c49e05c2693a0e7c95fee6624c770d9d13d5be0772dd",
+  "fuente_despues": "b59af0f083d7b9c7b5f2b9b959d0d2827927c060f16ac8fee3b2349d3d778515",
+  "pendientes": [],
+  "explicado": [
+   "002",
+   "003",
+   "005",
+   "012"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2010-11-30",
+  "hasta": "2012-04-09",
+  "fuente_antes": "b59af0f083d7b9c7b5f2b9b959d0d2827927c060f16ac8fee3b2349d3d778515",
+  "fuente_despues": "e893cded29ecee9a0b5ad3c4c07a33b6be520db6a73f89e837a32235b6167c84",
+  "pendientes": [],
+  "explicado": [
+   "011",
+   "014",
+   "015",
+   "016",
+   "018",
+   "019"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]

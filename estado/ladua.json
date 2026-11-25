@@ -1,13 +1,12 @@
 {
- "fecha": "2026-11-23T21:24:07+00:00",
+ "fecha": "2026-11-25T12:50:27+00:00",
  "configuracion": "5248bb54f469",
- "publicada": false,
+ "publicada": true,
  "capturas": 33,
  "versiones_archivadas": 9,
  "fuera": [],
  "versiones": 9,
  "desde": "2006-02-02",
  "hasta": "2025-11-19",
- "sin_explicar": 3,
- "motivo": "la coherencia deja artículos sin explicar"
+ "sin_explicar": 0
 }

@@ -1,9 +1,9 @@
 {
- "fecha": "2026-11-24T08:58:22+00:00",
+ "fecha": "2026-11-25T13:44:52+00:00",
  "configuracion": "5248bb54f469",
  "publicada": false,
  "capturas": 40,
- "versiones_archivadas": 23,
+ "versiones_archivadas": 22,
  "fuera": [
   {
    "version": "2005-12-21",
@@ -26,9 +26,9 @@
    "motivo": "auditar:   lfd/188: no_literal «lacomisionnacionaldelaguainformaratrimestralmentealhcongresodelaunionacercadelad»; texto_omitido «La Comisión Nacional del Agua informará, trimestralmente, al H. Congreso de la "
   }
  ],
- "versiones": 19,
+ "versiones": 18,
  "desde": "2008-11-13",
  "hasta": "2025-11-07",
- "sin_explicar": 9,
+ "sin_explicar": 65,
  "motivo": "la coherencia deja artículos sin explicar"
 }

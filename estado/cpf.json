@@ -1,184 +1,18 @@
 {
- "fecha": "2026-11-23T19:21:14+00:00",
- "configuracion": "d155e8edee1d",
- "publicada": false,
+ "fecha": "2026-11-25T11:29:43+00:00",
+ "configuracion": "5695e77b17ed",
+ "publicada": true,
  "capturas": 56,
  "versiones_archivadas": 48,
  "fuera": [
   {
-   "version": "2007-04-13",
-   "sha256": "7253c79fdc225dd8d2a21b394d913eeda776fb89ca0f03172d89ef76a1e3b1c3",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2007-06-28",
-   "sha256": "aada372e7b1311fc943a261fd0673c0f0bb9d5126d9d911a3894e610c843b5af",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2007-11-27",
-   "sha256": "df0e372d038b62bbe482e19ca94c157c2aa40e23ddab3ef3d344ed3d78c77f86",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2008-06-26",
-   "sha256": "355ab6fe223e55b7351f8a2aced418c5b6810b5332eb5746740b5e0e9bdda6df",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2009-01-23",
-   "sha256": "1535cccbaa2acde9b3086a4d47828b02b1c6d887f3027d3a05a9b27951da7d9a",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2010-08-19",
-   "sha256": "e72de4cba2b608c615be85e5ce452ef638c2f1d950d3f0a890d7ca04d0b5886b",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2011-05-25",
-   "sha256": "8db130923cead97e12282d42945e087439d0b60afe5db558fa64bcf2d2763cd2",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2011-06-08",
-   "sha256": "3e937981a05b31dee4749643d6875b177e8ffa52fb7ad899dba199005acc2d85",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2011-10-24",
-   "sha256": "e9ded48726700912ccdde905d9ef3caced5796935ca5a846e5298da881525bfc",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2012-04-17",
-   "sha256": "d7fe62cab836aff086ea6b59c58a3677903c5d73d563cb993798821463cd050e",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2012-06-14",
-   "sha256": "d32b5f9661bd4544321efa300d285c7de7f4551fb0679be4f5321ff0f0027b3a",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2013-05-03",
-   "sha256": "704b35c94c558553e52523b65ff225327f15d745428299c580445c6bad245644",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2013-10-30",
-   "sha256": "d54afce20bd5235f9c8267eaf366b67bb2862ffa1a438226320c3639572413fa",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2013-12-26",
-   "sha256": "4bd6be5a357119e44155dca66e86dbf847c2ce9b4608ea4e3a338ed234f24435",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2014-03-14",
-   "sha256": "64f90d99b4a15a44ad38c07557d335baf437f469189b7ac165550125d5abe910",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2014-06-03",
-   "sha256": "9212bc1b0e234826fc92e08388d75283bb882b1f6e1741224cf45f68ca427664",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2014-07-14",
-   "sha256": "6313c389795bddc180f97f6358600d5d4ab2b473dea4784addc0a21fb6a1fa6d",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2015-03-12",
-   "sha256": "348b74d8a4075fcb4e8a3648426f76e65d2a55b4a79b7dc9f2cc4a39dc26083c",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2016-01-12",
-   "sha256": "c3b17fa4bf71e1b119964cd0ad9a0c77d93f3c9fe187eb251252b720729d0109",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2016-04-07",
-   "sha256": "e2d1e70b80ee6ec2ed362daf0f4909ff74ddb248ff419e6802cc5469fe46f3ac",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2016-07-18",
-   "sha256": "562c47b9d10b78b4d4927e6b92510f83e0b08062336f076689174453df63e392",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2017-04-07",
-   "sha256": "642a8a810b85fff5bbc4d54ecd9333e099042d8b05c90aaaeaceb4c3bce6a41b",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2017-06-19",
-   "sha256": "22f204812bdfb1e7c59b34e5d786b5b9352a13b39784bb0d254fb37ac60bf4c3",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2017-06-26",
-   "sha256": "44fcef7f2be38e2c08568e5cb161ad6467bc0e44ae611919a629fef69e5f15cc",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2017-11-17",
-   "sha256": "49c3410e7eac7402f097ca26c48b5d2deed774905ef875e2e1cab36042b10a54",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2018-02-21",
-   "sha256": "b685e80e437302eaaeab8b87abbe941a33a0f6beb4ca386d9cd5bc8c3d6aae36",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2018-03-09",
-   "sha256": "bb8a0de13684a9d4f03611f8a70401f1e0fa7fcd413e59970789ae76cee01efd",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2018-06-15",
-   "sha256": "506f7ff37ae55dc5adc9f3f65c10500057c9a28cc8d2d0f81c5465402e3cf2b9",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2018-06-21",
-   "sha256": "9322847fc58c1664f4a9b6c53ea70a40d3647d090f57e029fa0837cf4fb3ef79",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
    "version": "2018-11-05",
    "sha256": "87e949658cde169ea8bc33f3da4b469d9e89f71ec34c32f4778b248fadf3e2c7",
    "motivo": "auditar:   cpf/217-bis: no_literal «ielservidorpublicoqueapruebeorefrendeelpagooquesuscribaelcomprobantechequeconlod»; no_literal «iiquienrecibaunpagoindebidoenlosterminosdelafraccionanteriorsinrealizarelrepor"
-  },
-  {
-   "version": "2019-04-12",
-   "sha256": "cfb7accf054c6a42bc22088eec590d76f1a348eb913d9bc5d29ff736e80905a0",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2019-11-08",
-   "sha256": "b30862c0b8a7d2bcf57dbb2f897e7a039b569683c9bb17016c25125b969ed798",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2020-01-24",
-   "sha256": "949bb5fe911901c30891278f9b273ea7dc95dd14d03d3fb6b91386d5c63285e1",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
-  },
-  {
-   "version": "2020-07-01",
-   "sha256": "846109e9e259c7e586026a4b41d16f35d9da270c7ac536599861b05e0632ea20",
-   "motivo": "auditar:   cpf/201-bis-3: no_literal «sederogacapacidadpararesistirlo»"
   }
  ],
- "versiones": 14,
+ "versiones": 47,
  "desde": "2006-06-30",
  "hasta": "2026-03-13",
- "sin_explicar": 2,
- "motivo": "la coherencia deja artículos sin explicar"
+ "sin_explicar": 0
 }

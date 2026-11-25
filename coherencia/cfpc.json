@@ -4,251 +4,22 @@
   "hasta": "2008-06-20",
   "fuente_antes": "4666ecfb238da14bd17f3c2b0a7bf5318c6d701f3acee2ff6b9693bc89167212",
   "fuente_despues": "83b79489d0bdafa03bd4364930c700a79290befc0baa51519c05730c673e9764",
-  "pendientes": [
-   {
-    "articulo": "007",
-    "antes": "c8fa555efd0230cb",
-    "despues": "7f9e3695a2ee5c98"
-   },
-   {
-    "articulo": "024",
-    "antes": "4052878a891bb720",
-    "despues": "53da2e5a2bb6704c"
-   },
-   {
-    "articulo": "036",
-    "antes": "0195299ca8b4e44d",
-    "despues": "8e8fc9c3f48599d9"
-   },
-   {
-    "articulo": "039",
-    "antes": "31200b178e3ddaa8",
-    "despues": "684c6cf3ae0d06b4"
-   },
-   {
-    "articulo": "045",
-    "antes": "70c2d370300dac03",
-    "despues": "f62e1a37b90dbebb"
-   },
-   {
-    "articulo": "053",
-    "antes": "68bf9b12fd4eff08",
-    "despues": "27bb592258b06933"
-   },
-   {
-    "articulo": "082",
-    "antes": "6f5b39198d0178ac",
-    "despues": "a89c09f8b04aa52b"
-   },
-   {
-    "articulo": "098",
-    "antes": "b3e96f0dfc2feaa5",
-    "despues": "0285280cd171cf12"
-   },
-   {
-    "articulo": "118",
-    "antes": "1751b11469558328",
-    "despues": "55204d65f1a8b61f"
-   },
-   {
-    "articulo": "125",
-    "antes": "77b39bf7fd7da604",
-    "despues": "46f89e3ddde8ae95"
-   },
-   {
-    "articulo": "141",
-    "antes": "5dbf8a94574b0a97",
-    "despues": "515c95cabe65e362"
-   },
-   {
-    "articulo": "174",
-    "antes": "12017e93b3c8af90",
-    "despues": "50a2d647559fdaae"
-   },
-   {
-    "articulo": "202",
-    "antes": "1dfdd5b2e1a3ccb2",
-    "despues": "be6997ac627d1bce"
-   },
-   {
-    "articulo": "206",
-    "antes": "228a2598fb7a749e",
-    "despues": "f1a2dd52e0ae4db0"
-   },
-   {
-    "articulo": "213",
-    "antes": "7a2c663b91c62633",
-    "despues": "85c539302f2580b8"
-   },
-   {
-    "articulo": "217",
-    "antes": "4dd0d9014b84036b",
-    "despues": "b2c589ca0bf502d0"
-   },
-   {
-    "articulo": "234",
-    "antes": "49a1818b6f827487",
-    "despues": "ace1ea9bf5e96e87"
-   },
-   {
-    "articulo": "268",
-    "antes": "6625b9e945603f6f",
-    "despues": "496e2a127541ae5f"
-   },
-   {
-    "articulo": "294",
-    "antes": "7a031aeb9307e30a",
-    "despues": "88f77b5f2b969497"
-   },
-   {
-    "articulo": "310",
-    "antes": "347d3ed4721f5577",
-    "despues": "b5d2a6b47e806a71"
-   },
-   {
-    "articulo": "316",
-    "antes": "03003fb2c3a00a1e",
-    "despues": "905dc39e908a01f4"
-   },
-   {
-    "articulo": "322",
-    "antes": "6fbdbf5873dd3b0a",
-    "despues": "7f8672f52a621bab"
-   },
-   {
-    "articulo": "365",
-    "antes": "366e29a093d895f9",
-    "despues": "2b3846ca7cd796bc"
-   },
-   {
-    "articulo": "373",
-    "antes": "ab020408e5904ae4",
-    "despues": "0a9dd7d19369fb80"
-   },
-   {
-    "articulo": "407",
-    "antes": "4de8efb0690f236e",
-    "despues": "bf694729d86e01a8"
-   },
-   {
-    "articulo": "430",
-    "antes": "e2361d9d7908b2f1",
-    "despues": "4861990e477b16e9"
-   },
-   {
-    "articulo": "434",
-    "antes": "21596462e731483c",
-    "despues": "d8140f6f25637a7f"
-   },
-   {
-    "articulo": "445",
-    "antes": "bc4d7b0b582775b8",
-    "despues": "bf1d94956e0d6ffb"
-   },
-   {
-    "articulo": "456",
-    "antes": "06ffc72b2f63cb8d",
-    "despues": "7b1c589b55307e1f"
-   },
-   {
-    "articulo": "460",
-    "antes": "0e66f72318410660",
-    "despues": "c87cbb79a76a9531"
-   },
-   {
-    "articulo": "473",
-    "antes": "d79f2369df8052df",
-    "despues": "44701bfdb07e2be8"
-   },
-   {
-    "articulo": "481",
-    "antes": "974c6582060764e5",
-    "despues": "4f1d7c66acf26a1c"
-   },
-   {
-    "articulo": "501",
-    "antes": "042b78b65b2826ad",
-    "despues": "96c4cc9adbf1b4da"
-   },
-   {
-    "articulo": "519",
-    "antes": "6b146d86b5621300",
-    "despues": "c359850728a28725"
-   },
-   {
-    "articulo": "528",
-    "antes": "0e8729244e64a5f7",
-    "despues": "bc20aed34a9b4136"
-   },
-   {
-    "articulo": "568",
-    "antes": "f95bf8b8496ee0e7",
-    "despues": "efcf8c44476094cd"
-   },
-   {
-    "articulo": "571",
-    "antes": "66c26dad7c9206c7",
-    "despues": "9e6d5eaddcf3f62d"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "055",
    "059",
    "153",
    "343"
   ],
-  "solo_notas": [
-   "003",
-   "261",
-   "536",
-   "560",
-   "574"
-  ],
+  "solo_notas": [],
   "solo_forma": [],
   "reedicion": [],
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "007",
-   "024",
-   "036",
-   "039",
-   "045",
-   "053",
-   "082",
-   "098",
-   "118",
-   "125",
-   "141",
-   "174",
-   "202",
-   "206",
-   "213",
-   "217",
-   "234",
-   "268",
-   "294",
-   "310",
-   "316",
-   "322",
-   "365",
-   "373",
-   "407",
-   "430",
-   "434",
-   "445",
-   "456",
-   "460",
-   "473",
-   "481",
-   "501",
-   "519",
-   "528",
-   "568",
-   "571"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2008-06-20",
@@ -265,6 +36,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -287,6 +59,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -355,6 +128,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -384,6 +158,7 @@
    "069"
   ],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -416,6 +191,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  }

@@ -4,283 +4,7 @@
   "hasta": "2007-08-31",
   "fuente_antes": "e6d5cb4625a77c46d99cc6e5ede35557e378a65bdeb3ddf514ccf3741a7ec418",
   "fuente_despues": "0b8e85869d70fc6edc9189110f2216e938697d6f0be782aa744fbaf50694cb2f",
-  "pendientes": [
-   {
-    "articulo": "005",
-    "antes": "baac32887502d90e",
-    "despues": "9ed939b6cb7e162b"
-   },
-   {
-    "articulo": "006",
-    "antes": "7ab2ea9dcd3f6f7f",
-    "despues": "2921efe1755cfa27"
-   },
-   {
-    "articulo": "014",
-    "antes": "9a2a18bf70f4e9df",
-    "despues": "49df477e2ed9748a"
-   },
-   {
-    "articulo": "015",
-    "antes": "545d9e0244eda7b9",
-    "despues": "999662efd7ca3f52"
-   },
-   {
-    "articulo": "017",
-    "antes": "9dc5304261be6307",
-    "despues": "ed68d28a949b6292"
-   },
-   {
-    "articulo": "018",
-    "antes": "ade76fdea7d8efc8",
-    "despues": "51af57bbf88f10e3"
-   },
-   {
-    "articulo": "021",
-    "antes": "528e3eec929f2368",
-    "despues": "31952bd813fbf199"
-   },
-   {
-    "articulo": "022",
-    "antes": "2d35bf3686c32318",
-    "despues": "73a20a786adc8f37"
-   },
-   {
-    "articulo": "026",
-    "antes": "96acefbf0b8f8a20",
-    "despues": "dd64c5d03e2df9e6"
-   },
-   {
-    "articulo": "030",
-    "antes": "6ec0d607937e7f59",
-    "despues": "5a6028db672bbb12"
-   },
-   {
-    "articulo": "033",
-    "antes": "f97c058135b7f1ad",
-    "despues": "801b098f6064114d"
-   },
-   {
-    "articulo": "035",
-    "antes": "268ae8ccbde7f7ab",
-    "despues": "f6bbcecefaa86758"
-   },
-   {
-    "articulo": "036-bis-1",
-    "antes": "1a0835df5154e895",
-    "despues": "9dfb842b1064e370"
-   },
-   {
-    "articulo": "036-bis",
-    "antes": "131b9262dc633a15",
-    "despues": "63f961978fe83b99"
-   },
-   {
-    "articulo": "037",
-    "antes": "e0b301c451c78730",
-    "despues": "ccdd31a6759a9186"
-   },
-   {
-    "articulo": "040",
-    "antes": "03530266b7d4abb9",
-    "despues": "3e2298dcb581514f"
-   },
-   {
-    "articulo": "044",
-    "antes": "c8cf7bc088468569",
-    "despues": "2d4dc4156e9046d7"
-   },
-   {
-    "articulo": "045",
-    "antes": "a9e46a4fc4e3fb0b",
-    "despues": "9f93a053da46c95d"
-   },
-   {
-    "articulo": "051",
-    "antes": "8eec6de9093264c6",
-    "despues": "1a1839047fa83735"
-   },
-   {
-    "articulo": "052",
-    "antes": "d5427ae98959c37e",
-    "despues": "1356eb378569fb3e"
-   },
-   {
-    "articulo": "053",
-    "antes": "17266b7a40e5843e",
-    "despues": "c33dffcdd0d39e83"
-   },
-   {
-    "articulo": "058",
-    "antes": "a6453bb4997c8474",
-    "despues": "25d31e31a1029b5c"
-   },
-   {
-    "articulo": "060",
-    "antes": "29b84c2f9ef53b96",
-    "despues": "c27d44819186583d"
-   },
-   {
-    "articulo": "064",
-    "antes": "8d56fa6e7989cea4",
-    "despues": "883ea7bfea799190"
-   },
-   {
-    "articulo": "067",
-    "antes": "f4f795dcb16c5f62",
-    "despues": "f9126d8943fe91f6"
-   },
-   {
-    "articulo": "069",
-    "antes": "da7fa2d954f479dc",
-    "despues": "f5b34a7b35f23c05"
-   },
-   {
-    "articulo": "071",
-    "antes": "caa9b96022b3cbce",
-    "despues": "ccf6cdf44b387cf7"
-   },
-   {
-    "articulo": "073",
-    "antes": "254be195b4a62281",
-    "despues": "36f51ab9ba4446b4"
-   },
-   {
-    "articulo": "074",
-    "antes": "a429e574c96be58a",
-    "despues": "e270d841b87807c3"
-   },
-   {
-    "articulo": "077",
-    "antes": "8fc5e8da9650a36c",
-    "despues": "631de6285d76c406"
-   },
-   {
-    "articulo": "078",
-    "antes": "bdebb015870c5863",
-    "despues": "85052025cb7f5ce2"
-   },
-   {
-    "articulo": "080",
-    "antes": "640178552fed271d",
-    "despues": "1f3c6b080ac18173"
-   },
-   {
-    "articulo": "089",
-    "antes": "c9b6e7f4ca536b9f",
-    "despues": "cff4fb8a3cfadcef"
-   },
-   {
-    "articulo": "092",
-    "antes": "83823261817506f6",
-    "despues": "704273693f3b336a"
-   },
-   {
-    "articulo": "095",
-    "antes": "dd72c6366220614e",
-    "despues": "fb17d2bec90a7638"
-   },
-   {
-    "articulo": "096",
-    "antes": "b4d3465b8d2d2144",
-    "despues": "e3a0ebacf5d3b41f"
-   },
-   {
-    "articulo": "099",
-    "antes": "f02ea89cc21bb0bc",
-    "despues": "77750790f5d56f11"
-   },
-   {
-    "articulo": "101",
-    "antes": "988182afdf717dd4",
-    "despues": "060e02c423102830"
-   },
-   {
-    "articulo": "104",
-    "antes": "0632d13c76e12420",
-    "despues": "1b901c067da9ebc0"
-   },
-   {
-    "articulo": "106",
-    "antes": "5755d454bee9d283",
-    "despues": "31fb94b311a4a37c"
-   },
-   {
-    "articulo": "108",
-    "antes": "56b04d18d6ef274c",
-    "despues": "f3bf71ec811ef6fa"
-   },
-   {
-    "articulo": "115",
-    "antes": "20be27d7ac9bd733",
-    "despues": "3cb6bba42d9d5ad8"
-   },
-   {
-    "articulo": "116",
-    "antes": "794ad495b0cc3131",
-    "despues": "2204a3b7834925d2"
-   },
-   {
-    "articulo": "117",
-    "antes": "9e461e1c13f87a15",
-    "despues": "770bc342d45649ac"
-   },
-   {
-    "articulo": "119",
-    "antes": "c3fda179c59671ad",
-    "despues": "86fbc61f57dff24c"
-   },
-   {
-    "articulo": "121",
-    "antes": "604cfe790849f078",
-    "despues": "07f123d4c7ed1f4e"
-   },
-   {
-    "articulo": "122",
-    "antes": "d4b0464137e878a6",
-    "despues": "c135f96df69399c4"
-   },
-   {
-    "articulo": "124-bis-2",
-    "antes": "efbd65ef094a9fea",
-    "despues": "f153496a7765b263"
-   },
-   {
-    "articulo": "124-bis",
-    "antes": "47724ff8a90dcb5b",
-    "despues": "5e90100995e504ad"
-   },
-   {
-    "articulo": "125",
-    "antes": "fa1a3e99333a4923",
-    "despues": "f7bc7f1af6f75427"
-   },
-   {
-    "articulo": "128",
-    "antes": "0a48eef0511e451b",
-    "despues": "e5fbb3ca8c268c9e"
-   },
-   {
-    "articulo": "131",
-    "antes": "80827ad6980bf9a1",
-    "despues": "a9a0d1a2e7524acc"
-   },
-   {
-    "articulo": "132",
-    "antes": "54df72810ef4807b",
-    "despues": "35fa61a2d92f2298"
-   },
-   {
-    "articulo": "134",
-    "antes": "2aad22a171dca787",
-    "despues": "40a071b0c604e9c4"
-   },
-   {
-    "articulo": "136",
-    "antes": "20f3d80c99ee094c",
-    "despues": "b2d46e0875fccd98"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "004-bis-1",
    "004-bis-2",
@@ -326,82 +50,16 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "005",
-   "006",
-   "014",
-   "015",
-   "017",
-   "018",
-   "021",
-   "022",
-   "026",
-   "030",
-   "033",
-   "035",
-   "036-bis-1",
-   "036-bis",
-   "037",
-   "040",
-   "044",
-   "045",
-   "051",
-   "052",
-   "053",
-   "058",
-   "060",
-   "064",
-   "067",
-   "069",
-   "071",
-   "073",
-   "074",
-   "077",
-   "078",
-   "080",
-   "089",
-   "092",
-   "095",
-   "096",
-   "099",
-   "101",
-   "104",
-   "106",
-   "108",
-   "115",
-   "116",
-   "117",
-   "119",
-   "121",
-   "122",
-   "124-bis-2",
-   "124-bis",
-   "125",
-   "128",
-   "131",
-   "132",
-   "134",
-   "136"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2007-08-31",
   "hasta": "2009-08-13",
   "fuente_antes": "0b8e85869d70fc6edc9189110f2216e938697d6f0be782aa744fbaf50694cb2f",
   "fuente_despues": "6f356b6b03b6730d4251762a08a45eb4e48faa524c229f3a93900c7c6bec7c33",
-  "pendientes": [
-   {
-    "articulo": "042",
-    "antes": "7f2383864ba31b46",
-    "despues": "a287b9c05712dcb3"
-   },
-   {
-    "articulo": "065-bis",
-    "antes": "fafad6c5b48af411",
-    "despues": "4b731984fea65b29"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "001",
    "002",
@@ -619,324 +277,16 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "042",
-   "065-bis"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2009-08-13",
   "hasta": "2014-01-10",
   "fuente_antes": "6f356b6b03b6730d4251762a08a45eb4e48faa524c229f3a93900c7c6bec7c33",
   "fuente_despues": "503e42acc3d1ff2c874995d72e21c74b67f206b8b9f59597a4f5d014c2f51d7f",
-  "pendientes": [
-   {
-    "articulo": "009",
-    "antes": "c168c6de44c1fe4d",
-    "despues": "b75d18b882d61810"
-   },
-   {
-    "articulo": "010",
-    "antes": "fb54624b21851e60",
-    "despues": "056141dca1b59d4c"
-   },
-   {
-    "articulo": "016",
-    "antes": "8f31ff5758cfab41",
-    "despues": "5f87f0befc5ac577"
-   },
-   {
-    "articulo": "030",
-    "antes": "c5655a9c25639fd8",
-    "despues": "d072f703ca2fc53a"
-   },
-   {
-    "articulo": "032",
-    "antes": "040fdd0ef2bd541d",
-    "despues": "ec2d48deb491b50d"
-   },
-   {
-    "articulo": "033",
-    "antes": "ca0a0ec10d2bf03e",
-    "despues": "2256a90ff8d56f4a"
-   },
-   {
-    "articulo": "034",
-    "antes": "26dd58d81023797a",
-    "despues": "0d132e275fcffec1"
-   },
-   {
-    "articulo": "036-bis-1",
-    "antes": "457e61bae7f45be0",
-    "despues": "4c94ec88d45978ed"
-   },
-   {
-    "articulo": "036-bis",
-    "antes": "de51d35c48c58ced",
-    "despues": "cc2529a57b643636"
-   },
-   {
-    "articulo": "037",
-    "antes": "24a6b45875e24c05",
-    "despues": "45f6ad45f3f8a5a4"
-   },
-   {
-    "articulo": "042",
-    "antes": "a287b9c05712dcb3",
-    "despues": "7f2383864ba31b46"
-   },
-   {
-    "articulo": "044",
-    "antes": "0d1f8fd678755a66",
-    "despues": "12e90e8cf90a5c03"
-   },
-   {
-    "articulo": "046-bis-12",
-    "antes": "dc0ef8f024a904cb",
-    "despues": "8620e907e80810f2"
-   },
-   {
-    "articulo": "046-bis-15",
-    "antes": "81906f2e8891feec",
-    "despues": "d0cb206f7484ca4c"
-   },
-   {
-    "articulo": "046-bis-19",
-    "antes": "548f853eeae3e9c3",
-    "despues": "2be9f6064b0d8cb9"
-   },
-   {
-    "articulo": "046-bis-2",
-    "antes": "07e62d83497d6185",
-    "despues": "ed5cb01f18c1a4c6"
-   },
-   {
-    "articulo": "046-bis-22",
-    "antes": "ce740b5dca707118",
-    "despues": "d7fb3a5f93e57b52"
-   },
-   {
-    "articulo": "046-bis-5",
-    "antes": "3c845817b33f6fd2",
-    "despues": "fec11ac7bdd22317"
-   },
-   {
-    "articulo": "046-bis-6",
-    "antes": "03ef19247ed94fd2",
-    "despues": "f5e3f67ff79d2732"
-   },
-   {
-    "articulo": "046-bis-9",
-    "antes": "a87c6ef4154b2312",
-    "despues": "9487b7a1baeeccce"
-   },
-   {
-    "articulo": "051",
-    "antes": "eeaccbca65a15ab4",
-    "despues": "eb94fd1861e43b52"
-   },
-   {
-    "articulo": "053",
-    "antes": "b80d5f6b5e346976",
-    "despues": "9391afd15cbdd9bc"
-   },
-   {
-    "articulo": "058",
-    "antes": "9b050a1de3aed09b",
-    "despues": "62b16cfbf8436f3c"
-   },
-   {
-    "articulo": "060",
-    "antes": "60877c5a3f39da54",
-    "despues": "e6c7c80396688c21"
-   },
-   {
-    "articulo": "063",
-    "antes": "0b5f9f6167c039b6",
-    "despues": "22b232453ab7c038"
-   },
-   {
-    "articulo": "066",
-    "antes": "50ea8c3cca941069",
-    "despues": "52a5b6e2df08998f"
-   },
-   {
-    "articulo": "067",
-    "antes": "983e0d7e130ae2f3",
-    "despues": "419e5d2bbec08b24"
-   },
-   {
-    "articulo": "070",
-    "antes": "03151f3949d766a8",
-    "despues": "f96996c2efa13941"
-   },
-   {
-    "articulo": "072",
-    "antes": "0126a606d592e37d",
-    "despues": "83eff8521579b207"
-   },
-   {
-    "articulo": "074",
-    "antes": "c948aeb405d15407",
-    "despues": "ed14b90c89f04cc3"
-   },
-   {
-    "articulo": "079",
-    "antes": "ed3d2c54c78efed4",
-    "despues": "7dba7fcdcda379c7"
-   },
-   {
-    "articulo": "080",
-    "antes": "78b36a2db5af8900",
-    "despues": "050d4c9e98247bd8"
-   },
-   {
-    "articulo": "086",
-    "antes": "b492790439a3a72d",
-    "despues": "d96bc0cdcb400996"
-   },
-   {
-    "articulo": "088",
-    "antes": "4ed88592c9a3e171",
-    "despues": "6abc0c7176cd85b9"
-   },
-   {
-    "articulo": "092",
-    "antes": "3a77d7fd7ee12c00",
-    "despues": "cf90da626d408e45"
-   },
-   {
-    "articulo": "095",
-    "antes": "c8ba2600f3f4ae26",
-    "despues": "b78a69d0f05cd89e"
-   },
-   {
-    "articulo": "096",
-    "antes": "f326136fd2b9ff9c",
-    "despues": "b36c88af6dc49cbe"
-   },
-   {
-    "articulo": "100",
-    "antes": "b426d12f55b52363",
-    "despues": "6b5730166d875655"
-   },
-   {
-    "articulo": "103",
-    "antes": "5f25e2c55ef8ca76",
-    "despues": "cd8a0b4ee0eb90dd"
-   },
-   {
-    "articulo": "104-bis-1",
-    "antes": "f01e07bcbbac16ab",
-    "despues": "f249b3bb421d61c2"
-   },
-   {
-    "articulo": "104",
-    "antes": "58e565b02069b7ac",
-    "despues": "cde42ba7b3e28696"
-   },
-   {
-    "articulo": "106",
-    "antes": "5544e1baf9d691eb",
-    "despues": "9a5157baf5b541ac"
-   },
-   {
-    "articulo": "108",
-    "antes": "ac2b27f2e481f5ad",
-    "despues": "1e1f00b49e74a8ee"
-   },
-   {
-    "articulo": "112",
-    "antes": "3ce7b48adf411e5c",
-    "despues": "00da5acc8fa37c3a"
-   },
-   {
-    "articulo": "114",
-    "antes": "8addb672bb06e3a3",
-    "despues": "8143b96f0e847afe"
-   },
-   {
-    "articulo": "115-bis",
-    "antes": "99711f62b4c55b12",
-    "despues": "b4664c4f1ef510eb"
-   },
-   {
-    "articulo": "116",
-    "antes": "b8f7ed9de5c28713",
-    "despues": "09ddee2ab45c9915"
-   },
-   {
-    "articulo": "118",
-    "antes": "79910a63c91b42cf",
-    "despues": "0fd6c69d998d645d"
-   },
-   {
-    "articulo": "119-bis-1",
-    "antes": "23ee672491658876",
-    "despues": "d7a6da8a0f3697d3"
-   },
-   {
-    "articulo": "119-bis-4",
-    "antes": "fdad80353b9eb250",
-    "despues": "175bbb70e9541754"
-   },
-   {
-    "articulo": "120",
-    "antes": "8e4961339ded9d73",
-    "despues": "a461378bd773e1f1"
-   },
-   {
-    "articulo": "124-bis",
-    "antes": "261476386f5238ed",
-    "despues": "77caab5ea563b438"
-   },
-   {
-    "articulo": "126-bis",
-    "antes": "8c6f1379017f4fc5",
-    "despues": "242fb2b15a4986d4"
-   },
-   {
-    "articulo": "128",
-    "antes": "40fda422aabe1629",
-    "despues": "1756e7a20a1030ab"
-   },
-   {
-    "articulo": "136-bis-2",
-    "antes": "6057b8999175888f",
-    "despues": "0a282315f9cc3041"
-   },
-   {
-    "articulo": "138",
-    "antes": "09dd15473d153d9f",
-    "despues": "92f239a787dac7e0"
-   },
-   {
-    "articulo": "142",
-    "antes": "5cfd86ab71b4d303",
-    "despues": "1cfa75c497e5a86f"
-   },
-   {
-    "articulo": "146",
-    "antes": "d13c953c37b02df3",
-    "despues": "5be2e237617fe8f9"
-   },
-   {
-    "articulo": "150",
-    "antes": "f1b5e5acc35620df",
-    "despues": "8d7794d4c71551ce"
-   },
-   {
-    "articulo": "153",
-    "antes": "a1cfad0491b935b2",
-    "despues": "ed1879e9774b3f49"
-   },
-   {
-    "articulo": "158",
-    "antes": "6fae3ec71557e4c4",
-    "despues": "5b6e86181e0f7674"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "012",
    "014",
@@ -954,7 +304,6 @@
    "046-bis-1",
    "046-bis",
    "084",
-   "109",
    "122-bis",
    "122",
    "124",
@@ -982,79 +331,12 @@
   "solo_notas": [],
   "solo_forma": [],
   "reedicion": [],
-  "nota_en_el_cuerpo": [
-   "002",
-   "003",
-   "008",
-   "021",
-   "023"
-  ],
+  "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "009",
-   "010",
-   "016",
-   "030",
-   "032",
-   "033",
-   "034",
-   "036-bis-1",
-   "036-bis",
-   "037",
-   "042",
-   "044",
-   "046-bis-12",
-   "046-bis-15",
-   "046-bis-19",
-   "046-bis-2",
-   "046-bis-22",
-   "046-bis-5",
-   "046-bis-6",
-   "046-bis-9",
-   "051",
-   "053",
-   "058",
-   "060",
-   "063",
-   "066",
-   "067",
-   "070",
-   "072",
-   "074",
-   "079",
-   "080",
-   "086",
-   "088",
-   "092",
-   "095",
-   "096",
-   "100",
-   "103",
-   "104-bis-1",
-   "104",
-   "106",
-   "108",
-   "112",
-   "114",
-   "115-bis",
-   "116",
-   "118",
-   "119-bis-1",
-   "119-bis-4",
-   "120",
-   "124-bis",
-   "126-bis",
-   "128",
-   "136-bis-2",
-   "138",
-   "142",
-   "146",
-   "150",
-   "153",
-   "158"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2014-01-10",
@@ -1071,6 +353,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -1093,6 +376,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  },
@@ -1111,6 +395,7 @@
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
+  "formula": [],
   "juzgado": [],
   "sin_explicar": []
  }

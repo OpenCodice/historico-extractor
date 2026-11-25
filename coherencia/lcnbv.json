@@ -4,82 +4,26 @@
   "hasta": "2007-06-15",
   "fuente_antes": "99395ffcba2651f30fe75ce20d33df226ddace398348dc5bc47d3c87ad09a962",
   "fuente_despues": "bc512b79a1db9696b15eb04badc94280c417a6e59db32899f14f9f12ba356814",
-  "pendientes": [
-   {
-    "articulo": "005",
-    "antes": "d79b53204ad4bd22",
-    "despues": "18af253dcc063696"
-   },
-   {
-    "articulo": "010",
-    "antes": "d0e769065fa622ea",
-    "despues": "c139e664fd9a4597"
-   },
-   {
-    "articulo": "012",
-    "antes": "afd338840479f16b",
-    "despues": "0d2e493ac239a560"
-   },
-   {
-    "articulo": "016",
-    "antes": "3211a8a2221f9ed9",
-    "despues": "189bc6c0e5d68294"
-   },
-   {
-    "articulo": "018",
-    "antes": "ea312b7b1c115ca5",
-    "despues": "c958099a03a6af74"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "004"
   ],
   "solo_notas": [],
   "solo_forma": [],
   "reedicion": [],
-  "nota_en_el_cuerpo": [
-   "003",
-   "015"
-  ],
+  "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
   "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "005",
-   "010",
-   "012",
-   "016",
-   "018"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2007-06-15",
   "hasta": "2009-08-13",
   "fuente_antes": "bc512b79a1db9696b15eb04badc94280c417a6e59db32899f14f9f12ba356814",
   "fuente_despues": "6fe7f6315e61422584c13acf3158565bd3fdac65cc910c13afde659f2c294e72",
-  "pendientes": [
-   {
-    "articulo": "005",
-    "antes": "18af253dcc063696",
-    "despues": "d79b53204ad4bd22"
-   },
-   {
-    "articulo": "010",
-    "antes": "c139e664fd9a4597",
-    "despues": "d0e769065fa622ea"
-   },
-   {
-    "articulo": "012",
-    "antes": "0d2e493ac239a560",
-    "despues": "afd338840479f16b"
-   },
-   {
-    "articulo": "016",
-    "antes": "189bc6c0e5d68294",
-    "despues": "3211a8a2221f9ed9"
-   }
-  ],
+  "pendientes": [],
   "explicado": [
    "002",
    "003",
@@ -89,19 +33,12 @@
   "solo_notas": [],
   "solo_forma": [],
   "reedicion": [],
-  "nota_en_el_cuerpo": [
-   "015"
-  ],
+  "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
   "formula": [],
   "juzgado": [],
-  "sin_explicar": [
-   "005",
-   "010",
-   "012",
-   "016"
-  ]
+  "sin_explicar": []
  },
  {
   "desde": "2009-08-13",
