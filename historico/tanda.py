@@ -28,8 +28,19 @@ def leer_estado(clave: str) -> dict | None:
     return json.loads(ruta.read_text(encoding="utf-8")) if ruta.exists() else None
 
 
+def fuentes_de(doc: dict) -> str:
+    """De dónde salen las versiones del documento según lo declarado: cómo se
+    fechan sus capturas y si cuenta con la edición para móvil."""
+    return f"{capturas.fechada_por(doc['clave'])}|{doc.get('movil', '')}"
+
+
 def sin_intentar() -> list[dict]:
-    return [d for d in configuracion()["documentos"] if leer_estado(d["clave"]) is None]
+    """Los documentos sin estado y los que se intentaron con otras fuentes
+    declaradas: su rama puede ganar versiones."""
+    def al_dia(doc: dict) -> bool:
+        estado = leer_estado(doc["clave"])
+        return estado is not None and estado.get("fuentes", "portada|") == fuentes_de(doc)
+    return [d for d in configuracion()["documentos"] if not al_dia(d)]
 
 
 def elegir(lote: int, claves: list[str] | None = None) -> list[dict]:
@@ -50,7 +61,8 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
     clave = doc["clave"]
     previo = leer_estado(clave) or {}
     estado = {"fecha": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
-              "configuracion": cadena.sello_de_configuracion(clave), "publicada": False}
+              "configuracion": cadena.sello_de_configuracion(clave), "fuentes": fuentes_de(doc),
+              "publicada": False}
     try:
         filas = capturas.descargar(clave, doc["archivos"], carpeta_capturas / clave, movil=doc.get("movil"))
         plan = capturas.versiones(clave)
@@ -61,7 +73,7 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
         # sigue siendo la misma: no hay nada que rehacer.
         if (previo.get("publicada") and publicar and not desde_cero
                 and all(previo.get(k) == estado[k] for k in ("configuracion", "capturas", "versiones_archivadas"))):
-            return previo | {"fecha": estado["fecha"]}
+            return previo | {"fecha": estado["fecha"], "fuentes": estado["fuentes"]}
         # Lo que ya falló solo se salta si nada de lo declarado cambió.
         fuera = previo.get("fuera", []) if previo.get("configuracion") == estado["configuracion"] else []
         if publicar:
@@ -95,6 +107,9 @@ def procesar(doc: dict, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
         estado["publicada"] = publicar
     except Exception as e:
         estado["motivo"] = f"{type(e).__name__}: {e}"[:300]
+        # Un intento que tronó (la red) no cuenta como hecho con las fuentes
+        # de hoy: vuelve a tocar.
+        del estado["fuentes"]
     return estado
 
 
@@ -157,8 +172,8 @@ def publicar_indice(repo: pathlib.Path) -> bool:
 def correr(lote: int, claves: list[str] | None, carpeta_capturas: pathlib.Path, repo: pathlib.Path,
            extractores: pathlib.Path, publicar: bool, desde_cero: bool = False, avisar=print) -> bool:
     """Procesa una tanda. Devuelve si queda otra igual por hacer: documentos
-    sin intentar, cuando la tanda no fue de claves dadas (repetirla con las
-    mismas claves no avanzaría nada)."""
+    sin intentar o intentados con otras fuentes, cuando la tanda no fue de
+    claves dadas (repetirla con las mismas claves no avanzaría nada)."""
     limite = time.monotonic() + MINUTOS_DE_REVISION * 60
     for doc in elegir(lote, claves):
         if time.monotonic() > limite:

@@ -334,3 +334,15 @@ def test_el_indice_liga_cada_ley_con_su_edicion_para_movil():
     hechas = {e["clave"]: e.get("movil") for e in declarar.entradas(
         leyes, {"LGS": ["142"], "LX": ["9"]}, declarar.moviles(paginas))}
     assert hechas == {"lgs": "(Ley_General_de_Salud)\\.pdf", "lft": None, "lx": None}
+
+
+def test_un_documento_intentado_con_otras_fuentes_vuelve_a_tocar(monkeypatch):
+    from historico import tanda
+    docs = [{"clave": "a"}, {"clave": "b", "movil": "(Ley_B)\\.pdf"}, {"clave": "c", "movil": "(Ley_C)\\.pdf"},
+            {"clave": "d"}]
+    estados = {"a": {"fecha": "1"}, "b": {"fecha": "2"}, "c": {"fecha": "3", "fuentes": "portada|(Ley_C)\\.pdf"},
+               "d": {"fecha": "4"}}
+    monkeypatch.setattr(tanda, "configuracion", lambda: {"documentos": docs})
+    monkeypatch.setattr(tanda, "leer_estado", estados.get)
+    monkeypatch.setattr(tanda.capturas, "fechada_por", lambda clave: "notas" if clave == "d" else "portada")
+    assert [d["clave"] for d in tanda.sin_intentar()] == ["b", "d"]

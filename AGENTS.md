@@ -94,6 +94,11 @@ cada ley con ese archivo por el índice de LeyesBiblio (`movil` en
 `documentos.json`) y sus capturas entran al manifiesto; una de ellas hace
 versión solo cuando no hay captura del PDF principal con esa fecha.
 
+Cuando cambia de dónde salen las versiones de un documento (se declara
+`version_por_notas` o su edición para móvil), la tanda sin claves lo vuelve a
+tomar como si no se hubiera intentado: su estado guarda las fuentes con que
+se hizo (`fuentes`) y declara trabajo pendiente mientras alguna difiera.
+
 ## Compuerta de coherencia
 
 Las compuertas de los extractores comparan una versión contra su propio PDF,
