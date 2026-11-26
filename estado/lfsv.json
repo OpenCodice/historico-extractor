@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T00:44:19+00:00",
+ "fecha": "2026-11-26T17:31:33+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 13,
@@ -10,5 +10,6 @@
  "hasta": "2022-05-11",
  "sin_explicar": 0,
  "faltan": [],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_Federal_de_Sanidad_Vegetal)\\.pdf"
 }

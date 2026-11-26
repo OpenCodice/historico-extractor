@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T00:23:33+00:00",
+ "fecha": "2026-11-26T17:22:36+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 12,
@@ -12,5 +12,6 @@
  "faltan": [
   "2026-05-14"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_de_Fiscalizacion_y_Rendicion_de_Cuentas_de_la_Federacion)\\.pdf"
 }

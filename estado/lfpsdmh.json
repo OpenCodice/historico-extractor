@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T00:21:49+00:00",
+ "fecha": "2026-11-26T17:22:13+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 11,
@@ -12,5 +12,6 @@
  "faltan": [
   "2018-05-18"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_Federal_para_Prevenir_y_Sancionar_los_Delitos\\-Materia_de_Hidrocarburos)\\.pdf"
 }

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T00:27:22+00:00",
+ "fecha": "2026-11-26T17:28:26+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 11,
@@ -12,5 +12,6 @@
  "faltan": [
   "2009-04-30"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_Federal_de_Responsabilidad_Patrimonial_del_Estado)\\.pdf"
 }

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T00:50:10+00:00",
+ "fecha": "2026-11-26T17:31:33+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 50,
@@ -16,5 +16,6 @@
   "2023-12-04",
   "2024-12-19"
  ],
- "anteriores": 26
+ "anteriores": 26,
+ "fuentes": "notas|(Ley_Federal_del_Trabajo)\\.pdf"
 }

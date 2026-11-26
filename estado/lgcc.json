@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T03:18:10+00:00",
+ "fecha": "2026-11-26T17:47:43+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 19,
@@ -13,5 +13,6 @@
   "2014-10-16",
   "2015-04-02"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_General_de_Cambio_Climatico)\\.pdf"
 }

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T00:32:09+00:00",
+ "fecha": "2026-11-26T17:31:33+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 8,
@@ -12,5 +12,6 @@
  "faltan": [
   "2011-01-27"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_Federal_de_Seguridad_Privada)\\.pdf"
 }

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26T03:08:14+00:00",
+ "fecha": "2026-11-26T17:47:43+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 21,
@@ -13,5 +13,6 @@
   "2012-01-10",
   "2021-05-20"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_General_de_Bienes_Nacionales)\\.pdf"
 }
