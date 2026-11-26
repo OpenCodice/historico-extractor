@@ -1,16 +1,16 @@
 {
- "fecha": "2026-11-24T16:00:26+00:00",
+ "fecha": "2026-11-26T00:23:33+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
- "capturas": 9,
+ "capturas": 12,
  "versiones_archivadas": 4,
  "fuera": [],
  "versiones": 4,
  "desde": "2016-07-18",
- "hasta": "2026-05-14",
+ "hasta": "2026-05-15",
  "sin_explicar": 0,
  "faltan": [
-  "2026-05-15"
+  "2026-05-14"
  ],
  "anteriores": 0
 }
