@@ -1,7 +1,13 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20210925180351_LCJPJF_070621.pdf	20210925180351	http://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF_070621.pdf	fe0040ef8664d83cb4384399c67ebb1ce987e83e3e604f9fe2f6b2a62d325c17	436212	2021-06-07	26	2021-06-07
-20211208131856_LCJPJF.pdf	20211208131856	http://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	b96bda3adb856161c6a9c2c70fda61bb2830e032026bb2b6d24f3acbe1840235	587412	2021-06-07	28	2021-06-07
-20221209023732_LCJPJF.pdf	20221209023732	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	8324c7bf85cff6b65623b42fc53e3bff4a089a8f0a99eb07026eceaff9ac9b55	598088	2021-06-07	30	2021-06-07
-20231203010221_LCJPJF.pdf	20231203010221	http://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	96b1cff65bfe34e9a633c32d7def44d69242870f5dbf4913b5c09a53aeb8fbc6	597539	2021-06-07	30	2021-06-07
-20250127182735_LCJPJF.pdf	20250127182735	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	235d742a2d01ea6616192e55c758d01ea029bc03b3b4822b5a445540581d9d24	392893	2025-01-02	20	2025-01-02
-20260207080921_LCJPJF.pdf	20260207080921	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	1307711de5651aa4df9452c8ea4a2e519ab6725b85c014a2e1844a9f8e823f4f	430218	2025-01-02	24	2025-01-02
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20210925180350_Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	20210925180350	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	4598d61a0b1be95858aef2c39b4eed392a9587da3fa3d9ba8e65db6f8e6b30ee	428404	2021-06-07	66	2021-06-07	portada
+20210925180351_LCJPJF_070621.pdf	20210925180351	http://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF_070621.pdf	fe0040ef8664d83cb4384399c67ebb1ce987e83e3e604f9fe2f6b2a62d325c17	436212	2021-06-07	26	2021-06-07	
+20211208131856_LCJPJF.pdf	20211208131856	http://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	b96bda3adb856161c6a9c2c70fda61bb2830e032026bb2b6d24f3acbe1840235	587412	2021-06-07	28	2021-06-07	
+20220126144905_Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	20220126144905	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	456666bce295f738e0acae710b37e4c16ced18033f947d3571c92ea90cc97c29	486136	2021-06-07	66	2021-06-07	portada
+20220725232239_Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	20220725232239	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	ca0a8827995dddedaf978eb90da7fe055c1a1be23a25aad8cd169b8bdec5294d	485355	2021-06-07	66	2021-06-07	portada
+20221209023732_LCJPJF.pdf	20221209023732	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	8324c7bf85cff6b65623b42fc53e3bff4a089a8f0a99eb07026eceaff9ac9b55	598088	2021-06-07	30	2021-06-07	
+20231203010221_LCJPJF.pdf	20231203010221	http://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	96b1cff65bfe34e9a633c32d7def44d69242870f5dbf4913b5c09a53aeb8fbc6	597539	2021-06-07	30	2021-06-07	
+20231203013045_Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	20231203013045	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	a696b508c96cc0309fbc58778b2762ae1c724a8abb3328088070da03fbe537bb	484397	2021-06-07	65	2021-06-07	portada
+20250127182735_LCJPJF.pdf	20250127182735	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	235d742a2d01ea6616192e55c758d01ea029bc03b3b4822b5a445540581d9d24	392893	2025-01-02	20	2025-01-02	
+20250130164657_Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	20250130164657	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	1898a016dc0564f3db77edd4c4a8ca157012d49030a9988f99051aa52be1ea34	333655	2025-01-02	67	2025-01-02	portada
+20260206125459_Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	20260206125459	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Carrera_Judicial_del_Poder_Judicial.pdf	bb992f2e0f1848c43516ac6f2531cb67207d66cf7e3f864ef1bf68e4f8ae74f7	348962	2025-01-02	59	2025-01-02	portada
+20260207080921_LCJPJF.pdf	20260207080921	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCJPJF.pdf	1307711de5651aa4df9452c8ea4a2e519ab6725b85c014a2e1844a9f8e823f4f	430218	2025-01-02	24	2025-01-02	

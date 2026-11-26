@@ -1,12 +1,18 @@
 {
- "fecha": "2026-11-25T13:34:12+00:00",
+ "fecha": "2026-11-26T10:25:50+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Ley_de_Desarrollo_Rural_Sustentable)\\.pdf",
  "publicada": true,
- "capturas": 16,
+ "capturas": 20,
  "versiones_archivadas": 13,
  "fuera": [],
  "versiones": 13,
  "desde": "2001-12-07",
  "hasta": "2024-06-07",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2010-12-09",
+  "2011-01-27"
+ ],
+ "anteriores": 0
 }

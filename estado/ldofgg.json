@@ -1,16 +1,17 @@
 {
- "fecha": "2026-11-24T02:37:20+00:00",
+ "fecha": "2026-11-26T09:53:57+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_del_Diario_Oficial_de_la_Federacion_y_Gacetas)\\.pdf",
  "publicada": true,
- "capturas": 9,
+ "capturas": 10,
  "versiones_archivadas": 3,
  "fuera": [],
  "versiones": 3,
  "desde": "1986-12-24",
- "hasta": "2019-05-31",
+ "hasta": "2019-06-10",
  "sin_explicar": 0,
  "faltan": [
-  "2019-06-10"
+  "2019-05-31"
  ],
  "anteriores": 0
 }

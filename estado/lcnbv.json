@@ -1,12 +1,17 @@
 {
- "fecha": "2026-11-25T13:29:50+00:00",
+ "fecha": "2026-11-26T09:11:50+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Ley_de_la_Comision_Nacional_Bancaria_y_de_Valores)\\.pdf",
  "publicada": true,
- "capturas": 10,
+ "capturas": 12,
  "versiones_archivadas": 7,
  "fuera": [],
  "versiones": 7,
  "desde": "2005-06-20",
  "hasta": "2022-05-11",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2009-06-25"
+ ],
+ "anteriores": 3
 }

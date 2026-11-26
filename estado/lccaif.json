@@ -1,12 +1,17 @@
 {
- "fecha": "2026-11-25T13:10:52+00:00",
+ "fecha": "2026-11-26T08:23:53+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Ley_que_Establece_Bases\\-Convenio_Constitutivo\\-Asociacion_Internacional_de_Fomento)\\.pdf",
  "publicada": true,
- "capturas": 10,
+ "capturas": 12,
  "versiones_archivadas": 4,
  "fuera": [],
  "versiones": 4,
  "desde": "1997-05-07",
  "hasta": "2025-06-06",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2008-12-30"
+ ],
+ "anteriores": 9
 }

@@ -284,10 +284,39 @@
   "desde": "2023-01-19",
   "hasta": "2024-04-01",
   "fuente_antes": "81c11a38524af8aa95f05a6636614db388d9a6661d97350824e39daae5f93a77",
-  "fuente_despues": "ba31c6816100503dee9da0ef9d4975d2edeb1c9da3c42a31ea4c8f8accab5302",
+  "fuente_despues": "bfac9367d6beed70a2fe03e4ff6fbf54345b3afda75bcd2f77ccf5f6e27318b3",
   "pendientes": [],
   "explicado": [
    "039-bis"
+  ],
+  "solo_notas": [
+   "059",
+   "060"
+  ],
+  "solo_forma": [
+   "013",
+   "018",
+   "031",
+   "033",
+   "038",
+   "047"
+  ],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2024-04-01",
+  "hasta": "2025-07-21",
+  "fuente_antes": "bfac9367d6beed70a2fe03e4ff6fbf54345b3afda75bcd2f77ccf5f6e27318b3",
+  "fuente_despues": "62c55f032a00c11de9e12e98aac68c6b2b1fdeee7273e0233ebef5cb58756f69",
+  "pendientes": [],
+  "explicado": [
+   "018"
   ],
   "solo_notas": [],
   "solo_forma": [],

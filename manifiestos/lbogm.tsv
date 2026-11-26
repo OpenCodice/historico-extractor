@@ -1,7 +1,10 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20110815151444_LBOGM.pdf	20110815151444	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LBOGM.pdf	86ec942097b924ae0becabf687cda144bde3cbb9da7f306d85126975ebc1cf66	287138	2005-03-18	44	2005-03-18
-20130303044929_LBOGM.pdf	20130303044929	http://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf	9535a73fdd93678c5979c4ea59871e50514c73d32b9b54e0bd21ca508720a5bf	438718	2005-03-18	44	2005-03-18
-20130515084503_LBOGM.pdf	20130515084503	http://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf	3432ce791b0109e3a2fd87b03163b20e10707aa95c750496802d875834629b2a	371446	2005-03-18	44	2005-03-18
-20181105072458_LBOGM.pdf	20181105072458	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LBOGM.pdf	1bc311f76438741a56943c11dbd54b64773cdb91d4add8eaa6f26864ae999aa4	441277	2005-03-18	44	2005-03-18
-20201126040054_LBOGM_061120.pdf	20201126040054	http://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM_061120.pdf	a53be1a86cf264171bf3ff9a3e91fe18ae1c2688a363cde81730c6212bcbde85	543771	2020-11-06	49	2005-03-18
-20220802171858_LBOGM.pdf	20220802171858	https://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf	b3c906475b455176de73da17f4f93a73f295965dc9bcca854b48417c7d4d3cfc	604130	2022-05-11	51	2005-03-18
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20110815151444_LBOGM.pdf	20110815151444	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LBOGM.pdf	86ec942097b924ae0becabf687cda144bde3cbb9da7f306d85126975ebc1cf66	287138	2005-03-18	44	2005-03-18	
+20130303044929_LBOGM.pdf	20130303044929	http://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf	9535a73fdd93678c5979c4ea59871e50514c73d32b9b54e0bd21ca508720a5bf	438718	2005-03-18	44	2005-03-18	
+20130515084503_LBOGM.pdf	20130515084503	http://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf	3432ce791b0109e3a2fd87b03163b20e10707aa95c750496802d875834629b2a	371446	2005-03-18	44	2005-03-18	
+20181105072458_LBOGM.pdf	20181105072458	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LBOGM.pdf	1bc311f76438741a56943c11dbd54b64773cdb91d4add8eaa6f26864ae999aa4	441277	2005-03-18	44	2005-03-18	
+20190710192052_Ley_de_Bioseguridad_de_Organismos_Geneticamente_Modificados.pdf	20190710192052	http://www.diputados.gob.mx:80/LeyesBiblio/pdf_mov/Ley_de_Bioseguridad_de_Organismos_Geneticamente_Modificados.pdf	5b3fe703f1351767f1d2d8ea27814f7645ee3a1d6bf9364a6195c6a202e6d5e4	494252	2005-03-18	113	2005-03-18	portada
+20201126040054_LBOGM_061120.pdf	20201126040054	http://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM_061120.pdf	a53be1a86cf264171bf3ff9a3e91fe18ae1c2688a363cde81730c6212bcbde85	543771	2020-11-06	49	2005-03-18	
+20210422183635_Ley_de_Bioseguridad_de_Organismos_Geneticamente_Modificados.pdf	20210422183635	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Bioseguridad_de_Organismos_Geneticamente_Modificados.pdf	347d7bfc9be935e32bf666fbe14e2c9f589045aea9c19fa9189795f8cb9b2323	496018	2020-11-06	113	2005-03-18	portada
+20220802171858_LBOGM.pdf	20220802171858	https://www.diputados.gob.mx/LeyesBiblio/pdf/LBOGM.pdf	b3c906475b455176de73da17f4f93a73f295965dc9bcca854b48417c7d4d3cfc	604130	2022-05-11	51	2005-03-18	
+20221007014359_Ley_de_Bioseguridad_de_Organismos_Geneticamente_Modificados.pdf	20221007014359	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Bioseguridad_de_Organismos_Geneticamente_Modificados.pdf	6d34121200e5ef9410411dcf0185de78a38f202b7d0add5e6a8b459386fdb6c1	513243	2022-05-11	113	2005-03-18	portada

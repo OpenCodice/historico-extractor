@@ -1,4 +1,6 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20250518041822_LCNE.pdf	20250518041822	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf	c76d1b58ace35a9c6257163b0f1550683b850f7d6a089ceb5c76d0e7a85a8eb6	371317	2025-03-18	13	2025-03-18
-20251219230855_LCNE.pdf	20251219230855	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf	1fa0c25d4cd457b51611448a955547b1ff0b32f08f63d9dc6ab3a2f0aeda707c	395193	2025-03-18	16	2025-03-18
-20261025202939_LCNE.pdf	20261025202939	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf	7c13fd20564f1e7230268a0943cc226368b24c44886d6738c479f4c42cbe77de	508412	2025-03-18	20	2025-03-18
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20250518041822_LCNE.pdf	20250518041822	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf	c76d1b58ace35a9c6257163b0f1550683b850f7d6a089ceb5c76d0e7a85a8eb6	371317	2025-03-18	13	2025-03-18	
+20250617213650_Ley_de_la_Comision_Nacional_de_Energia.pdf	20250617213650	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_la_Comision_Nacional_de_Energia.pdf	3dda403fc7ee3abad8b267208d063d2e56b9bc3e477ab1baa6f1f0285f185a4f	369944	2025-03-18	34	2025-03-18	portada
+20251219230855_LCNE.pdf	20251219230855	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf	1fa0c25d4cd457b51611448a955547b1ff0b32f08f63d9dc6ab3a2f0aeda707c	395193	2025-03-18	16	2025-03-18	
+20260805144504_Ley_de_la_Comision_Nacional_de_Energia.pdf	20260805144504	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_la_Comision_Nacional_de_Energia.pdf	265566a8713b5d49342026ed0e532720a6432b60ab8f7dce040322ccbecb0c79	399863	2025-03-18	40	2025-03-18	portada
+20261025202939_LCNE.pdf	20261025202939	https://www.diputados.gob.mx/LeyesBiblio/pdf/LCNE.pdf	7c13fd20564f1e7230268a0943cc226368b24c44886d6738c479f4c42cbe77de	508412	2025-03-18	20	2025-03-18	

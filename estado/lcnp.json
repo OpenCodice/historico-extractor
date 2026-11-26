@@ -1,12 +1,15 @@
 {
- "fecha": "2026-11-25T13:33:58+00:00",
+ "fecha": "2026-11-26T09:27:32+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Ley_para_Conservar_la_Neutralidad_del_Pais)\\.pdf",
  "publicada": true,
- "capturas": 7,
+ "capturas": 8,
  "versiones_archivadas": 2,
  "fuera": [],
  "versiones": 2,
  "desde": "1939-11-10",
  "hasta": "2018-06-21",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [],
+ "anteriores": 0
 }

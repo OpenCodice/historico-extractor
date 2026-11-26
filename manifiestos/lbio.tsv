@@ -1,3 +1,5 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20250509021555_LBio.pdf	20250509021555	https://www.diputados.gob.mx/LeyesBiblio/pdf/LBio.pdf	6d619d528281abacf47137268cb18235d913f681ab90b05dcb753ebea3373e25	406169	2025-03-18	18	2025-03-18
-20260115142405_LBio.pdf	20260115142405	https://www.diputados.gob.mx/LeyesBiblio/pdf/LBio.pdf	c1870db657a6564bbeb692a1778472db811a920626822de553ff5ca5194f95b4	441184	2025-03-18	23	2025-03-18
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20250509021555_LBio.pdf	20250509021555	https://www.diputados.gob.mx/LeyesBiblio/pdf/LBio.pdf	6d619d528281abacf47137268cb18235d913f681ab90b05dcb753ebea3373e25	406169	2025-03-18	18	2025-03-18	
+20250617213526_Ley_de_Biocombustibles.pdf	20250617213526	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Biocombustibles.pdf	534c3b6c2cf2da6a9467cde08a78ab3da75e920bdf44d9411fa7aaddd3064539	413495	2025-03-18	51	2025-03-18	portada
+20260115142405_LBio.pdf	20260115142405	https://www.diputados.gob.mx/LeyesBiblio/pdf/LBio.pdf	c1870db657a6564bbeb692a1778472db811a920626822de553ff5ca5194f95b4	441184	2025-03-18	23	2025-03-18	
+20260716171844_Ley_de_Biocombustibles.pdf	20260716171844	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_de_Biocombustibles.pdf	193d1efac2feb223b18cc1df1b8878398e06476db0d096d94c2e83c616d0eebd	439422	2025-03-18	58	2025-03-18	portada

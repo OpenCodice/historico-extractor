@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-24T01:19:47+00:00",
+ "fecha": "2026-11-26T09:02:52+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_de_la_Casa_de_Moneda)\\.pdf",
  "publicada": true,
- "capturas": 9,
+ "capturas": 11,
  "versiones_archivadas": 3,
  "fuera": [],
  "versiones": 3,
- "desde": "1986-01-20",
+ "desde": "1986-01-24",
  "hasta": "2022-05-11",
  "sin_explicar": 0,
- "faltan": [
-  "1986-01-24"
- ],
+ "faltan": [],
  "anteriores": 0
 }
