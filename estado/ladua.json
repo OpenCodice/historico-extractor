@@ -1,12 +1,29 @@
 {
- "fecha": "2026-11-25T12:50:27+00:00",
+ "fecha": "2026-11-26T06:44:04+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Ley_Aduanera)\\.pdf",
  "publicada": true,
- "capturas": 33,
+ "capturas": 41,
  "versiones_archivadas": 9,
  "fuera": [],
  "versiones": 9,
  "desde": "2006-02-02",
  "hasta": "2025-11-19",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2006-04-10",
+  "2007-05-09",
+  "2008-05-09",
+  "2009-05-12",
+  "2010-07-01",
+  "2011-08-03",
+  "2011-12-27",
+  "2012-01-27",
+  "2014-12-29",
+  "2017-01-27",
+  "2017-12-22",
+  "2018-12-24",
+  "2020-12-24"
+ ],
+ "anteriores": 12
 }

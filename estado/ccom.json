@@ -1,62 +1,22 @@
 {
- "fecha": "2026-11-23T16:42:38+00:00",
- "configuracion": "d155e8edee1d",
+ "fecha": "2026-11-26T04:19:19+00:00",
+ "configuracion": "d65605daf94e",
+ "fuentes": "notas|(Codigo_de_Comercio)\\.pdf",
  "publicada": true,
- "capturas": 36,
- "versiones_archivadas": 12,
- "fuera": [
-  {
-   "version": "2011-01-27",
-   "sha256": "e2df362ce81ba9eebb0b4961424709fd05a0e591e27a1fe1ad76a619aba01e29",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1376bisatodoopositorquenoobtengasentenciafavorableselecondenaraalpagodeg»; texto_omitido «Artículo 1376 Bis.- A todo opositor que no obtenga sentencia favorable, se le "
-  },
-  {
-   "version": "2011-06-09",
-   "sha256": "9233d36ce581c1fbc604ba510a3e15595ff821b8190298dad78ae91aed969a59",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1376bisatodoopositorquenoobtengasentenciafavorableselecondenaraalpagodeg»; texto_omitido «Artículo 1376 Bis.- A todo opositor que no obtenga sentencia favorable, se le "
-  },
-  {
-   "version": "2011-10-19",
-   "sha256": "141447e7b40fc80dab16f5d43a2c608ad5cac6dee501309b4c27cb56ce4a94bb",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1376bisatodoopositorquenoobtengasentenciafavorableselecondenaraalpagodeg»; texto_omitido «Artículo 1376 Bis.- A todo opositor que no obtenga sentencia favorable, se le "
-  },
-  {
-   "version": "2012-04-17",
-   "sha256": "aa2c329a0a605f8685fa50b23ccfe90413a243ec51e21ed288725bb822205328",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1376bisatodoopositorquenoobtengasentenciafavorableselecondenaraalpagodeg»; texto_omitido «Artículo 1376 Bis.- A todo opositor que no obtenga sentencia favorable, se le "
-  },
-  {
-   "version": "2014-01-10",
-   "sha256": "2fc66ac52fa3cff167db72ad45100b5b29fa17d2d4fe00787278b243ccf4ee5b",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1190sederogaarticulo1191sederogaarticulo1192sederogaarticulo1193sederoga»; texto_omitido «Artículo 1190.- Se deroga Artículo 1191.- Se deroga Artículo 1192.- Se deroga "
-  },
-  {
-   "version": "2014-06-13",
-   "sha256": "25508f8e6cd7a2d144cf702f3e239d9110e511cb025f3b1c454e915af341cfe1",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1190sederogaarticulo1191sederogaarticulo1192sederogaarticulo1193sederoga»; texto_omitido «Artículo 1190.- Se deroga Artículo 1191.- Se deroga Artículo 1192.- Se deroga "
-  },
-  {
-   "version": "2016-04-07",
-   "sha256": "13e49c129e3303c50954e4b7bd0ca4ff34c820a15062da1ffa69eae5d12d7f47",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1190sederogaarticulo1191sederogaarticulo1192sederogaarticulo1193sederoga»; texto_omitido «Artículo 1190.- Se deroga Artículo 1191.- Se deroga Artículo 1192.- Se deroga "
-  },
-  {
-   "version": "2017-01-25",
-   "sha256": "831cffc33eb103316cee60f2432455e922228a94e9b878f1ddd8dc9a09590202",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1190sederogaarticulo1191sederogaarticulo1192sederogaarticulo1193sederoga»; texto_omitido «Artículo 1190.- Se deroga Artículo 1191.- Se deroga Artículo 1192.- Se deroga "
-  },
-  {
-   "version": "2017-05-02",
-   "sha256": "6c3d5e3cc4199b1464bd207a6ad0ddb6f8795968168187796d737de493adccc4",
-   "motivo": "auditar:   ccom/290: no_literal «articulo1190sederogaarticulo1191sederogaarticulo1192sederogaarticulo1193sederoga»; texto_omitido «Artículo 1190.- Se deroga Artículo 1191.- Se deroga Artículo 1192.- Se deroga "
-  }
- ],
- "versiones": 3,
- "desde": "2018-03-28",
- "hasta": "2025-11-14",
+ "capturas": 48,
+ "versiones_archivadas": 25,
+ "fuera": [],
+ "versiones": 25,
+ "desde": "2011-01-27",
+ "hasta": "2026-02-18",
  "sin_explicar": 0,
  "faltan": [
-  "2018-12-31"
+  "2011-06-06",
+  "2011-12-14",
+  "2012-01-09",
+  "2012-04-09",
+  "2013-12-30",
+  "2016-12-26"
  ],
- "anteriores": 57
+ "anteriores": 37
 }

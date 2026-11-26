@@ -1,12 +1,15 @@
 {
- "fecha": "2026-11-25T11:20:50+00:00",
+ "fecha": "2026-11-26T06:10:28+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares)\\.pdf",
  "publicada": true,
- "capturas": 6,
+ "capturas": 10,
  "versiones_archivadas": 4,
  "fuera": [],
  "versiones": 4,
  "desde": "2023-06-07",
  "hasta": "2026-01-15",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [],
+ "anteriores": 0
 }

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-25T17:56:54+00:00",
+ "fecha": "2026-11-26T05:37:39+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 64,
@@ -12,5 +12,6 @@
  "faltan": [
   "2025-11-07"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Codigo_Fiscal_de_la_Federacion)\\.pdf"
 }

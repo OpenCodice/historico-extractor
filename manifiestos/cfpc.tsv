@@ -1,19 +1,26 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20060715071220_6.pdf	20060715071220	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/6.pdf	4666ecfb238da14bd17f3c2b0a7bf5318c6d701f3acee2ff6b9693bc89167212	462280	2003-06-13	89	1943-02-24
-20080911184548_6.pdf	20080911184548	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	83b79489d0bdafa03bd4364930c700a79290befc0baa51519c05730c673e9764	458275	2008-06-20	90	1943-02-24
-20100922153950_6.pdf	20100922153950	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/6.pdf	faf61773f198b2ecb26686d517517600cb26259d121373e61a72318c04933ee8	3297406	2008-12-30	92	1943-02-24
-20110803222606_6.pdf	20110803222606	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	3aca88159d0abd875afadec90a94dc65df45b98fa5ebe008d694836777676d1e	468934	2011-05-24	93	1943-02-24
-20111017213628_6.pdf	20111017213628	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	fcc343dcb70b304b64749a4c27f5e67ef3eed35e2ab740423d36d29d3a8d7b96	534260	2011-08-30	107	1943-02-24
-20120511140638_6.pdf	20120511140638	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	d014fb5f14b56667f503b0ab04d7f31d845a53e73988e1aea93de6d29f8d6a48	540393	2012-04-09	109	1943-02-24
-20121115124749_6.pdf	20121115124749	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	a2d89b51a9325b8f1fab4c04afa6a768e8d2d4f18e3426448002ce7948baa2e7	893704	2012-04-09	109	1943-02-24
-20130126195309_6.pdf	20130126195309	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	ccfec6f0372f482f7922b96c4489b684afd3e89a55fb1378869ce237fe87153e	947274	2012-04-09	109	1943-02-24
-20130626055223_6.pdf	20130626055223	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	c104baa068cbcc7005cc7ea01c1c2c8b0ad66d39f3441ef1c6c79a86654e413b	985267	2012-04-09	109	1943-02-24
-20190120025915_6.pdf	20190120025915	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	07585c9d2bb583b14acebd2be4836d6f03baa41c7cdbfb02fd172d13795e4afd	1077738	2012-04-09	109	1943-02-24
-20210819234831_6_070621.pdf	20210819234831	http://www.diputados.gob.mx/LeyesBiblio/pdf/6_070621.pdf	9145529ddc1f1bd904460fc3a948bfb68a31c5f9711d53223b6e1a31b0549b61	1132709	2021-06-07	116	1943-02-24
-20211016060241_6_070621.pdf	20211016060241	http://www.diputados.gob.mx/LeyesBiblio/pdf/6_070621.pdf	25a817e45abe5fb27a2174444155cf4a2975e3971b76a3ff09d0a5d274e7141b	1048576	ilegible: PdfminerException	0	
-20211208115921_CFPC.pdf	20211208115921	http://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	fc437fefbdf5b07b80825040bdd8e2670bf1fa21a5ad9121cbb8db24bc6e27c9	1048576	ilegible: PdfminerException	0	
-20220122034130_CFPC.pdf	20220122034130	http://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	7ea896bf4188c1a68a913f0490ad41627db15bbb0f20ff6854043c062dafe538	1292914	2021-06-07	118	1943-02-24
-20220429175303_CFPC.pdf	20220429175303	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	0991222837dc80ab25d6565bd63b7677188a4e330827c4314bb4811fdf19ec9b	1304860	2021-06-07	120	1943-02-24
-20220630204608_CFPC.pdf	20220630204608	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	f1a7d7591f4491dce4f46f8dce8931181f8aa4cea964f3d573107bbb3e251bde	1048576	ilegible: PdfminerException	0	
-20230713182525_CFPC.pdf	20230713182525	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	d2e31564cd6b6841d9aef9ad8feec7bf76a2f82d65af37fa69bc89ebebe5d0e0	1426160	2021-06-07	124	1943-02-24
-20260414015825_CFPC.pdf	20260414015825	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	db545f3918f1c1907dac23d6431d5076c8de91af1fbf97dcf5b5b2a68b165299	1549659	2021-06-07	129	1943-02-24
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20060715071220_6.pdf	20060715071220	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/6.pdf	4666ecfb238da14bd17f3c2b0a7bf5318c6d701f3acee2ff6b9693bc89167212	462280	2003-06-13	89	1943-02-24	
+20080911184548_6.pdf	20080911184548	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	83b79489d0bdafa03bd4364930c700a79290befc0baa51519c05730c673e9764	458275	2008-06-20	90	1943-02-24	
+20100922153950_6.pdf	20100922153950	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/6.pdf	faf61773f198b2ecb26686d517517600cb26259d121373e61a72318c04933ee8	3297406	2008-12-30	92	1943-02-24	
+20110803222606_6.pdf	20110803222606	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	3aca88159d0abd875afadec90a94dc65df45b98fa5ebe008d694836777676d1e	468934	2011-05-24	93	1943-02-24	
+20111017213628_6.pdf	20111017213628	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	fcc343dcb70b304b64749a4c27f5e67ef3eed35e2ab740423d36d29d3a8d7b96	534260	2011-08-30	107	1943-02-24	
+20120511140638_6.pdf	20120511140638	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	d014fb5f14b56667f503b0ab04d7f31d845a53e73988e1aea93de6d29f8d6a48	540393	2012-04-09	109	1943-02-24	
+20121115124749_6.pdf	20121115124749	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	a2d89b51a9325b8f1fab4c04afa6a768e8d2d4f18e3426448002ce7948baa2e7	893704	2012-04-09	109	1943-02-24	
+20130126195309_6.pdf	20130126195309	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	ccfec6f0372f482f7922b96c4489b684afd3e89a55fb1378869ce237fe87153e	947274	2012-04-09	109	1943-02-24	
+20130626055223_6.pdf	20130626055223	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	c104baa068cbcc7005cc7ea01c1c2c8b0ad66d39f3441ef1c6c79a86654e413b	985267	2012-04-09	109	1943-02-24	
+20190120025915_6.pdf	20190120025915	http://www.diputados.gob.mx/LeyesBiblio/pdf/6.pdf	07585c9d2bb583b14acebd2be4836d6f03baa41c7cdbfb02fd172d13795e4afd	1077738	2012-04-09	109	1943-02-24	
+20190710185640_Codigo_Federal_de_Procedimientos_Civiles.pdf	20190710185640	http://www.diputados.gob.mx:80/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	3d3700bad6176799a5b3186debc88ba1cf0ebd6691f6096238f84877af494584	937227	2012-04-09	240	1943-02-24	portada
+20210709211124_Codigo_Federal_de_Procedimientos_Civiles.pdf	20210709211124	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	d3eb3451db3b85f27bcdfa528ead21637f0ef9fd089f1a43508158691b68a4be	941187	2021-06-07	241	1943-02-24	portada
+20210819234831_6_070621.pdf	20210819234831	http://www.diputados.gob.mx/LeyesBiblio/pdf/6_070621.pdf	9145529ddc1f1bd904460fc3a948bfb68a31c5f9711d53223b6e1a31b0549b61	1132709	2021-06-07	116	1943-02-24	
+20211016060241_6_070621.pdf	20211016060241	http://www.diputados.gob.mx/LeyesBiblio/pdf/6_070621.pdf	25a817e45abe5fb27a2174444155cf4a2975e3971b76a3ff09d0a5d274e7141b	1048576	ilegible: PdfminerException	0		
+20211208115921_CFPC.pdf	20211208115921	http://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	fc437fefbdf5b07b80825040bdd8e2670bf1fa21a5ad9121cbb8db24bc6e27c9	1048576	ilegible: PdfminerException	0		
+20220122034130_CFPC.pdf	20220122034130	http://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	7ea896bf4188c1a68a913f0490ad41627db15bbb0f20ff6854043c062dafe538	1292914	2021-06-07	118	1943-02-24	
+20220124200918_Codigo_Federal_de_Procedimientos_Civiles.pdf	20220124200918	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	769a4ef3f2dd518065671166cfe3e4a8a5920cef54976fd524ec394a45be3805	991310	2021-06-07	241	1943-02-24	portada
+20220429175303_CFPC.pdf	20220429175303	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	0991222837dc80ab25d6565bd63b7677188a4e330827c4314bb4811fdf19ec9b	1304860	2021-06-07	120	1943-02-24	
+20220630194140_Codigo_Federal_de_Procedimientos_Civiles.pdf	20220630194140	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	be6877179e3d7e9c5d4abcee8fd1a04386e587edf00c5485d24181e2353a224a	992683	2021-06-07	241	1943-02-24	portada
+20220630204608_CFPC.pdf	20220630204608	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	f1a7d7591f4491dce4f46f8dce8931181f8aa4cea964f3d573107bbb3e251bde	1048576	ilegible: PdfminerException	0		
+20230713182525_CFPC.pdf	20230713182525	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	d2e31564cd6b6841d9aef9ad8feec7bf76a2f82d65af37fa69bc89ebebe5d0e0	1426160	2021-06-07	124	1943-02-24	
+20231202150118_Codigo_Federal_de_Procedimientos_Civiles.pdf	20231202150118	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	7e1c3a83abac97a0d9c9aa92504e7f88cfd9f227ef2312b158be773923b328ae	1078210	2021-06-07	242	1943-02-24	portada
+20240914000623_Codigo_Federal_de_Procedimientos_Civiles.pdf	20240914000623	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	ff67940df8309593cf71a74ea392a2c67c19817e07412cacca8ece5c1a9faa3a	1048576	ilegible: PdfminerException	0		portada
+20260227000702_Codigo_Federal_de_Procedimientos_Civiles.pdf	20260227000702	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Federal_de_Procedimientos_Civiles.pdf	808118b578027e9c527571a206e3f308d9823c25f06bb77f660d31004dfad9c5	1077174	2021-06-07	242	1943-02-24	portada
+20260414015825_CFPC.pdf	20260414015825	https://www.diputados.gob.mx/LeyesBiblio/pdf/CFPC.pdf	db545f3918f1c1907dac23d6431d5076c8de91af1fbf97dcf5b5b2a68b165299	1549659	2021-06-07	129	1943-02-24	

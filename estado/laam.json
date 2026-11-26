@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-25T21:19:17+00:00",
+ "fecha": "2026-11-26T06:36:34+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 11,
@@ -15,5 +15,6 @@
   "2010-08-27",
   "2011-01-26"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_de_Ascensos_de_la_Armada)\\.pdf"
 }

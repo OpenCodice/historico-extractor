@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-25T20:54:39+00:00",
+ "fecha": "2026-11-26T06:19:17+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 32,
@@ -43,5 +43,6 @@
   "2024-12-16",
   "2025-11-14"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Codigo_Nacional_de_Procedimientos_Penales)\\.pdf"
 }

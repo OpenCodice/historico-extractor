@@ -1,12 +1,15 @@
 {
- "fecha": "2026-11-25T12:37:38+00:00",
+ "fecha": "2026-11-26T06:36:28+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Estatuto_de_Gobierno_del_Distrito_Federal)\\.pdf",
  "publicada": true,
- "capturas": 11,
+ "capturas": 12,
  "versiones_archivadas": 5,
  "fuera": [],
  "versiones": 5,
  "desde": "1999-10-14",
  "hasta": "2014-06-27",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [],
+ "anteriores": 4
 }

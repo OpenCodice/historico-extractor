@@ -1,5 +1,6 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20110409090058_LAAT.pdf	20110409090058	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LAAT.pdf	acee73353e72dc2337fdd693d65dff19e0b5e698fc5c034d6479f0aa5fb9742e	53192	2011-01-17	6	2011-01-17
-20130303055329_LAAT.pdf	20130303055329	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf	d6daf3becf970e9d524a2a1a9ecbedd4a2e6502ab071a8f52ee2f66fc0f7ca60	144268	2011-01-17	6	2011-01-17
-20130626015822_LAAT.pdf	20130626015822	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf	f10203590f8b681b2d3db42c9ae26df16d5152811675b8792dfbcfda5c83cbff	249479	2011-01-17	6	2011-01-17
-20190212085942_LAAT.pdf	20190212085942	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf	2e6462a9ddd472efe129d2285c1602316c91640646847da74dbf13363c5238fb	305931	2011-01-17	6	2011-01-17
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20110409090058_LAAT.pdf	20110409090058	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LAAT.pdf	acee73353e72dc2337fdd693d65dff19e0b5e698fc5c034d6479f0aa5fb9742e	53192	2011-01-17	6	2011-01-17	
+20130303055329_LAAT.pdf	20130303055329	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf	d6daf3becf970e9d524a2a1a9ecbedd4a2e6502ab071a8f52ee2f66fc0f7ca60	144268	2011-01-17	6	2011-01-17	
+20130626015822_LAAT.pdf	20130626015822	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf	f10203590f8b681b2d3db42c9ae26df16d5152811675b8792dfbcfda5c83cbff	249479	2011-01-17	6	2011-01-17	
+20190212085942_LAAT.pdf	20190212085942	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAAT.pdf	2e6462a9ddd472efe129d2285c1602316c91640646847da74dbf13363c5238fb	305931	2011-01-17	6	2011-01-17	
+20190710192044_Ley_de_Ayuda_Alimentaria_para_los_Trabajadores.pdf	20190710192044	http://www.diputados.gob.mx:80/LeyesBiblio/pdf_mov/Ley_de_Ayuda_Alimentaria_para_los_Trabajadores.pdf	aca27468ddc620fd8fdbb0f1c4bff374b47e32339adf1d7c7e96b1d1f87059e3	291689	2011-01-17	14	2011-01-17	portada

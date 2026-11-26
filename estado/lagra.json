@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-25T21:50:36+00:00",
+ "fecha": "2026-11-26T06:58:19+00:00",
  "configuracion": "5248bb54f469",
  "publicada": true,
  "capturas": 22,
@@ -13,5 +13,6 @@
   "2012-01-17",
   "2018-06-22"
  ],
- "anteriores": 0
+ "anteriores": 0,
+ "fuentes": "notas|(Ley_Agraria)\\.pdf"
 }

@@ -1,12 +1,20 @@
 {
- "fecha": "2026-11-25T11:08:37+00:00",
+ "fecha": "2026-11-26T05:42:42+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Codigo_Federal_de_Procedimientos_Civiles)\\.pdf",
  "publicada": true,
- "capturas": 18,
+ "capturas": 25,
  "versiones_archivadas": 7,
  "fuera": [],
  "versiones": 7,
  "desde": "2003-06-13",
  "hasta": "2021-06-07",
- "sin_explicar": 0
+ "sin_explicar": 0,
+ "faltan": [
+  "2012-01-16",
+  "2021-05-20",
+  "2025-06-05",
+  "2025-06-17"
+ ],
+ "anteriores": 5
 }

@@ -1,7 +1,11 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20230627073605_CNPCF.pdf	20230627073605	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	b7535f13c6ded38da5b53c7266916d727c630d3ca00ed5f34cced6723878ee9a	1884048	2023-06-07	208	2023-06-07
-20231003163909_CNPCF.pdf	20231003163909	http://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	f769a171b0ac1c4c00bb27eeb64fcfa2ed04155823d18d5db89c40f5f47fd94d	1048576	ilegible: PdfminerException	0	
-20231204123328_CNPCF.pdf	20231204123328	http://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	6bc5c4eccd1a297b04414e335d7926282c003d1ae21a703776fd2e49d2040968	2452480	2023-06-07	270	2023-06-07
-20250121192014_CNPCF.pdf	20250121192014	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	e5b1a005cba958ddb041f527881686d68c50667ece2e93396cc58943907b056b	2653800	2024-06-04	274	2023-06-07
-20250130140740_CNPCF.pdf	20250130140740	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	a47346fc60888237791748e1563c88bac1c2f4309de1e1fa8b71246932b7e46c	2664020	2024-12-16	277	2023-06-07
-20260202015315_CNPCF.pdf	20260202015315	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	6ed874d10a9e5823c6a7bd6a0df60c8ed110aeee9e660ae6aab3bf649d07d1f8	2680035	2026-01-15	279	2023-06-07
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20230627073605_CNPCF.pdf	20230627073605	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	b7535f13c6ded38da5b53c7266916d727c630d3ca00ed5f34cced6723878ee9a	1884048	2023-06-07	208	2023-06-07	
+20231003161922_Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	20231003161922	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	3e04a6234260be7875691121083a0181c53dd39c4d0a128e9edac58fd70fedf1	1048576	ilegible: PdfminerException	0		portada
+20231003163909_CNPCF.pdf	20231003163909	http://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	f769a171b0ac1c4c00bb27eeb64fcfa2ed04155823d18d5db89c40f5f47fd94d	1048576	ilegible: PdfminerException	0		
+20231203010005_Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	20231203010005	http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	c399425919a4f95c7b46b14e107989c2562275375dd517bb9f4158b2f2fb3f0b	2522265	2023-06-07	713	2023-06-07	portada
+20231204123328_CNPCF.pdf	20231204123328	http://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	6bc5c4eccd1a297b04414e335d7926282c003d1ae21a703776fd2e49d2040968	2452480	2023-06-07	270	2023-06-07	
+20250121191442_Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	20250121191442	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	c5fd6436d750ffb8531d47153adccd7d5f7487df5810437ed64f8f0dcce675fc	2629670	2024-06-04	716	2023-06-07	portada
+20250121192014_CNPCF.pdf	20250121192014	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	e5b1a005cba958ddb041f527881686d68c50667ece2e93396cc58943907b056b	2653800	2024-06-04	274	2023-06-07	
+20250130140740_CNPCF.pdf	20250130140740	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	a47346fc60888237791748e1563c88bac1c2f4309de1e1fa8b71246932b7e46c	2664020	2024-12-16	277	2023-06-07	
+20250130160004_Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	20250130160004	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Codigo_Nacional_de_Procedimientos_Civiles_y_Familiares.pdf	716c8aa8e2a1e5fbcb1070a54f718943100bc1c742a887ffd7a2a69feb211b2c	2619476	2024-12-16	715	2023-06-07	portada
+20260202015315_CNPCF.pdf	20260202015315	https://www.diputados.gob.mx/LeyesBiblio/pdf/CNPCF.pdf	6ed874d10a9e5823c6a7bd6a0df60c8ed110aeee9e660ae6aab3bf649d07d1f8	2680035	2026-01-15	279	2023-06-07	

@@ -1,5 +1,6 @@
-archivo	captura	url	sha256	bytes	version	paginas	origen
-20110815150917_LAEM.pdf	20110815150917	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LAEM.pdf	9b9335e8a9da0228c9428058aa8c1e412be8032c30401c97b9d14d9acab25c25	65358	2010-07-30	9	2010-07-30
-20130303041206_LAEM.pdf	20130303041206	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAEM.pdf	232261e5dfc439da95e7b39978fa8d0bba808e9c0af0b4c5ead297f896be6ab8	163777	2010-07-30	9	2010-07-30
-20130626054824_LAEM.pdf	20130626054824	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAEM.pdf	59a70b8259d67fa2485fc8709d1c183bf32b5fd6e633de0d4cc8fdc5332757c7	203017	2010-07-30	9	2010-07-30
-20181105072448_LAEM.pdf	20181105072448	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LAEM.pdf	b007340fd742c125439e4f037c7aae09f2fe9e55f88a9f194079e0daebfc1dca	241824	2010-07-30	9	2010-07-30
+archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
+20110815150917_LAEM.pdf	20110815150917	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LAEM.pdf	9b9335e8a9da0228c9428058aa8c1e412be8032c30401c97b9d14d9acab25c25	65358	2010-07-30	9	2010-07-30	
+20130303041206_LAEM.pdf	20130303041206	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAEM.pdf	232261e5dfc439da95e7b39978fa8d0bba808e9c0af0b4c5ead297f896be6ab8	163777	2010-07-30	9	2010-07-30	
+20130626054824_LAEM.pdf	20130626054824	http://www.diputados.gob.mx/LeyesBiblio/pdf/LAEM.pdf	59a70b8259d67fa2485fc8709d1c183bf32b5fd6e633de0d4cc8fdc5332757c7	203017	2010-07-30	9	2010-07-30	
+20181105072448_LAEM.pdf	20181105072448	http://www.diputados.gob.mx:80/LeyesBiblio/pdf/LAEM.pdf	b007340fd742c125439e4f037c7aae09f2fe9e55f88a9f194079e0daebfc1dca	241824	2010-07-30	9	2010-07-30	
+20190710193855_Ley_que_crea_la_Agencia_Espacial_Mexicana.pdf	20190710193855	http://www.diputados.gob.mx:80/LeyesBiblio/pdf_mov/Ley_que_crea_la_Agencia_Espacial_Mexicana.pdf	29b9fc6295550dea8377a441f325fb84fb4a1a02e66a23066008f3fe5b62fc9d	229112	2010-07-30	21	2010-07-30	portada
