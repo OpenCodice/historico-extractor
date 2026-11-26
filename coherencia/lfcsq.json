@@ -1,13 +1,18 @@
 [
  {
-  "desde": "2009-06-09",
+  "desde": "2009-07-03",
   "hasta": "2021-05-20",
   "fuente_antes": "8b602809eae71e51e808bdc3a5ed7ebd3ffb3fe3f6cab5fe28c4fa64d647cbfd",
   "fuente_despues": "2fa2a11b9a2d6e7a3613947c29e72213b9e6dade367ee7fabef3c7bcc3ae9fca",
-  "pendientes": [],
+  "pendientes": [
+   {
+    "articulo": "075",
+    "antes": "f63006039040d6f9",
+    "despues": "a487ee6306412a73"
+   }
+  ],
   "explicado": [
-   "012",
-   "075"
+   "012"
   ],
   "solo_notas": [],
   "solo_forma": [],
@@ -19,7 +24,9 @@
   "otro_orden": [],
   "formula": [],
   "juzgado": [],
-  "sin_explicar": []
+  "sin_explicar": [
+   "075"
+  ]
  },
  {
   "desde": "2021-05-20",

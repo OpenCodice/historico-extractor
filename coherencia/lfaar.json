@@ -1,1 +1,35 @@
-[]
+[
+ {
+  "desde": "2005-05-13",
+  "hasta": "2025-11-14",
+  "fuente_antes": "e643eaca27e4e981b8ab877b5e45366638ec9b07d2141fc6c624f46bd0a0653d",
+  "fuente_despues": "e615b26772afdf81350ca865c8ae9e3977eff06f38ca1528a8e0d7c421d3cdb0",
+  "pendientes": [],
+  "explicado": [
+   "006"
+  ],
+  "solo_notas": [],
+  "solo_forma": [
+   "001",
+   "008",
+   "011",
+   "012",
+   "017",
+   "020",
+   "029",
+   "034",
+   "039",
+   "046",
+   "048",
+   "052",
+   "095"
+  ],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ }
+]

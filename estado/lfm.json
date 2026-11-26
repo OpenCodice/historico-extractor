@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-24T14:01:57+00:00",
+ "fecha": "2026-11-26T14:46:14+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_Federal_del_Mar)\\.pdf",
  "publicada": true,
- "capturas": 6,
+ "capturas": 7,
  "versiones_archivadas": 1,
  "fuera": [],
  "versiones": 1,
- "desde": "1986-01-08",
- "hasta": "1986-01-08",
+ "desde": "1986-01-09",
+ "hasta": "1986-01-09",
  "sin_explicar": 0,
- "faltan": [
-  "1986-01-09"
- ],
+ "faltan": [],
  "anteriores": 0
 }

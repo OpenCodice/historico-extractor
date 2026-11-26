@@ -1,16 +1,16 @@
 {
- "fecha": "2026-11-24T07:55:03+00:00",
+ "fecha": "2026-11-26T11:49:18+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_Federal_de_Cinematografia)\\.pdf",
  "publicada": true,
- "capturas": 9,
- "versiones_archivadas": 5,
+ "capturas": 12,
+ "versiones_archivadas": 6,
  "fuera": [],
- "versiones": 5,
+ "versiones": 6,
  "desde": "2006-01-26",
- "hasta": "2021-03-22",
+ "hasta": "2025-08-19",
  "sin_explicar": 0,
  "faltan": [
-  "2025-08-19",
   "2025-09-01"
  ],
  "anteriores": 3
