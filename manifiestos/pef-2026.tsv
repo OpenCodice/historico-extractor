@@ -1,3 +1,5 @@
 archivo	captura	url	sha256	bytes	version	paginas	origen	fechada_por
 20251128204941_PEF_2026.pdf	20251128204941	https://www.diputados.gob.mx/LeyesBiblio/pdf/PEF_2026.pdf	02bf4543bd8e99d1bb980a3c513749114a6db35ee94a9ce8ef678cf73d95165b	8624116	2025-11-21	118	2025-11-21	portada
 20260216145645_PEF_2026.pdf	20260216145645	https://www.diputados.gob.mx/LeyesBiblio/pdf/PEF_2026.pdf	a4283be943542dd50d0768978452da89839e1047e51b9b661729828667b949ae	5242880	ilegible: PdfminerException	0		portada
+20260328104949_Presupuesto_de_Egresos_2026.pdf	20260328104949	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Presupuesto_de_Egresos_2026.pdf	46fa84a66a0f7dc9683f99ddbbcbe1e4716648d89893c8f7094478facb356473	8523446	2025-11-21	214	2025-11-21	portada
+20260713001937_Presupuesto_de_Egresos_2026.pdf	20260713001937	https://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Presupuesto_de_Egresos_2026.pdf	7494cbae680a9cb6727c7d4571df9e22448aeb85ed40952d99e562b86a4c9502	5242880	ilegible: PdfminerException	0		portada
