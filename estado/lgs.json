@@ -1,11 +1,23 @@
 {
- "fecha": "2026-11-24T21:41:11+00:00",
+ "fecha": "2026-11-27T03:16:36+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_General_de_Salud)\\.pdf",
  "publicada": true,
- "capturas": 55,
- "versiones_archivadas": 42,
- "fuera": [],
- "versiones": 42,
+ "capturas": 74,
+ "versiones_archivadas": 46,
+ "fuera": [
+  {
+   "version": "2021-01-07",
+   "sha256": "82427d1222637f82ab765fedf655df0d97f0dec31c05d05a22891c7ae337e3bf",
+   "motivo": "auditar:   lgs/339: no_literal «articuloreformadodof260520001106200912122011humanos»"
+  },
+  {
+   "version": "2026-01-15",
+   "sha256": "79573c6a2e877b0b27fcc7f70daf530f1532a917a1fa92c2fb1c07c5b459a627",
+   "motivo": "auditar:   lgs/077-bis-6: no_literal «articuloadicionadodof15052003reformadodof04062014seguridadsocial»"
+  }
+ ],
+ "versiones": 44,
  "desde": "2006-06-06",
  "hasta": "2024-06-07",
  "sin_explicar": 0,
@@ -48,7 +60,6 @@
   "2020-12-22",
   "2021-01-07",
   "2021-06-29",
-  "2021-07-15",
   "2021-09-22",
   "2021-11-22",
   "2021-12-21",

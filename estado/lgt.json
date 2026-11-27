@@ -1,15 +1,11 @@
 {
- "fecha": "2026-11-24T23:12:12+00:00",
+ "fecha": "2026-11-27T05:36:55+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_General_de_Turismo)\\.pdf",
  "publicada": true,
- "capturas": 14,
+ "capturas": 20,
  "versiones_archivadas": 12,
  "fuera": [
-  {
-   "version": "2013-04-08",
-   "sha256": "f87d00cf411f9503a571ca54a0631df846defba9938480f63c7a4ad3be6c23c0",
-   "motivo": "auditar:   lgt/038: no_literal «delosaspectosoperativosdelregistronacionaldeturismoarticulo46elregistronacionald»; texto_omitido «TÍTULO QUINTO De los Aspectos Operativos CAPÍTULO I Del Registro Nacional de Tu"
-  },
   {
    "version": "2014-11-10",
    "sha256": "5a569b4f6ece0ddcf14bc6bb2139b3b1f5e879730cfe94243038cc42c132b658",
@@ -23,6 +19,11 @@
   {
    "version": "2017-12-22",
    "sha256": "bd4125d59abdfddd1615bac0c8f886cc2048b3ada0f8976265bf114701bed6e9",
+   "motivo": "auditar:   lgt/038: no_literal «delosaspectosoperativosdelregistronacionaldeturismoarticulo46elregistronacionald»; texto_omitido «TÍTULO QUINTO De los Aspectos Operativos CAPÍTULO I Del Registro Nacional de Tu"
+  },
+  {
+   "version": "2013-05-28",
+   "sha256": "f87d00cf411f9503a571ca54a0631df846defba9938480f63c7a4ad3be6c23c0",
    "motivo": "auditar:   lgt/038: no_literal «delosaspectosoperativosdelregistronacionaldeturismoarticulo46elregistronacionald»; texto_omitido «TÍTULO QUINTO De los Aspectos Operativos CAPÍTULO I Del Registro Nacional de Tu"
   }
  ],

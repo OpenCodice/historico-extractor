@@ -1,23 +1,35 @@
 {
- "fecha": "2026-11-24T23:06:54+00:00",
+ "fecha": "2026-11-27T04:58:25+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_General_del_Sistema_de_Medios_de_Impugnacion\\-Materia_Electoral|Ley_General_del_Sistema_de_Medios_de_Impugnacion_en_Materia_Electoral)\\.pdf",
  "publicada": true,
- "capturas": 18,
- "versiones_archivadas": 9,
+ "capturas": 25,
+ "versiones_archivadas": 12,
  "fuera": [
   {
    "version": "2022-04-19",
    "sha256": "4f2844d77ee66b19363dfee3fd888f838f2193d72896795a0ce7363ec6d90d58",
    "motivo": "auditar:   lgsmime/010: encabezado_pegado «Inciso declarado inválido por sentencia de la SCJN a Acción de Inconstitucionali»"
+  },
+  {
+   "version": "2022-12-20",
+   "sha256": "2cf4e80086fdd82f99d8d43b2048a6111bb35bd54e11229db851a7972f496e77",
+   "motivo": "auditar:   lgsmime/010: encabezado_pegado «Inciso declarado inválido por sentencia de la SCJN a Acción de Inconstitucionali»"
+  },
+  {
+   "version": "2023-03-02",
+   "sha256": "f9237cdf6babe2f23dd81ab2e7eeece2b5c8e6f6d8dfc9eed0be3abf62bf941f",
+   "motivo": "auditar:   lgsmime/010: encabezado_pegado «Inciso declarado inválido por sentencia de la SCJN a Acción de Inconstitucionali»"
   }
  ],
- "versiones": 8,
+ "versiones": 9,
  "desde": "1996-11-22",
  "hasta": "2025-11-14",
  "sin_explicar": 0,
  "faltan": [
   "2014-05-20",
-  "2022-04-19"
+  "2022-04-19",
+  "2022-12-20"
  ],
  "anteriores": 0
 }

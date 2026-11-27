@@ -1,20 +1,19 @@
 {
- "fecha": "2026-11-24T23:49:07+00:00",
+ "fecha": "2026-11-27T06:56:43+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_del_Impuesto_Especial_sobre_Produccion_y_Servicios)\\.pdf",
  "publicada": true,
- "capturas": 31,
- "versiones_archivadas": 12,
+ "capturas": 42,
+ "versiones_archivadas": 22,
  "fuera": [],
- "versiones": 12,
+ "versiones": 22,
  "desde": "2006-12-27",
- "hasta": "2025-11-07",
+ "hasta": "2025-12-22",
  "sin_explicar": 0,
  "faltan": [
   "2008-07-11",
   "2009-11-27",
-  "2015-01-01",
-  "2019-12-24",
-  "2020-12-24"
+  "2015-11-18"
  ],
  "anteriores": 29
 }
