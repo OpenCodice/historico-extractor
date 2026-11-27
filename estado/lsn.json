@@ -1,9 +1,10 @@
 {
- "fecha": "2026-11-25T06:38:04+00:00",
+ "fecha": "2026-11-27T14:54:30+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "portada|(Ley_de_Seguridad_Nacional)\\.pdf",
  "publicada": true,
- "capturas": 2,
- "versiones_archivadas": 2,
+ "capturas": 7,
+ "versiones_archivadas": 5,
  "fuera": [
   {
    "version": "2021-05-20",
@@ -11,10 +12,12 @@
    "motivo": "auditar:   lsn/005: encabezado_pegado «Fracción declarada inválida por sentencia de la SCJN a Acción de Inconstituciona»"
   }
  ],
- "versiones": 1,
- "desde": "2025-11-14",
+ "versiones": 4,
+ "desde": "2005-12-26",
  "hasta": "2025-11-14",
  "sin_explicar": 0,
- "faltan": [],
- "anteriores": 4
+ "faltan": [
+  "2021-05-20"
+ ],
+ "anteriores": 0
 }

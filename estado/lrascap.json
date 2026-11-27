@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-25T05:10:47+00:00",
+ "fecha": "2026-11-27T13:16:08+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_para_Regular_las_Actividades_de_las_Sociedades_Cooperativas_de_Ahorro_y_Prestamo)\\.pdf",
  "publicada": true,
- "capturas": 12,
+ "capturas": 16,
  "versiones_archivadas": 7,
  "fuera": [],
  "versiones": 7,
- "desde": "2009-08-13",
+ "desde": "2009-08-21",
  "hasta": "2025-11-14",
  "sin_explicar": 0,
- "faltan": [
-  "2009-08-21"
- ],
+ "faltan": [],
  "anteriores": 0
 }
