@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-24T21:17:11+00:00",
+ "fecha": "2026-11-26T23:15:51+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_General_de_Partidos_Politicos)\\.pdf",
  "publicada": true,
- "capturas": 10,
- "versiones_archivadas": 4,
+ "capturas": 17,
+ "versiones_archivadas": 7,
  "fuera": [],
- "versiones": 4,
+ "versiones": 7,
  "desde": "2014-05-23",
- "hasta": "2023-03-02",
+ "hasta": "2023-11-24",
  "sin_explicar": 0,
- "faltan": [
-  "2015-08-13"
- ],
+ "faltan": [],
  "anteriores": 0
 }
