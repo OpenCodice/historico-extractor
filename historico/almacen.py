@@ -15,7 +15,7 @@ import time
 import urllib.error
 import urllib.request
 
-URL = os.environ.get("HISTORICO_ALMACEN", "https://historico-capturas.danielcardeenas.workers.dev")
+URL = os.environ.get("HISTORICO_ALMACEN", "https://historico.constitucion.app")
 TOKEN = os.environ.get("HISTORICO_ALMACEN_TOKEN", "")
 AGENTE = {"User-Agent": "OpenCodice-historico"}
 FALLO_DE_RED = (OSError, http.client.HTTPException)

@@ -13,7 +13,7 @@ y [fiscal-extractor](https://github.com/OpenCodice/fiscal-extractor)).
 
 Cada PDF archivado queda además en una copia propia, por su sha256 (el
 `Fuente-Sha256` de su commit):
-`https://historico-capturas.danielcardeenas.workers.dev/{sha256}`.
+`https://historico.constitucion.app/{sha256}`.
 
 El resultado es una rama por ley, con un commit por versión:
 
