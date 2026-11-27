@@ -3,3 +3,5 @@ capturas/
 __pycache__/
 .pytest_cache/
 _trabajo/
+node_modules/
+.wrangler/

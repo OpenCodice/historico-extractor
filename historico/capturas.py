@@ -15,7 +15,7 @@ import urllib.request
 
 import pdfplumber
 
-from . import MANIFIESTOS, configuracion
+from . import MANIFIESTOS, almacen, configuracion
 
 CDX = "https://web.archive.org/cdx/search/cdx"
 CARPETA_PDF = "diputados.gob.mx/LeyesBiblio/pdf/"
@@ -168,6 +168,7 @@ def descargar(clave: str, patron: str, destino: pathlib.Path, capturas=None,
             if datos is None:
                 continue
             ruta.write_bytes(datos)
+            almacen.guardar(datos)
             time.sleep(PAUSA)
         datos = ruta.read_bytes()
         version, paginas, origen = leer_portada(ruta, modo == "notas", f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}")
@@ -184,12 +185,16 @@ def asegurar(fila: dict, destino: pathlib.Path) -> pathlib.Path:
     Tiene que ser el mismo que se fechó: se comprueba su sha256."""
     ruta = destino / fila["archivo"]
     if not ruta.exists():
-        datos = _bajar(f"https://web.archive.org/web/{fila['captura']}id_/{fila['url']}")
-        if datos is None or hashlib.sha256(datos).hexdigest() != fila["sha256"]:
-            raise RuntimeError(f"{fila['archivo']}: Wayback ya no entrega la captura registrada")
+        # Primero la copia propia: no depende de Wayback ni de su ritmo.
+        datos = almacen.traer(fila["sha256"])
+        if datos is None:
+            datos = _bajar(f"https://web.archive.org/web/{fila['captura']}id_/{fila['url']}")
+            if datos is None or hashlib.sha256(datos).hexdigest() != fila["sha256"]:
+                raise RuntimeError(f"{fila['archivo']}: ni el almacén ni Wayback entregan la captura registrada")
+            almacen.guardar(datos)
+            time.sleep(PAUSA)
         destino.mkdir(parents=True, exist_ok=True)
         ruta.write_bytes(datos)
-        time.sleep(PAUSA)
     return ruta
 
 

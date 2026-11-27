@@ -86,6 +86,8 @@ jobs:
           CLAVES: ${{ inputs.claves }}
           LOTE: ${{ inputs.lote }}
           DESDE_CERO: ${{ inputs.desde_cero }}
+          # Lo que la tanda baja de Wayback se guarda en el almacén propio.
+          HISTORICO_ALMACEN_TOKEN: ${{ secrets.HISTORICO_ALMACEN_TOKEN }}
         run: |
           set -o pipefail
           extra=()

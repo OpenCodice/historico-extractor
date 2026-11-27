@@ -38,6 +38,7 @@ Publicacion).
 | `historico/coherencia.py` | La compuerta de la cadena (ver abajo). |
 | `historico/faltantes.py` | Las publicaciones que anotan los artículos y no tienen versión en la rama. |
 | `historico/reedicion.py` | Prueba, con el texto de los dos PDF, que un cambio sin reforma lo hizo la Cámara. |
+| `almacen/` | El Worker `historico-capturas` (Cloudflare, sobre R2): la copia propia de cada PDF archivado, por su sha256. Leer es público (`GET /{sha256}`, `GET /lista`); guardar pide `HISTORICO_ALMACEN_TOKEN` y el cuerpo tiene que ser un PDF con esa huella. Las tandas leen de ahí antes que de Wayback y guardan lo que bajan (`historico/almacen.py`); `copiar-capturas.yml`, a mano, lleva lo que falte. Se despliega a mano (`npx wrangler deploy` en `almacen/`): este repo no tiene los secrets de Cloudflare. |
 | `coherencia/<clave>.json`, `verificaciones/<clave>.json` | El informe de la compuerta de cada rama y los veredictos del agente. |
 
 Una versión es una fecha de portada; si hay varias capturas con la misma

@@ -11,6 +11,10 @@ versión con los mismos extractores que mantienen el texto vigente
 ([constitucion-extractor](https://github.com/OpenCodice/constitucion-extractor)
 y [fiscal-extractor](https://github.com/OpenCodice/fiscal-extractor)).
 
+Cada PDF archivado queda además en una copia propia, por su sha256 (el
+`Fuente-Sha256` de su commit):
+`https://historico-capturas.danielcardeenas.workers.dev/{sha256}`.
+
 El resultado es una rama por ley, con un commit por versión:
 
 ```

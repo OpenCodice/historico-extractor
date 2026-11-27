@@ -16,6 +16,12 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+      - name: El Worker del almacén
+        working-directory: almacen
+        run: node --check worker.js && node --test
 
   infra:
     # Los workflows: un error aquí no lo ve pytest y solo aparecería en una

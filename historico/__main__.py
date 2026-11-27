@@ -4,7 +4,7 @@ import pathlib
 import sys
 
 from . import RAIZ, documento
-from . import cadena, capturas, coherencia, declarar, reedicion, tanda
+from . import almacen, cadena, capturas, coherencia, declarar, reedicion, tanda
 
 EXTRACTOR = {"constitucion": "constitucion-extractor", "federal": "fiscal-extractor"}
 
@@ -50,7 +50,16 @@ def main(argv=None) -> int:
     sp.add_argument("claves", nargs="*", help="vacío = todas las publicadas")
     sp.add_argument("--out", required=True, type=pathlib.Path, help="clon de OpenCodice/historico")
 
+    sp = sub.add_parser("almacen", help="copia al almacén propio las capturas registradas que aún no tiene")
+    sp.add_argument("--capturas", default=RAIZ / "capturas", type=pathlib.Path)
+    sp.add_argument("--minutos", default=240, type=int)
+
     args = p.parse_args(argv)
+    if args.orden == "almacen":
+        r = almacen.copiar(args.capturas, args.minutos)
+        print(json.dumps(r, ensure_ascii=False))
+        print(f"pendiente={'true' if r['faltan'] else 'false'}")
+        return 0
     if args.orden == "faltantes":
         print(tanda.medir_faltantes(args.out, args.claves or None))
         return 0

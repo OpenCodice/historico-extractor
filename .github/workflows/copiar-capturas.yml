@@ -1,0 +1,45 @@
+name: Copiar las capturas al almacén
+run-name: "copiar-capturas minutos=[${{ inputs.minutos }}] origen=[${{ inputs.origen }}]"
+
+# Lleva al almacén propio (el Worker `almacen/`, sobre R2) los PDF de los
+# manifiestos que aún no tiene, del más antiguo al más nuevo de cada documento,
+# bajándolos de Wayback a su ritmo. Las tandas ya guardan lo que bajan; esto
+# es para lo registrado antes de que hubiera almacén, o para rehacerlo si se
+# pierde. Se lanza a mano (workflow_dispatch) y se puede relanzar: sigue donde
+# se quedó.
+on:
+  workflow_dispatch:
+    inputs:
+      minutos:
+        description: Cuánto tiempo copiar
+        required: false
+        default: '300'
+      origen:
+        description: 'Quién lanzó la corrida (supervisor); vacío = a mano'
+        required: false
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: copiar-capturas
+  cancel-in-progress: false
+
+jobs:
+  copiar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -q -r requirements.txt
+      - name: Copiar
+        env:
+          HISTORICO_ALMACEN_TOKEN: ${{ secrets.HISTORICO_ALMACEN_TOKEN }}
+          MINUTOS: ${{ inputs.minutos }}
+        run: python -m historico almacen --minutos "${MINUTOS:-300}"
