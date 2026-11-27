@@ -1,5 +1,24 @@
 [
  {
+  "desde": "2006-04-24",
+  "hasta": "2014-01-10",
+  "fuente_antes": "2464a81b5ca55c09b7949ad4d8bbab36ca391517fc2ffca493e4363bf5d079e3",
+  "fuente_despues": "b15796fdb366dad9dc7ecc08ac809ecfd9eacb97de46949dced06c466909f001",
+  "pendientes": [],
+  "explicado": [
+   "009"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
   "desde": "2014-01-10",
   "hasta": "2024-01-03",
   "fuente_antes": "b15796fdb366dad9dc7ecc08ac809ecfd9eacb97de46949dced06c466909f001",

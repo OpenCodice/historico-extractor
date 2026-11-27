@@ -1,16 +1,17 @@
 {
- "fecha": "2026-11-25T00:16:20+00:00",
+ "fecha": "2026-11-27T09:10:54+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_del_Instituto_de_Seguridad_Social_para_las_Fuerzas_Armadas)\\.pdf",
  "publicada": true,
- "capturas": 13,
+ "capturas": 16,
  "versiones_archivadas": 11,
  "fuera": [],
  "versiones": 11,
  "desde": "2006-05-08",
- "hasta": "2025-11-14",
+ "hasta": "2025-12-16",
  "sin_explicar": 0,
  "faltan": [
-  "2025-12-16",
+  "2025-11-14",
   "2026-01-15"
  ],
  "anteriores": 1
