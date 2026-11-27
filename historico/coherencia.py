@@ -127,6 +127,11 @@ def blob(texto: str) -> str:
     return hashlib.sha256(texto.encode()).hexdigest()[:16]
 
 
+# «fuente»: el cambio lo hizo la Cámara. «tabla»: los dos PDF traen la misma
+# tabla y solo difiere cómo quedaron leídos sus rótulos o números de fila.
+VEREDICTOS_QUE_PASAN = {"fuente", "tabla"}
+
+
 def veredictos(clave: str) -> dict[tuple[str, str], str]:
     """(antes, después) → veredicto, por el contenido exacto de las dos
     versiones del artículo: si cambia la extracción, el juicio ya no aplica."""
@@ -175,7 +180,7 @@ def medir(repo: pathlib.Path, rama: str, texto_de=None) -> list[dict]:
                                         texto_de(fuente[hb])) or menor or clase
             elif menor:
                 clase = menor
-            if clase == "sin_explicar" and juicios.get((blob(antes), blob(despues))) == "fuente":
+            if clase == "sin_explicar" and juicios.get((blob(antes), blob(despues))) in VEREDICTOS_QUE_PASAN:
                 clase = "juzgado"
             paso[clase].append(pathlib.Path(ruta).stem)
             if clase == "sin_explicar":

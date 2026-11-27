@@ -167,6 +167,9 @@ versiones del artículo contra sus dos PDF y agrega a
 
 - `fuente`: las dos versiones son fieles, cada una a su PDF; el cambio lo
   hizo la Cámara. Cuenta como juzgado.
+- `tabla`: los dos PDF traen la misma tabla y las versiones solo difieren en
+  cómo quedaron leídos sus rótulos girados o sus números de fila, sin que
+  cambie ninguna palabra. Cuenta como juzgado; el `detalle` dice qué difiere.
 - `lectura`: los PDF dicen lo mismo, o alguna versión no es fiel al suyo.
   Sigue sin explicar, y el `detalle` dice cuál versión y qué le falta o sobra.
 
