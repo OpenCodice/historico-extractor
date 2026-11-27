@@ -276,19 +276,18 @@
  },
  {
   "desde": "2014-12-24",
-  "hasta": "2015-01-27",
+  "hasta": "2015-02-11",
   "fuente_antes": "57a40e9ff2d1b66b149eb4a331c374f22dadea3a234de572bc24d9060372e799",
   "fuente_despues": "4af10825a64871d2fc1e07b1a4a114419ac97f50ad62f9c382f321654a464969",
   "pendientes": [],
   "explicado": [
+   "027",
    "038"
   ],
   "solo_notas": [],
   "solo_forma": [],
   "reedicion": [],
-  "nota_en_el_cuerpo": [
-   "027"
-  ],
+  "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
   "formula": [],
@@ -296,7 +295,7 @@
   "sin_explicar": []
  },
  {
-  "desde": "2015-01-27",
+  "desde": "2015-02-11",
   "hasta": "2015-05-13",
   "fuente_antes": "4af10825a64871d2fc1e07b1a4a114419ac97f50ad62f9c382f321654a464969",
   "fuente_despues": "6572af6e87b8e047b17a21b402a5f338c2966d3789718941e61e32cb9b999a6e",
@@ -731,7 +730,7 @@
   "desde": "2022-09-09",
   "hasta": "2023-05-03",
   "fuente_antes": "a8f8a39a1b33aa375effa4f7825c42875195a0e3371a603d7cb122c53e9c8064",
-  "fuente_despues": "7cd035742351281f936f3e8f2f972439ed1cd425fa0016f438a45e32b5cf7b93",
+  "fuente_despues": "5c561d70c7117363aeb0f5511340c2fbd053c3f337652641e0e07b562c181b7b",
   "pendientes": [],
   "explicado": [
    "014-bis",
@@ -756,6 +755,25 @@
  },
  {
   "desde": "2023-05-03",
+  "hasta": "2023-09-20",
+  "fuente_antes": "5c561d70c7117363aeb0f5511340c2fbd053c3f337652641e0e07b562c181b7b",
+  "fuente_despues": "7cd035742351281f936f3e8f2f972439ed1cd425fa0016f438a45e32b5cf7b93",
+  "pendientes": [],
+  "explicado": [
+   "029"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2023-09-20",
   "hasta": "2023-12-01",
   "fuente_antes": "7cd035742351281f936f3e8f2f972439ed1cd425fa0016f438a45e32b5cf7b93",
   "fuente_despues": "7714d3b64b352c7429481ff2dd00e23bfc527f9f3e7adee2be19c6b3aa16cd30",

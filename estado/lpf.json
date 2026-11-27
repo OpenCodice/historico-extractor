@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-25T04:02:51+00:00",
+ "fecha": "2026-11-27T12:29:21+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_de_la_Policia_Federal)\\.pdf",
  "publicada": true,
- "capturas": 11,
- "versiones_archivadas": 3,
+ "capturas": 13,
+ "versiones_archivadas": 4,
  "fuera": [],
- "versiones": 3,
+ "versiones": 4,
  "desde": "2010-11-30",
  "hasta": "2025-11-14",
  "sin_explicar": 0,
- "faltan": [
-  "2011-06-24"
- ],
+ "faltan": [],
  "anteriores": 0
 }

@@ -1,16 +1,24 @@
 {
- "fecha": "2026-11-25T02:43:45+00:00",
+ "fecha": "2026-11-27T12:03:09+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_Organica_del_Ejercito_y_Fuerza_Aerea)\\.pdf",
  "publicada": true,
- "capturas": 18,
- "versiones_archivadas": 13,
- "fuera": [],
+ "capturas": 25,
+ "versiones_archivadas": 14,
+ "fuera": [
+  {
+   "version": "2023-05-03",
+   "sha256": "c4e446c2d8415471f5b2ff6d5f8896f1919f7289372050c25ce75773467d3937",
+   "motivo": "auditar:   loefam/138: encabezado_pegado «Fracción declarada inválida por sentencia de la SCJN a Acción de Inconstituciona»"
+  }
+ ],
  "versiones": 13,
  "desde": "1998-01-23",
  "hasta": "2025-07-16",
  "sin_explicar": 0,
  "faltan": [
-  "2009-06-12"
+  "2009-06-12",
+  "2023-05-03"
  ],
  "anteriores": 1
 }

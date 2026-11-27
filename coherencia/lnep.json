@@ -1,6 +1,25 @@
 [
  {
   "desde": "2016-06-16",
+  "hasta": "2018-05-09",
+  "fuente_antes": "190076f982963d40321784d7c2a06960db57511e8c98d3b377948712ab9e1890",
+  "fuente_despues": "009822a81c612d91953e7df56b3e890a2733935ad1daaac9e2efa9a066e3945c",
+  "pendientes": [],
+  "explicado": [
+   "139"
+  ],
+  "solo_notas": [],
+  "solo_forma": [],
+  "reedicion": [],
+  "nota_en_el_cuerpo": [],
+  "solo_puntuacion": [],
+  "otro_orden": [],
+  "formula": [],
+  "juzgado": [],
+  "sin_explicar": []
+ },
+ {
+  "desde": "2018-05-09",
   "hasta": "2024-04-01",
   "fuente_antes": "009822a81c612d91953e7df56b3e890a2733935ad1daaac9e2efa9a066e3945c",
   "fuente_despues": "91abecabe50a5e414e0835daa9086ce3b307fffb9ebe626dab3bb9d1eae51680",

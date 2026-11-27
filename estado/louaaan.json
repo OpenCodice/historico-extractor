@@ -1,8 +1,15 @@
 {
- "fecha": "2026-11-25T03:37:15+00:00",
+ "fecha": "2026-11-27T12:16:44+00:00",
  "configuracion": "5248bb54f469",
- "publicada": false,
- "capturas": 5,
- "versiones_archivadas": 0,
- "motivo": "sin capturas con fecha de versión"
+ "fuentes": "portada|(Ley_Organica_de_la_Universidad_Autonoma_Agraria_Antonio_Narro)\\.pdf",
+ "publicada": true,
+ "capturas": 6,
+ "versiones_archivadas": 1,
+ "fuera": [],
+ "versiones": 1,
+ "desde": "2006-04-26",
+ "hasta": "2006-04-26",
+ "sin_explicar": 0,
+ "faltan": [],
+ "anteriores": 0
 }

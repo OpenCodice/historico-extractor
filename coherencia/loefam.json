@@ -213,7 +213,7 @@
  },
  {
   "desde": "2022-09-09",
-  "hasta": "2023-05-03",
+  "hasta": "2023-09-20",
   "fuente_antes": "e748aa8ec5773b160f39c5dd5ba2f9f898fda4f3b153b721d5dcd261bf783e24",
   "fuente_despues": "e1cbc70b151a18d295a23eb66e6e36391423157ccf7c68b288a33d968e793d68",
   "pendientes": [],
@@ -253,17 +253,16 @@
    "101-sexies",
    "101-ter",
    "101",
+   "138",
    "160",
+   "170",
    "191",
    "192",
    "193"
   ],
   "solo_notas": [],
   "solo_forma": [],
-  "reedicion": [
-   "138",
-   "170"
-  ],
+  "reedicion": [],
   "nota_en_el_cuerpo": [],
   "solo_puntuacion": [],
   "otro_orden": [],
@@ -272,7 +271,7 @@
   "sin_explicar": []
  },
  {
-  "desde": "2023-05-03",
+  "desde": "2023-09-20",
   "hasta": "2024-05-03",
   "fuente_antes": "e1cbc70b151a18d295a23eb66e6e36391423157ccf7c68b288a33d968e793d68",
   "fuente_despues": "f722a2504f04e924fe8bb58f794fe89e9206579bb48c49ebb6602c0bd9fdc188",

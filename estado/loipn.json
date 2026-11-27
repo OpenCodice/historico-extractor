@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-25T02:53:50+00:00",
+ "fecha": "2026-11-27T12:09:23+00:00",
  "configuracion": "5248bb54f469",
+ "fuentes": "notas|(Ley_Organica_del_Instituto_Politecnico_Nacional)\\.pdf",
  "publicada": true,
- "capturas": 6,
+ "capturas": 7,
  "versiones_archivadas": 1,
  "fuera": [],
  "versiones": 1,
- "desde": "1981-12-29",
- "hasta": "1981-12-29",
+ "desde": "1982-05-28",
+ "hasta": "1982-05-28",
  "sin_explicar": 0,
- "faltan": [
-  "1982-05-28"
- ],
+ "faltan": [],
  "anteriores": 0
 }
