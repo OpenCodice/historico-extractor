@@ -57,7 +57,7 @@ workflow sube a este repo junto con los manifiestos y los informes.
 
 Qué toca: primero los documentos declarados que nunca se han intentado, hasta
 cuarenta por tanda; cuando no quedan, todos, del que lleva más tiempo sin
-revisarse al más reciente. Cualquier tanda se detiene al agotar cuatro horas. La revisión de una rama publicada
+revisarse al más reciente. Cualquier tanda se detiene al agotar tres horas. La revisión de una rama publicada
 sin capturas nuevas ni cambios en lo declarado no rehace nada. Mientras queden sin
 intentar, la corrida declara `estado pendiente=[true]` y el supervisor lanza
 la siguiente; después basta la cita semanal. Una rama publicada se continúa

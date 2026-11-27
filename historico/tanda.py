@@ -20,7 +20,7 @@ ESTADO = RAIZ / "estado"
 INFORMES = RAIZ / "coherencia"
 EXTRACTOR = {"constitucion": "constitucion-extractor", "federal": "fiscal-extractor"}
 MARCA = ("<!-- ramas -->", "<!-- /ramas -->")
-MINUTOS_DE_REVISION = 240
+MINUTOS_DE_REVISION = 180
 
 
 def leer_estado(clave: str) -> dict | None:
