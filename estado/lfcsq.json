@@ -1,16 +1,15 @@
 {
- "fecha": "2026-11-26T12:28:20+00:00",
+ "fecha": "2026-11-28T00:14:14+00:00",
  "configuracion": "5248bb54f469",
  "fuentes": "notas|(Ley_Federal_para_el_Control_de_Sustancias_Quimicas\\-Armas_Quimicas)\\.pdf",
- "publicada": false,
+ "publicada": true,
  "capturas": 12,
  "versiones_archivadas": 3,
  "fuera": [],
  "versiones": 3,
  "desde": "2009-07-03",
  "hasta": "2024-06-14",
- "sin_explicar": 1,
+ "sin_explicar": 0,
  "faltan": [],
- "anteriores": 0,
- "motivo": "la coherencia deja artículos sin explicar"
+ "anteriores": 0
 }
